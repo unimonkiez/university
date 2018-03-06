@@ -67,7 +67,7 @@ $$ \cos{\alpha} = \frac{-2}{\sqrt{5}}  $$
 
 $$ \pm1\hat{y}$$
 
-* זמן למהירות
+* פונקציית מקום לפונקציית מהירות
 
 $$\dot{x}(t) = \frac{\delta x}{\delta t} = \frac{x(t + \Delta t) - x(\Delta t)}{\Delta t}$$
 
