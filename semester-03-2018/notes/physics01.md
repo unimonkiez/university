@@ -14,9 +14,10 @@
 
 $$\bar{a} * \bar{b} = |\bar{a}| * |\bar{b}| * \cos{\alpha}$$
 
-* מכפלה וקטורית
+* מכפלה וקטורית  
+יש להחליף לסירוגין בין (+) ו (-) כשמתחילים ב (+)
 
-$$\bar{a} \bigotimes \bar{b} = (a_yb_z-a_zb_y)\hat{x} - (a_xb_z-a_zb_x)\hat{y} + (x_yb_y-a_yb_x)\hat{z}$$
+$$\bar{a} \otimes \bar{b} = (a_yb_z-a_zb_y)\hat{x} - (a_xb_z-a_zb_x)\hat{y} + (x_yb_y-a_yb_x)\hat{z}$$
 
 ## פתרון תרגיל בית 1
 
@@ -62,4 +63,22 @@ $$ \bar{a} * \bar{b} = |\bar{a}| * |\bar{b}| * \cos{\alpha} $$
 $$ -2 = |\bar{a}| * |\bar{b}| * \cos{\alpha} $$
 $$ -2 = 1 * \sqrt{5} * \cos{\alpha} $$
 $$ \cos{\alpha} = \frac{-2}{\sqrt{5}}  $$
+* ה
 
+$$ \pm1\hat{y}$$
+
+* זמן למהירות
+
+$$\dot{x}(t) = \frac{\delta x}{\delta t} = \frac{x(t + \Delta t) - x(\Delta t)}{\Delta t}$$
+
+## פתרון תרגיל בית 15
+נתון
+
+$$x(t) = 5\epsilon^{-\gamma t} \cos {\omega t}$$
+* א
+
+$$ \dot{x}(t) = 5 \epsilon^{-\gamma t} (-\gamma) \cos{\omega t} + 5 \epsilon^{-\gamma t} (-\sin{\omega t})\omega $$
+* ג
+
+$$ [\omega] = \frac{1}{t}$$
+$$ [\gamma] = \frac{1}{t}$$
