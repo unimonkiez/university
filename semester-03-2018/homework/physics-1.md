@@ -22,12 +22,19 @@ $$ \measuredangle \alpha = ? $$
 
 $$ \bar{a} = (11, 0) $$
 $$ \bar{b} = (12 \cdot \cos{\alpha}, 12 \cdot \sin{\alpha}) $$
-$$ \sqrt{(a_x \cdot b_x)^2 + (a_y \cdot b_y)^2} = 17 $$
+$$ \bar{a} + \bar{b} = \bar{v} = (11 + 12\cos{\alpha}, 12\sin{\alpha}) $$
 $$ \Downarrow $$
-$$ \sqrt{(11 \cdot 12 \cdot \cos{\alpha})^2} = 17 $$
-$$ 132 \cdot \cos{\alpha} = 17 $$
-$$ \cos{\alpha} = \dfrac{17}{132} $$
-$$ \alpha \simeq 82.6\degree $$
+$$ |\bar{v}| = \sqrt{(11 + 12\cos{\alpha})^2 + (12\sin{\alpha})^2} = 17 $$
+$$ (11 + 12\cos{\alpha})^2 + (12\sin{\alpha})^2 = 17^2 $$
+$$ 11^2 + 24\cdot11 \cdot\cos{\alpha} + (12\cos{\alpha})^2 + (12\sin{\alpha})^2 = 17^2 $$
+$$ 24\cdot11 \cdot\cos{\alpha} + 144(\cos{\alpha})^2 + 144\sin{^2\alpha} = 17^2 - 11^2 $$
+$$ 24\cdot11 \cdot\cos{\alpha} + 144(\cos{\alpha})^2 + 144(1 - \cos{^2\alpha}) = 17^2 - 11^2 $$
+$$ x = \cos{\alpha} $$
+$$ 24\cdot11 \cdot x + 144x^2 + 144(1 - x^2) = 17^2 - 11^2 $$
+$$ 12 \cdot 2 \cdot 11 x + 12^2 = 17^2 - 11^2 $$
+$$ 22 x = \frac{17^2 - 11^2 - 12^2}{12} $$
+$$ x = \frac{17^2 - 11^2 - 12^2}{12 \cdot 22} $$
+$$ \alpha \simeq 84.78\degree $$
 
 3.
 $$ \alpha = 46 \degree$$
@@ -95,4 +102,11 @@ $$|\vec{\alpha}| = \sqrt{3^2 + 5^2 + (-11)^2} \Rightarrow \sqrt{9 + 25 + 121} \R
     $$ \cos{\alpha} = \frac{-2}{\sqrt{5}}  $$
     5. מכפלה ווקטורית
 
-    $$ \pm1\hat{y}$$
+    $$\bar{a} \otimes \bar{b} = (a_yb_z-a_zb_y)\hat{x} - (a_xb_z-a_zb_x)\hat{y} + (a_xb_y-a_yb_x)\hat{z}$$
+    $$\bar{a} \otimes \bar{b} = (0 \cdot (-2) - ((-1) \cdot 0))\hat{x} - (0 \cdot (-2) - 1 \cdot 1)\hat{y} + (0 \cdot 0 - 0 \cdot 1)\hat{z} = - \hat{y} $$
+    כדי למצוא את שתי הוקטורים פשוט נהפוך את ערכי x, y, z, ולכן -
+
+    $$\vec{v}_{12} = \pm1\hat{y}$$
+
+  10. נתון
+      * $\vec{\alpha} = 2\hat{x} + 3\hat{y} - \hat{z}$
