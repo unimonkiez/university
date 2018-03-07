@@ -27,8 +27,8 @@ $$ \Downarrow $$
 $$ |\bar{v}| = \sqrt{(11 + 12\cos{\alpha})^2 + (12\sin{\alpha})^2} = 17 $$
 $$ (11 + 12\cos{\alpha})^2 + (12\sin{\alpha})^2 = 17^2 $$
 $$ 11^2 + 24\cdot11 \cdot\cos{\alpha} + (12\cos{\alpha})^2 + (12\sin{\alpha})^2 = 17^2 $$
-$$ 24\cdot11 \cdot\cos{\alpha} + 144(\cos{\alpha})^2 + 144\sin{^2\alpha} = 17^2 - 11^2 $$
-$$ 24\cdot11 \cdot\cos{\alpha} + 144(\cos{\alpha})^2 + 144(1 - \cos{^2\alpha}) = 17^2 - 11^2 $$
+$$ 24\cdot11 \cdot\cos{\alpha} + 144\cos{^2\alpha} + 144\sin{^2\alpha} = 17^2 - 11^2 $$
+$$ 24\cdot11 \cdot\cos{\alpha} + 144\cos{^2\alpha} + 144(1 - \cos{^2\alpha}) = 17^2 - 11^2 $$
 $$ x = \cos{\alpha} $$
 $$ 24\cdot11 \cdot x + 144x^2 + 144(1 - x^2) = 17^2 - 11^2 $$
 $$ 12 \cdot 2 \cdot 11 x + 12^2 = 17^2 - 11^2 $$
@@ -43,7 +43,7 @@ $$ (5\sin{46}, 5\cos{46}) $$
 4. $\vec{a} = 5\cdot {m\Big/s^2}$  
     1. $\alpha_y = 30\degree \Rightarrow \alpha_x = 120 \degree$ (המרה לציר X לצורך הנוחות)
 
-    $$ \vec{\alpha} = (5 \cdot \sin{120})\hat{x} + (5 \cdot \cos{120})\hat{y} $$
+    $$ \vec{\alpha} = (5 \cdot \sin{120})\hat{x} + (5 \cdot \cos{120})\hat{y}\Rightarrow 5 (\sin{60}\hat{x} + \cos{60}\hat{y}) $$
 
     2. $\alpha_y = -90\degree \Rightarrow \alpha_x = 0 \degree$ (המרה לציר X לצורך הנוחות)
 
@@ -108,5 +108,54 @@ $$|\vec{\alpha}| = \sqrt{3^2 + 5^2 + (-11)^2} \Rightarrow \sqrt{9 + 25 + 121} \R
 
     $$\vec{v}_{12} = \pm1\hat{y}$$
 
-  10. נתון
-      * $\vec{\alpha} = 2\hat{x} + 3\hat{y} - \hat{z}$
+10. נתון
+    * $\vec{a} = 2\hat{x} + 3\hat{y} - \hat{z}$
+    * $\vec{b} = \hat{x} - 2\hat{y} + \hat{z}$
+
+    תשובות
+    1. $\hat{a} + \hat{b}$
+
+    $$(2+1)\hat{x} + (3-2)\hat{y} + (1-1)\hat{z}$$
+    $$3\hat{x} + \hat{y}$$
+    2. $\hat{a} - \hat{b}$
+
+    $$(1-2)\hat{x} + (-2-3)\hat{y} + (1-(-1))\hat{z}$$
+    $$-\hat{x} -5 \hat{y} +2 \hat{z}$$
+    3. $\hat{a} \cdot \hat{b}$
+
+    $$(a_x\cdot b_x) + (a_y\cdot b_y) + (a_z \cdot y_z)$$
+    $$\Downarrow$$
+    $$(1\cdot2) + (-2\cdot(-3)) + (1 \cdot (-1))$$
+    $$2 +6  -1 $$
+    $$\Downarrow$$
+    $$7$$
+    4. $\alpha\degree = ?$
+
+    $$\cos\alpha = \frac{\vec{a} \cdot \vec{b}}{ |\vec{a}||\vec{b}| }$$
+    $$\Downarrow$$
+    $$\cos\alpha = \frac{7}{ \sqrt{2^2+3^2+(-1)^2}\sqrt{1^2+(-2)^2+1^2} }$$
+    $$\cos\alpha = \frac{7}{ \sqrt{4+9+1}\sqrt{1+4+1} }$$
+    $$\cos\alpha = \frac{7}{ \sqrt{15}\sqrt{61} }$$
+    $$ \alpha \simeq 42.27\degree $$
+    5. $\hat{a} \otimes \hat{b}$
+
+    $$\bar{a} \otimes \bar{b} = (a_yb_z-a_zb_y)\hat{x} - (a_xb_z-a_zb_x)\hat{y} + (a_xb_y-a_yb_x)\hat{z}$$
+    $$\Downarrow$$
+    $$\bar{a} \otimes \bar{b} = (3 \cdot 1-(-1) \cdot (-2))\hat{x} - (2 \cdot 1-(-1)\cdot1)\hat{y} + (2\cdot(-2)-3\cdot 1)\hat{z}$$
+    $$\bar{a} \otimes \bar{b} = (3-2)\hat{x} - (2+1)\hat{y} + (-4-3)\hat{z}$$
+    $$\bar{a} \otimes \bar{b} = \hat{x} -3\hat{y} -7\hat{z}$$
+
+11. להוכיח
+    * $a\sin{\alpha}=b\sin{\beta}=c\sin{\gamma}$
+
+    תשובה  
+    משפט הסינוסים (חישוב שטח המקבילית):
+
+    $$\vec{a}\otimes\vec{b} = |\vec{a}||\vec{b}|\sin{\alpha}$$
+
+    $$$$
+    לפי השרטוט, כל וקטור שווה בלסכום שני הוקטורים האחרים, _במשולש_, ולכן בהינתן כיוונם הוא בכיוון השעון אז:
+    * $\vec{a} = \vec{b} + \vec{c}$
+    * $\vec{b} = \vec{c} + \vec{a}$
+    * $\vec{c} = \vec{a} + \vec{b}$  
+

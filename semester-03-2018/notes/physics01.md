@@ -17,7 +17,7 @@ $$\bar{a} * \bar{b} = |\bar{a}| * |\bar{b}| * \cos{\alpha}$$
 * מכפלה וקטורית  
 יש להחליף לסירוגין בין (+) ו (-) כשמתחילים ב (+)
 
-$$\bar{a} \otimes \bar{b} = (a_yb_z-a_zb_y)\hat{x} - (a_xb_z-a_zb_x)\hat{y} + (x_yb_y-a_yb_x)\hat{z}$$
+$$\bar{a} \otimes \bar{b} = (a_yb_z-a_zb_y)\hat{x} - (a_xb_z-a_zb_x)\hat{y} + (a_xb_y-a_yb_x)\hat{z}$$
 
 ## פתרון תרגיל בית 1
 
