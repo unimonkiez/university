@@ -164,3 +164,16 @@ $$|\vec{\alpha}| = \sqrt{3^2 + 5^2 + (-11)^2} \Rightarrow \sqrt{9 + 25 + 121} \R
 
     $$\Downarrow$$
     $$\frac{a}{\sin{\alpha}}=\frac{b}{\sin{\beta}}=\frac{c}{\sin{\gamma}}$$
+
+11. קובייה בגודל 1x1x1  
+    * $\vec{v_1} = \hat{x} + \hat{y} + \hat{z}$
+    * $\vec{v_2}$ -  
+    מנקודה $(\hat{y} + \hat{z})$ לנקודה $(\hat{x})$  
+    $\vec{v_2} = \hat{x} - \hat{y} - \hat{z}$
+
+    $$\cos\alpha = \frac{\vec{a} \cdot \vec{b}}{ |\vec{a}||\vec{b}| }$$
+    $$\Downarrow$$
+    $$\cos\alpha = \frac{(1\cdot1)+(1\cdot(-1))+(1\cdot(-1))}{ \sqrt{1+1+1}\sqrt{1+1+1} }$$
+    $$\cos\alpha = \frac{-1}{ \sqrt{3}\sqrt{3} }$$
+    $$\cos\alpha = -\frac{1}{3}$$
+    $$\cos\alpha = 70.52\degree$$
