@@ -165,7 +165,7 @@ $$|\vec{\alpha}| = \sqrt{3^2 + 5^2 + (-11)^2} \Rightarrow \sqrt{9 + 25 + 121} \R
     $$\Downarrow$$
     $$\frac{a}{\sin{\alpha}}=\frac{b}{\sin{\beta}}=\frac{c}{\sin{\gamma}}$$
 
-11. קובייה בגודל 1x1x1  
+12. קובייה בגודל 1x1x1  
     * $\vec{v_1} = \hat{x} + \hat{y} + \hat{z}$
     * $\vec{v_2}$ -  
     מנקודה $(\hat{y} + \hat{z})$ לנקודה $(\hat{x})$  
@@ -177,3 +177,40 @@ $$|\vec{\alpha}| = \sqrt{3^2 + 5^2 + (-11)^2} \Rightarrow \sqrt{9 + 25 + 121} \R
     $$\cos\alpha = \frac{-1}{ \sqrt{3}\sqrt{3} }$$
     $$\cos\alpha = -\frac{1}{3}$$
     $$\cos\alpha = 70.52\degree$$
+
+13.
+    1. להוכיח  
+    $|A + B|^2 + |A - B|^2 = 2(|A|^2+|B|^2)$  
+    תשובה  
+
+    $$|\vec{v}| = \sqrt{v_x^2 + v_y^2 + v_z^2}$$
+    $$\Downarrow$$
+    $$\sqrt{(A+B)_x^2 + (A+B)_y^2 + (A+B)_z^2}^2 + \sqrt{(A-B)_x^2 + (A-B)_y^2 + (A-B)_z^2}^2 = 2 \cdot (\sqrt{A_x^2 + A_y^2 + A_z^2}^2 + \sqrt{B_x^2 + B_y^2 + B_z^2}^2)$$
+    $$(A+B)_x^2 + (A+B)_y^2 + (A+B)_z^2 + (A-B)_x^2 + (A-B)_y^2 + (A-B)_z^2 = 2 \cdot (A_x^2 + A_y^2 + A_z^2 + B_x^2 + B_y^2 + B_z^2)$$
+    $$A_x^2 \xcancel{+2A_xB_x} + B_x^2 + A_y^2 \xcancel{+2A_yB_y} + B_y^2 + A_z^2 \xcancel{+2A_zB_z} + B_z^2 + A_x^2 \xcancel{-2A_xB_X} + B_x^2 + A_y^2 \xcancel{-2A_yB_y} + B_y^2 + A_z^2 \xcancel{-2A_zB_z} + B_z^2 = 2 \cdot (A_x^2 + A_y^2 + A_z^2 + B_x^2 + B_y^2 + B_z^2)$$
+    $$A_x^2 + B_x^2 + A_y^2 + B_y^2 + A_z^2 + B_z^2 + A_x^2 + B_x^2 + A_y^2 + B_y^2 + A_z^2 + B_z^2 = 2 \cdot (A_x^2 + A_y^2 + A_z^2 + B_x^2 + B_y^2 + B_z^2)$$
+    $$2A_x^2 + 2B_x^2 + 2A_y^2 + 2B_y^2 + 2A_z^2 + 2B_z^2 = 2 \cdot (A_x^2 + A_y^2 + A_z^2 + B_x^2 + B_y^2 + B_z^2)$$
+    $$2 \cdot (A_x^2 + A_y^2 + A_z^2 + B_x^2 + B_y^2 + B_z^2) = 2 \cdot (A_x^2 + A_y^2 + A_z^2 + B_x^2 + B_y^2 + B_z^2)$$
+    **מש"ל**  
+
+    2. כלל המקבילית הוא משפט בגאומטריה אוקלידית, הקובע כי סכום ריבועי ארבע צלעות המקבילית שווה לסכום ריבועי האלכסונים. במקרה שהמקבילית היא מלבן, האלכסונים שווים ומתקבל משפט פיתגורס.
+
+14.
+    1. $\vec{A}\otimes(\vec{B}\otimes\vec{C}) = (\vec{A}\cdot\vec{C})\vec{B}-(\vec{A}\cdot\vec{B})\vec{C}$
+
+    נחשב את צד ימין
+
+    $$(\vec{A}\cdot\vec{C})\vec{B}-(\vec{A}\cdot\vec{B})\vec{C}$$
+    $$(A_xC_x + A_yC_y + A_zC_z)\vec{B}-(A_xB_x + A_yB_y + A_zB_z)\vec{C}$$
+    $$
+    (B_xA_xC_x + B_xA_yC_y + B_xA_zC_z - (A_xB_xC_x + A_yB_yC_x+A_zB_zC_c))\hat{x} +
+    (A_xC_x + A_yC_y + A_zC_z)B_y\hat{y} +
+    (A_xC_x + A_yC_y + A_zC_z)B_z\hat{z} +
+    $$
+    <!-- $$\vec{A}\otimes((B_yC_z - B_zC_y)\hat{x} - (B_zC_x - B_xC_z)\hat{y} + (B_xC_y - B_yC_x)\hat{z}) = (\vec{A}\cdot\vec{C})\vec{B}-(\vec{A}\cdot\vec{B})\vec{C}$$ -->
+
+
+
+    2. $\vec{A}\otimes(\vec{B}\otimes\vec{C})+\vec{C}\otimes(\vec{A}\otimes\vec{B})+\vec{B}\otimes(\vec{C}\otimes\vec{A})=0$
+    3. תנאי ל-$\vec{A}\otimes(\vec{B}\otimes\vec{C})=(\vec{A}\otimes\vec{B})\otimes\vec{C})$
+    4. $(\vec{A}\otimes\vec{B})\cdot(\vec{C}\otimes\vec{D})=(\vec{A}\cdot\vec{C})(\vec{B}\cdot\vec{D})-(\vec{A}\cdot\vec{D})(\vec{B}\cdot\vec{C})$
