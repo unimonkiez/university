@@ -3,4 +3,7 @@
 *.synctex.gz
 *.fdb_latexmk
 *.aux
+*.out
+*.out.*
+*.o
 *_temp.tex
