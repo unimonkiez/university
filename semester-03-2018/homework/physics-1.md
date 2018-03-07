@@ -146,16 +146,21 @@ $$|\vec{\alpha}| = \sqrt{3^2 + 5^2 + (-11)^2} \Rightarrow \sqrt{9 + 25 + 121} \R
     $$\bar{a} \otimes \bar{b} = \hat{x} -3\hat{y} -7\hat{z}$$
 
 11. להוכיח
-    * $a\sin{\alpha}=b\sin{\beta}=c\sin{\gamma}$
+    * $\frac{a}{\sin{\alpha}}=\frac{b}{\sin{\beta}}=\frac{c}{\sin{\gamma}}$
 
     תשובה  
-    משפט הסינוסים (חישוב שטח המקבילית):
+    משפט הסינוסים (חישוב שטח המקבילית), כאשר ${\gamma}$ היא הזווית בין הווקטורים:
 
-    $$\vec{a}\otimes\vec{b} = |\vec{a}||\vec{b}|\sin{\alpha}$$
+    $$\vec{a}\otimes\vec{b} = |\vec{a}||\vec{b}|\sin{\gamma}$$
 
-    $$$$
-    לפי השרטוט, כל וקטור שווה בלסכום שני הוקטורים האחרים, _במשולש_, ולכן בהינתן כיוונם הוא בכיוון השעון אז:
-    * $\vec{a} = \vec{b} + \vec{c}$
-    * $\vec{b} = \vec{c} + \vec{a}$
-    * $\vec{c} = \vec{a} + \vec{b}$  
+    שטח המקבילית זהה גם עבור שאר הוקטורים במשולש, מכיוון ששטח המשולש הוא למעשה שטח המקבילית חלקי 2, ושטח המשולש תמיד שווה לעצמו
 
+    $$\frac{\vec{a}\otimes\vec{b}}{2} = \frac{ab\sin{\gamma}}{2} = \frac{bc\sin{\alpha}}{2} = \frac{ca\sin{\beta}}{2}$$
+    $$\frac{ab\sin{\gamma}}{2} = \frac{bc\sin{\alpha}}{2} = \frac{ca\sin{\beta}}{2}$$
+    $$ab\sin{\gamma} = bc\sin{\alpha} = ca\sin{\beta}$$
+    $$\Downarrow$$
+    $$ab\sin{\gamma} = bc\sin{\alpha} \Rightarrow a\sin{\gamma} = c\sin{\alpha}\Rightarrow \frac{a}{\sin{\alpha}} = \frac{c}{\sin{\gamma}}$$
+    $$ab\sin{\gamma} = ca\sin{\beta} \Rightarrow b\sin{\gamma} = c\sin{\beta}\Rightarrow \frac{b}{\sin{\beta}} = \frac{c}{\sin{\gamma}}$$
+
+    $$\Downarrow$$
+    $$\frac{a}{\sin{\alpha}}=\frac{b}{\sin{\beta}}=\frac{c}{\sin{\gamma}}$$
