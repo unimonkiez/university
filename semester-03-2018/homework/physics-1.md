@@ -198,19 +198,187 @@ $$|\vec{\alpha}| = \sqrt{3^2 + 5^2 + (-11)^2} \Rightarrow \sqrt{9 + 25 + 121} \R
 14.
     1. $\vec{A}\otimes(\vec{B}\otimes\vec{C}) = (\vec{A}\cdot\vec{C})\vec{B}-(\vec{A}\cdot\vec{B})\vec{C}$
 
-    נחשב את צד ימין
+    נחשב את צד שמאל
 
-    $$(\vec{A}\cdot\vec{C})\vec{B}-(\vec{A}\cdot\vec{B})\vec{C}$$
-    $$(A_xC_x + A_yC_y + A_zC_z)\vec{B}-(A_xB_x + A_yB_y + A_zB_z)\vec{C}$$
+    $$\vec{A}\otimes(\vec{B}\otimes\vec{C})$$
+    <div style="font-size: 14px;">
+
+    $$\vec{A}\otimes((B_yC_z-B_zC_y)\hat{x}-(B_zC_x-B_xC_z)\hat{y}+(B_xC_y-B_yC_x)\hat{z})$$
+    $$\vec{A}\otimes(
+    (B_yC_z-B_zC_y)\hat{x}+
+    (B_xC_z-B_zC_x)\hat{y}+
+    (B_xC_y-B_yC_x)\hat{z}
+    )$$
     $$
-    (B_xA_xC_x + B_xA_yC_y + B_xA_zC_z - (A_xB_xC_x + A_yB_yC_x+A_zB_zC_c))\hat{x} +
-    (A_xC_x + A_yC_y + A_zC_z)B_y\hat{y} +
-    (A_xC_x + A_yC_y + A_zC_z)B_z\hat{z} +
+    (A_y(B_xC_y-B_yC_x)-A_z(B_xC_z-B_zC_x))\hat{x}-
+    (A_z(B_yC_z-B_zC_y)-A_x(B_xC_y-B_yC_x))\hat{y}+
+    (A_x(B_xC_z-B_zC_x)-A_y(B_yC_z-B_zC_y))\hat{z}
     $$
-    <!-- $$\vec{A}\otimes((B_yC_z - B_zC_y)\hat{x} - (B_zC_x - B_xC_z)\hat{y} + (B_xC_y - B_yC_x)\hat{z}) = (\vec{A}\cdot\vec{C})\vec{B}-(\vec{A}\cdot\vec{B})\vec{C}$$ -->
+    $$
+    (A_y(B_xC_y-B_yC_x)-A_z(B_xC_z-B_zC_x))\hat{x}+
+    (A_x(B_xC_y-B_yC_x)-A_z(B_yC_z-B_zC_y))\hat{y}+
+    (A_x(B_xC_z-B_zC_x)-A_y(B_yC_z-B_zC_y))\hat{z}
+    $$
+    $$
+    (A_yB_xC_y-A_yB_yC_x-A_zB_xC_z+A_zB_zC_x)\hat{x}+
+    (A_xB_xC_y-A_xB_yC_x-A_zB_yC_z+A_zB_zC_y)\hat{y}+
+    (A_xB_xC_z-A_xB_zC_x-A_yB_yC_z+A_yB_zC_y)\hat{z}
+    $$
+    $$
+    (B_x(A_yC_y-A_zC_z)-A_yB_yC_x+A_zB_zC_x)\hat{x}+
+    (B_y(-A_xC_x-A_zC_z)+A_xB_xC_y+A_zB_zC_y)\hat{y}+
+    (B_z(-A_xC_x+A_yC_y)+A_xB_xC_z-A_xB_zC_x-A_yB_yC_z)\hat{z}
+    $$
+    $$
+    (B_x(A_xC_x+A_yC_y+A_zC_z-A_xC_x-2A_zC_z)-A_yB_yC_x+A_zB_zC_x)\hat{x}+
+    (B_y(A_xC_+xA_yC_y+A_zC_z-2A_xC_x-A_yC_y-2A_zC_z)+A_xB_xC_y+A_zB_zC_y)\hat{y}+
+    (B_z(A_xC_x+A_yC_y+A_zC_z-2A_xC_x-A_yC_y)+A_xB_xC_z-A_xB_zC_x-A_yB_yC_z)\hat{z}
+    $$
+    $$
+    (B_x(\vec{A}\cdot\vec{C}-A_xC_x-2A_zC_z)-A_yB_yC_x+A_zB_zC_x)\hat{x}+
+    (B_y(\vec{A}\cdot\vec{C}-2A_xC_x-A_yC_y-2A_zC_z)+A_xB_xC_y+A_zB_zC_y)\hat{y}+
+    (B_z(\vec{A}\cdot\vec{C}-2A_xC_x-A_yC_y)+A_xB_xC_z-A_xB_zC_x-A_yB_yC_z)\hat{z}
+    $$
+    $$
+    K\vec{v} \Leftrightarrow K\vec{v}\hat{x} + K\vec{v}\hat{y} + K\vec{v}\hat{z}
+    $$
+    $$ \Downarrow $$
+    $$
+    (\vec{A}\cdot\vec{C})\vec{B}+
+    (B_x(-A_xC_x-2A_zC_z)-A_yB_yC_x+A_zB_zC_x)\hat{x}+
+    (B_y(-2A_xC_x-A_yC_y-2A_zC_z)+A_xB_xC_y+A_zB_zC_y)\hat{y}+
+    (B_z(-2A_xC_x-A_yC_y)+A_xB_xC_z-A_xB_zC_x-A_yB_yC_z)\hat{z}
+    $$
+    $$
+    (\vec{A}\cdot\vec{C})\vec{B}+
+    (C_x(-A_xB_x-A_yB_y+A_zB_z)-2A_zB_xC_z)\hat{x}+
+    (C_y(-A_yB_y+A_xB_x+A_zB_z)-2A_zB_yC_z-2A_xB_yC_x)\hat{y}+
+    (C_z(A_xB_x-A_yB_y)-2A_xB_zC_x-A_yB_zC_y-A_xB_zC_x)\hat{z}
+    $$
+    $$
+    (\vec{A}\cdot\vec{C})\vec{B}+
+    (C_x((A_xB_x+A_yB_y+A_zB_z)-2A_xB_x-2A_yB_y)-2A_zB_xC_z)\hat{x}+
+    (C_y((A_xB_x+A_yB_y+A_zB_z)-2A_yB_y)-2A_zB_yC_z-2A_xB_yC_x)\hat{y}+
+    (C_z((A_xB_x+A_yB_y+A_zB_z)-A_yB_y-A_zB_z)-2A_xB_zC_x-A_yB_zC_y-A_xB_zC_x)\hat{z}
+    $$
+    $$
+    (\vec{A}\cdot\vec{C})\vec{B}+(-1)
+    (-C_x(\vec{A}\cdot\vec{B}-2A_xB_x-2A_yB_y)-2A_zB_xC_z)\hat{x}+
+    (-C_y(\vec{A}\cdot\vec{B}-2A_yB_y)-2A_zB_yC_z-2A_xB_yC_x)\hat{y}+
+    (-C_z(\vec{A}\cdot\vec{B}-A_yB_y-A_zB_z)-2A_xB_zC_x-A_yB_zC_y-A_xB_zC_x)\hat{z}
+    $$
+    $$
+    (\vec{A}\cdot\vec{C})\vec{B}+(-1)
+    ((-1)C_x(\vec{A}\cdot\vec{B}-2A_xB_x-2A_yB_y)-2A_zB_xC_z)\hat{x}+
+    ((-1)C_y(\vec{A}\cdot\vec{B}-2A_yB_y)-2A_zB_yC_z-2A_xB_yC_x)\hat{y}+
+    ((-1)C_z(\vec{A}\cdot\vec{B}-A_yB_y-A_zB_z)-2A_xB_zC_x-A_yB_zC_y-A_xB_zC_x)\hat{z}
+    $$
+    $$
+    (\vec{A}\cdot\vec{C})\vec{B}
+    -(\vec{A}\cdot\vec{B})\vec{C}
+    +
+    ((-1)C_x(-2A_xB_x-2A_yB_y)-2A_zB_xC_z)\hat{x}+
+    ((-1)C_y(-2A_yB_y)-2A_zB_yC_z-2A_xB_yC_x)\hat{y}+
+    ((-1)C_z(-A_yB_y-A_zB_z)-2A_xB_zC_x-A_yB_zC_y-A_xB_zC_x)\hat{z}
+    $$
+    נמשיך עם צד ימין של התרגיל כדי לראות שהוא מתאפס
 
-
+    $$
+    ((-1)C_x(-2A_xB_x-2A_yB_y)-2A_zB_xC_z)\hat{x}+
+    ((-1)C_y(-2A_yB_y)-2A_zB_yC_z-2A_xB_yC_x)\hat{y}+
+    ((-1)C_z(-A_yB_y-A_zB_z)-2A_xB_zC_x-A_yB_zC_y-A_xB_zC_x)\hat{z} = 0
+    $$
+    $$
+    (C_x(2A_xB_x+2A_yB_y)-2A_zB_xC_z)\hat{x}+
+    (C_y(2A_yB_y)-2A_zB_yC_z-2A_xB_yC_x)\hat{y}+
+    (C_z(A_yB_y+A_zB_z)-2A_xB_zC_x-A_yB_zC_y-A_xB_zC_x)\hat{z}
+    = 0
+    $$
+    $$
+    (2A_xB_xC_x+2A_yB_yC_x-2A_zB_xC_z)\hat{x}+
+    (2A_yB_yC_y-2A_zB_yC_z-2A_xB_yC_x)\hat{y}+
+    (A_yB_yC_z+A_zB_zC_z-2A_xB_zC_x-A_yB_zC_y-A_xB_zC_x)\hat{z}
+    = 0
+    $$
+    $$
+    2(A_xB_xC_x+A_yB_yC_x-A_zB_xC_z)\hat{x}+
+    2(A_yB_yC_y-A_zB_yC_z-A_xB_yC_x)\hat{y}+
+    (A_yB_yC_z+A_zB_zC_z-3A_xB_zC_x-A_yB_zC_y)\hat{z}
+    = 0
+    $$
+    
+    </div>
 
     2. $\vec{A}\otimes(\vec{B}\otimes\vec{C})+\vec{C}\otimes(\vec{A}\otimes\vec{B})+\vec{B}\otimes(\vec{C}\otimes\vec{A})=0$
-    3. תנאי ל-$\vec{A}\otimes(\vec{B}\otimes\vec{C})=(\vec{A}\otimes\vec{B})\otimes\vec{C})$
+    3. תנאי ל-$\vec{A}\otimes(\vec{B}\otimes\vec{C})=(\vec{A}\otimes\vec{B})\otimes\vec{C}$
     4. $(\vec{A}\otimes\vec{B})\cdot(\vec{C}\otimes\vec{D})=(\vec{A}\cdot\vec{C})(\vec{B}\cdot\vec{D})-(\vec{A}\cdot\vec{D})(\vec{B}\cdot\vec{C})$
+
+15. $x_{(t)} = 5\epsilon^{-\gamma t} \cos {\omega t}$  
+    1.  
+
+    $$ f_x = x\sin{y} \Rightarrow \dot{f}_x = x'\sin{y} + x\cos{y}\cdot y' $$
+    $$ f_x = x\cos{y} \Rightarrow \dot{f}_x = x'\cos{y} - x\sin{y}\cdot y' $$
+    $$ \Downarrow $$
+    $$x'_{(t)} = 5(-\gamma)\epsilon^{-\gamma t} \cos {\omega t}-5\epsilon^{-\gamma t}\sin{\omega t}\cdot \omega$$
+    $$ x'_{(t)} = -5 (\gamma\epsilon^{-\gamma t}\cos{\omega t}+\omega\epsilon^{-\gamma t} \sin{\omega t}) $$
+    2.  
+
+    $$x''_{(t)} = (-5 (\gamma\epsilon^{-\gamma t}\cos{\omega t}+\omega\epsilon^{-\gamma t} \sin{\omega t}))' $$
+    לצורך נוחות: $z=\epsilon^{-\gamma t}$, $z'=-\gamma\epsilon^{-\gamma t}=-\gamma z$ 
+
+    $$x''_{(t)} = (-5 (\gamma z\cos{\omega t}+\omega z \sin{\omega t}))' $$
+    $$x''_{(t)} = (-5\gamma z\cos{\omega t}-5\omega z \sin{\omega t}))' $$
+    $$x''_{(t)} = (-5\gamma z'\cos{\omega t} - (-5\gamma\omega z\sin{\omega t}))-(5\omega z' \sin{\omega t} + 5\omega^2 z\cos{\omega t}) $$
+    $$x''_{(t)} = 5(-\gamma z'\cos{\omega t}+\gamma\omega z\sin{\omega t}-\omega z' \sin{\omega t}-\omega^2 z\cos{\omega t}) $$
+    $$x''_{(t)} = 5(-\gamma(-\gamma) z\cos{\omega t}+\gamma\omega z\sin{\omega t}-\omega(-\gamma)z \sin{\omega t}-\omega^2 z\cos{\omega t}) $$
+    $$x''_{(t)} = 5(\gamma^2 z\cos{\omega t}+\gamma\omega z\sin{\omega t}+\omega\gamma z \sin{\omega t}-\omega^2 z\cos{\omega t}) $$
+    $$x''_{(t)} = 5z(\gamma^2 \cos{\omega t}+\gamma\omega \sin{\omega t}+\omega\gamma\sin{\omega t}-\omega^2\cos{\omega t}) $$
+    $$x''_{(t)} = 5z((\gamma^2-\omega^2)\cos{\omega t}+(2\gamma\omega)\sin{\omega t}) $$
+    $$x''_{(t)} = 5\epsilon^{-\gamma t}((\gamma^2-\omega^2)\cos{\omega t}+(2\gamma\omega)\sin{\omega t}) $$
+    3.
+
+    $$ [\omega] = \frac{cm}{t}$$
+    $$ [\gamma] = \frac{cm}{t}$$
+    4. תמונות: 
+16. $r_{(t)} = B(t + \tau)^{-2}\epsilon^{-3}\cos{(at^3)}$
+    1.
+
+    $$ [a] = \frac{1}{t}$$
+    $$ [\tau] = t$$
+    2. לצורך נוחות: $\tau = c$, $B = b$
+
+    $$r'_{(t)} = (b(t + c)^{-2}\epsilon^{-3}\cos{(at^3)})'$$
+    $$r'_{(t)} = (b(t + c)^{-2}\epsilon^{-3})'\cos{(at^3)}-(b(t + c)^{-2}\epsilon^{-3})\sin{(at^3)}(at^3)'$$
+    $$r'_{(t)} = -2b(t + c)^{-3}\epsilon^{-3}\cos{(at^3)}-(b(t + c)^{-2}\epsilon^{-3})\sin{(at^3)}3at^2$$
+    $$r'_{(t)} = -b\epsilon^{-3}(2(t+c)^{-3}\cos{(at^3)}+2a^2(t+c)^{-2}\sin{(at^3)}) = velocity$$
+    $$r'_{(t)} = -b\epsilon^{-3}[2(t+c)^{-3}\cos{(at^3)}+2a^2(t+c)^{-2}\sin{(at^3)}]' = acceleration$$
+
+    $$ f_x = x\sin{y} \Rightarrow \dot{f}_x = x'\sin{y} + x\cos{y}\cdot y' $$
+    $$ f_x = x\cos{y} \Rightarrow \dot{f}_x = x'\cos{y} - x\sin{y}\cdot y' $$
+    
+    $$r'_{(t)} =-b\epsilon^{-3}[
+    -6(t+c)^{-4}\cos{(at^3)}
+    -2(t+c)^{-3}3at^2\sin{(at^3)}
+    -4a^2(t+c)^{-3}\sin{(at^3)}
+    +4a^4(t+c)^{-2}\cos{(at^3)}
+    ]
+    $$
+    $$r'_{(t)} =2b\epsilon^{-3}[
+    3(t+c)^{-4}\cos{(at^3)}
+    +(t+c)^{-3}3at^2\sin{(at^3)}
+    +2a^2(t+c)^{-3}\sin{(at^3)}
+    -2a^4(t+c)^{-2}\cos{(at^3)}
+    ]
+    $$
+    $$r'_{(t)} =2b\epsilon^{-3}[
+    (3(t+c)^{-4}-2a^4(t+c)^{-2})\cos{(at^3)}
+    +((t+c)^{-3}3at^2+2a^2(t+c)^{-3})\sin{(at^3)}
+    ]
+    $$
+    $$r'_{(t)} =2b\epsilon^{-3}[
+    (t+c)^{-2}(3(t+c)^{-2}-2a^4)\cos{(at^3)}
+    +(t+c)^{-3}a(3t^2+2a)\sin{(at^3)}
+    ]
+    $$
+
+    
