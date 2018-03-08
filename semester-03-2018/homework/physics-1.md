@@ -357,6 +357,64 @@ $$|\vec{\alpha}| = \sqrt{3^2 + 5^2 + (-11)^2} \Rightarrow \sqrt{9 + 25 + 121} \R
 
     4. $(\vec{A}\otimes\vec{B})\cdot(\vec{C}\otimes\vec{D})=(\vec{A}\cdot\vec{C})(\vec{B}\cdot\vec{D})-(\vec{A}\cdot\vec{D})(\vec{B}\cdot\vec{C})$
 
+    $$RHS=(\vec{A}\cdot\vec{C})(\vec{B}\cdot\vec{D})-(\vec{A}\cdot\vec{D})(\vec{B}\cdot\vec{C})$$
+    $$LHS=(\vec{A}\otimes\vec{B})\cdot(\vec{C}\otimes\vec{D})$$
+    <div style="font-size: 9px;">
+
+    $$LHS=(
+    (A_yB_z-A_zB_y)\hat{x}+
+    (A_zB_x-A_xB_z)\hat{y}+
+    (A_xB_y-A_yB_x)\hat{z}
+    )\cdot(
+    (C_yD_z-C_zD_y)\hat{x}+
+    (C_zD_x-C_xD_z)\hat{y}+
+    (C_xD_y-C_yD_x)\hat{z}
+    )$$
+    $$LHS=
+    (A_yB_z-A_zB_y)(C_yD_z-C_zD_y)+
+    (A_zB_x-A_xB_z)(C_zD_x-C_xD_z)+
+    (A_xB_y-A_yB_x)(C_xD_y-C_yD_x)
+    $$
+    $$LHS=
+    A_yB_zC_yD_z-A_yB_zC_zD_y-A_zB_yC_yD_z+A_zB_yC_zD_y+
+    A_zB_xC_zD_x-A_zB_xC_xD_z-A_xB_zC_zD_x+A_xB_zC_xD_z+
+    A_xB_yC_xD_y-A_xB_yC_yD_x-A_yB_xC_xD_y+A_yB_xC_yD_x
+    $$
+    $$LHS=
+    (
+    A_yB_zC_yD_z+A_zB_yC_zD_y+A_zB_xC_zD_x+A_xB_zC_xD_z+A_xB_yC_xD_y+A_yB_xC_yD_x
+    )
+    -(
+    A_yB_zC_zD_y+A_zB_yC_yD+A_zB_xC_xD_z+A_xB_zC_zD_x+A_xB_yC_yD_x+A_yB_xC_xD_y
+    )
+    $$
+    נוסיף $A_xB_xC_xD_x+A_yB_yC_yD_y+A_zB_zC_zD_z$ לשני האגפים
+
+    $$LHS=
+    (
+    A_yB_zC_yD_z+A_zB_yC_zD_y+A_zB_xC_zD_x+A_xB_zC_xD_z+A_xB_yC_xD_y+A_yB_xC_yD_x
+    +A_xB_xC_xD_x+A_yB_yC_yD_y+A_zB_zC_zD_z
+    )
+    -(
+    A_yB_zC_zD_y+A_zB_yC_yD+A_zB_xC_xD_z+A_xB_zC_zD_x+A_xB_yC_yD_x+A_yB_xC_xD_y
+    +A_xB_xC_xD_x+A_yB_yC_yD_y+A_zB_zC_zD_z
+    )
+    $$
+    $$LHS=
+    (
+    (A_xC_x+A_yC_y+A_zC_z)
+    (B_xD_x+B_yD_y+B_zD_z)
+    )
+    -(
+    (A_xD_x+A_yD_y+A_zD_z)
+    (B_xC_x+B_yC_y+B_zC_z)
+    )
+    $$
+    </div>
+
+    $$LHS=(\vec{A}\cdot\vec{C})(\vec{B}\cdot\vec{D})-(\vec{A}\cdot\vec{D})(\vec{B}\cdot\vec{C})=RHS$$
+    
+
 15. $x_{(t)} = 5\epsilon^{-\gamma t} \cos {\omega t}$  
     1.  
 
