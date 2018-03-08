@@ -310,7 +310,51 @@ $$|\vec{\alpha}| = \sqrt{3^2 + 5^2 + (-11)^2} \Rightarrow \sqrt{9 + 25 + 121} \R
     </div>
 
     2. $\vec{A}\otimes(\vec{B}\otimes\vec{C})+\vec{C}\otimes(\vec{A}\otimes\vec{B})+\vec{B}\otimes(\vec{C}\otimes\vec{A})=0$
-    3. תנאי ל-$\vec{A}\otimes(\vec{B}\otimes\vec{C})=(\vec{A}\otimes\vec{B})\otimes\vec{C}$
+    נציב בנוסחא מסעיף קודם: $\vec{A}\otimes(\vec{B}\otimes\vec{C}) = (\vec{A}\cdot\vec{C})\vec{B}-(\vec{A}\cdot\vec{B})\vec{C}$  
+
+    $$
+    (\vec{A}\cdot\vec{C})\vec{B}-(\vec{A}\cdot\vec{B})\vec{C} +
+    (\vec{C}\cdot\vec{B})\vec{A}-(\vec{C}\cdot\vec{A})\vec{B}
+    (\vec{B}\cdot\vec{A})\vec{C}-(\vec{B}\cdot\vec{C})\vec{A}
+    =\vec{0}
+    $$
+    $$
+    \vec{A}(\vec{C}\cdot\vec{B}-\vec{B}\cdot\vec{C}))+
+    \vec{B}(\vec{A}\cdot\vec{C}-\vec{C}\cdot\vec{A}))+
+    \vec{C}(\vec{A}\cdot\vec{B}-\vec{B}\cdot\vec{A}))
+    =\vec{0}
+    $$
+    $$\vec{v_1}\cdot\vec{v_2}=\vec{v_2}\cdot\vec{v_1}$$
+    $$\Downarrow$$
+    $$
+    0\vec{A}+
+    0\vec{B}+
+    0\vec{C}
+    =\vec{0}
+    $$
+    **מש"ל**
+
+    3. תנאי ל-$\vec{A}\otimes(\vec{B}\otimes\vec{C})=(\vec{A}\otimes\vec{B})\otimes\vec{C}$  
+
+    $$\vec{A}\otimes(\vec{B}\otimes\vec{C})=(\vec{A}\otimes\vec{B})\otimes\vec{C}$$
+    $$
+    \vec{A}\otimes(\vec{B}\otimes\vec{C})=-\vec{C}\otimes(\vec{A}\otimes\vec{B})
+    $$
+    $$
+    \cancel{\vec{B}(\vec{A}\cdot\vec{C})}
+    \cancel{-}\vec{C}(\vec{A}\cdot\vec{B})
+    =
+    \cancel{-}\vec{A}(\vec{B}\cdot\vec{C})
+    \cancel{+\vec{B}(\vec{A}\cdot\vec{C})}
+    $$
+    $$
+    \vec{C}(\vec{A}\cdot\vec{B})
+    =
+    \vec{A}(\vec{B}\cdot\vec{C})
+    $$
+    $$\Downarrow$$
+    B תמיד במכפלה סקלארית, ולכן רק כש$\vec{A}$ ו$\vec{C}$ שווים אז המשוואה נכונה.
+
     4. $(\vec{A}\otimes\vec{B})\cdot(\vec{C}\otimes\vec{D})=(\vec{A}\cdot\vec{C})(\vec{B}\cdot\vec{D})-(\vec{A}\cdot\vec{D})(\vec{B}\cdot\vec{C})$
 
 15. $x_{(t)} = 5\epsilon^{-\gamma t} \cos {\omega t}$  
@@ -335,15 +379,15 @@ $$|\vec{\alpha}| = \sqrt{3^2 + 5^2 + (-11)^2} \Rightarrow \sqrt{9 + 25 + 121} \R
     $$x''_{(t)} = 5z(\gamma^2 \cos{\omega t}+\gamma\omega \sin{\omega t}+\omega\gamma\sin{\omega t}-\omega^2\cos{\omega t}) $$
     $$x''_{(t)} = 5z((\gamma^2-\omega^2)\cos{\omega t}+(2\gamma\omega)\sin{\omega t}) $$
     $$x''_{(t)} = 5\epsilon^{-\gamma t}((\gamma^2-\omega^2)\cos{\omega t}+(2\gamma\omega)\sin{\omega t}) $$
-    3.
+    3.  כדי לאזן את t יש לשים לב לפעולה המתמטית שבין משתנים אלו לt, ולכן:
 
-    $$ [\omega] = \frac{cm}{t}$$
-    $$ [\gamma] = \frac{cm}{t}$$
+    $$ [\omega] = t^{-1}$$
+    $$ [\gamma] = t^{-1}$$
     4. תמונות: 
-16. $r_{(t)} = B(t + \tau)^{-2}\epsilon^{-3}\cos{(at^3)}$
-    1.
+16. $r_{(t)} = B(t + \tau)^{-2}\epsilon^{-3}\cos{(at^3)}$  
+    1.  כדי לאזן את t יש לשים לב לפעולה המתמטית שבין משתנים אלו לt, ולכן:
 
-    $$ [a] = \frac{1}{t}$$
+    $$ [a] = t^{-3}$$
     $$ [\tau] = t$$
     2. לצורך נוחות: $\tau = c$, $B = b$
 
@@ -351,34 +395,30 @@ $$|\vec{\alpha}| = \sqrt{3^2 + 5^2 + (-11)^2} \Rightarrow \sqrt{9 + 25 + 121} \R
     $$r'_{(t)} = (b(t + c)^{-2}\epsilon^{-3})'\cos{(at^3)}-(b(t + c)^{-2}\epsilon^{-3})\sin{(at^3)}(at^3)'$$
     $$r'_{(t)} = -2b(t + c)^{-3}\epsilon^{-3}\cos{(at^3)}-(b(t + c)^{-2}\epsilon^{-3})\sin{(at^3)}3at^2$$
     $$r'_{(t)} = -b\epsilon^{-3}(2(t+c)^{-3}\cos{(at^3)}+2a^2(t+c)^{-2}\sin{(at^3)}) = velocity$$
-    $$r'_{(t)} = -b\epsilon^{-3}[2(t+c)^{-3}\cos{(at^3)}+2a^2(t+c)^{-2}\sin{(at^3)}]' = acceleration$$
-
-    $$ f_x = x\sin{y} \Rightarrow \dot{f}_x = x'\sin{y} + x\cos{y}\cdot y' $$
-    $$ f_x = x\cos{y} \Rightarrow \dot{f}_x = x'\cos{y} - x\sin{y}\cdot y' $$
-    
-    $$r'_{(t)} =-b\epsilon^{-3}[
+    $$r''_{(t)} = -b\epsilon^{-3}[2(t+c)^{-3}\cos{(at^3)}+2a^2(t+c)^{-2}\sin{(at^3)}]'$$
+    $$r''_{(t)} =-b\epsilon^{-3}[
     -6(t+c)^{-4}\cos{(at^3)}
     -2(t+c)^{-3}3at^2\sin{(at^3)}
     -4a^2(t+c)^{-3}\sin{(at^3)}
     +4a^4(t+c)^{-2}\cos{(at^3)}
     ]
     $$
-    $$r'_{(t)} =2b\epsilon^{-3}[
+    $$r''_{(t)} =2b\epsilon^{-3}[
     3(t+c)^{-4}\cos{(at^3)}
     +(t+c)^{-3}3at^2\sin{(at^3)}
     +2a^2(t+c)^{-3}\sin{(at^3)}
     -2a^4(t+c)^{-2}\cos{(at^3)}
     ]
     $$
-    $$r'_{(t)} =2b\epsilon^{-3}[
+    $$r''_{(t)} =2b\epsilon^{-3}[
     (3(t+c)^{-4}-2a^4(t+c)^{-2})\cos{(at^3)}
     +((t+c)^{-3}3at^2+2a^2(t+c)^{-3})\sin{(at^3)}
     ]
     $$
-    $$r'_{(t)} =2b\epsilon^{-3}[
+    $$r''_{(t)} =2b\epsilon^{-3}[
     (t+c)^{-2}(3(t+c)^{-2}-2a^4)\cos{(at^3)}
     +(t+c)^{-3}a(3t^2+2a)\sin{(at^3)}
-    ]
+    ] = acceleration
     $$
 
     
