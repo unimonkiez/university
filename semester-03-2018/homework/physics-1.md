@@ -203,108 +203,82 @@ $$|\vec{\alpha}| = \sqrt{3^2 + 5^2 + (-11)^2} \Rightarrow \sqrt{9 + 25 + 121} \R
     $$\vec{A}\otimes(\vec{B}\otimes\vec{C})$$
     <div style="font-size: 14px;">
 
-    $$\vec{A}\otimes((B_yC_z-B_zC_y)\hat{x}-(B_zC_x-B_xC_z)\hat{y}+(B_xC_y-B_yC_x)\hat{z})$$
-    $$\vec{A}\otimes(
+    $$\vec{A}\otimes[
     (B_yC_z-B_zC_y)\hat{x}+
-    (B_xC_z-B_zC_x)\hat{y}+
+    (B_zC_x-B_xC_z)\hat{y}+
     (B_xC_y-B_yC_x)\hat{z}
-    )$$
+    ]$$
     $$
-    (A_y(B_xC_y-B_yC_x)-A_z(B_xC_z-B_zC_x))\hat{x}-
+    (A_y(B_xC_y-B_yC_x)-A_z(B_zC_x-B_xC_z))\hat{x}+
     (A_z(B_yC_z-B_zC_y)-A_x(B_xC_y-B_yC_x))\hat{y}+
-    (A_x(B_xC_z-B_zC_x)-A_y(B_yC_z-B_zC_y))\hat{z}
+    (A_x(B_zC_x-B_xC_z)-A_y(B_yC_z-B_zC_y))\hat{z}
     $$
     $$
-    (A_y(B_xC_y-B_yC_x)-A_z(B_xC_z-B_zC_x))\hat{x}+
-    (A_x(B_xC_y-B_yC_x)-A_z(B_yC_z-B_zC_y))\hat{y}+
-    (A_x(B_xC_z-B_zC_x)-A_y(B_yC_z-B_zC_y))\hat{z}
+    (A_yB_xC_y-A_yB_yC_x-A_zB_zC_x+A_zB_xC_z)\hat{x}+
+    (A_zB_yC_z-A_zB_zC_y-A_xB_xC_y+A_xB_yC_x)\hat{y}+
+    (A_xB_zC_x-A_xB_xC_z-A_yB_yC_z-A_yB_zC_y)\hat{z}
     $$
     $$
-    (A_yB_xC_y-A_yB_yC_x-A_zB_xC_z+A_zB_zC_x)\hat{x}+
-    (A_xB_xC_y-A_xB_yC_x-A_zB_yC_z+A_zB_zC_y)\hat{y}+
-    (A_xB_xC_z-A_xB_zC_x-A_yB_yC_z+A_yB_zC_y)\hat{z}
+    (A_yB_xC_y+A_zB_xC_z)\hat{x}+
+    (A_zB_yC_z+A_xB_yC_x)\hat{y}+
+    (A_xB_zC_x+A_yB_zC_y)\hat{z}
+    -(
+    (A_yB_yC_x-A_zB_zC_x)\hat{x}+
+    (A_zB_zC_y-A_xB_xC_y)\hat{y}+
+    (A_xB_xC_z-A_yB_yC_z)\hat{z}
+    )
     $$
     $$
-    (B_x(A_yC_y-A_zC_z)-A_yB_yC_x+A_zB_zC_x)\hat{x}+
-    (B_y(-A_xC_x-A_zC_z)+A_xB_xC_y+A_zB_zC_y)\hat{y}+
-    (B_z(-A_xC_x+A_yC_y)+A_xB_xC_z-A_xB_zC_x-A_yB_yC_z)\hat{z}
+    (B_x(A_yC_y+A_zC_z))\hat{x}+
+    (B_y(A_zC_z+A_xC_x))\hat{y}+
+    (B_z(A_xC_x+A_yC_y))\hat{z}
+    -(
+    (C_x(A_yB_y+A_zB_z))\hat{x}+
+    (C_y(A_zB_z+A_xB_x))\hat{y}+
+    (C_z(A_xB_x+A_yB_y))\hat{z}
+    )
     $$
-    $$
-    (B_x(A_xC_x+A_yC_y+A_zC_z-A_xC_x-2A_zC_z)-A_yB_yC_x+A_zB_zC_x)\hat{x}+
-    (B_y(A_xC_+xA_yC_y+A_zC_z-2A_xC_x-A_yC_y-2A_zC_z)+A_xB_xC_y+A_zB_zC_y)\hat{y}+
-    (B_z(A_xC_x+A_yC_y+A_zC_z-2A_xC_x-A_yC_y)+A_xB_xC_z-A_xB_zC_x-A_yB_yC_z)\hat{z}
-    $$
-    $$
-    (B_x(\vec{A}\cdot\vec{C}-A_xC_x-2A_zC_z)-A_yB_yC_x+A_zB_zC_x)\hat{x}+
-    (B_y(\vec{A}\cdot\vec{C}-2A_xC_x-A_yC_y-2A_zC_z)+A_xB_xC_y+A_zB_zC_y)\hat{y}+
-    (B_z(\vec{A}\cdot\vec{C}-2A_xC_x-A_yC_y)+A_xB_xC_z-A_xB_zC_x-A_yB_yC_z)\hat{z}
-    $$
-    $$
-    K\vec{v} \Leftrightarrow K\vec{v}\hat{x} + K\vec{v}\hat{y} + K\vec{v}\hat{z}
-    $$
-    $$ \Downarrow $$
-    $$
-    (\vec{A}\cdot\vec{C})\vec{B}+
-    (B_x(-A_xC_x-2A_zC_z)-A_yB_yC_x+A_zB_zC_x)\hat{x}+
-    (B_y(-2A_xC_x-A_yC_y-2A_zC_z)+A_xB_xC_y+A_zB_zC_y)\hat{y}+
-    (B_z(-2A_xC_x-A_yC_y)+A_xB_xC_z-A_xB_zC_x-A_yB_yC_z)\hat{z}
-    $$
-    $$
-    (\vec{A}\cdot\vec{C})\vec{B}+
-    (C_x(-A_xB_x-A_yB_y+A_zB_z)-2A_zB_xC_z)\hat{x}+
-    (C_y(-A_yB_y+A_xB_x+A_zB_z)-2A_zB_yC_z-2A_xB_yC_x)\hat{y}+
-    (C_z(A_xB_x-A_yB_y)-2A_xB_zC_x-A_yB_zC_y-A_xB_zC_x)\hat{z}
-    $$
-    $$
-    (\vec{A}\cdot\vec{C})\vec{B}+
-    (C_x((A_xB_x+A_yB_y+A_zB_z)-2A_xB_x-2A_yB_y)-2A_zB_xC_z)\hat{x}+
-    (C_y((A_xB_x+A_yB_y+A_zB_z)-2A_yB_y)-2A_zB_yC_z-2A_xB_yC_x)\hat{y}+
-    (C_z((A_xB_x+A_yB_y+A_zB_z)-A_yB_y-A_zB_z)-2A_xB_zC_x-A_yB_zC_y-A_xB_zC_x)\hat{z}
-    $$
-    $$
-    (\vec{A}\cdot\vec{C})\vec{B}+(-1)
-    (-C_x(\vec{A}\cdot\vec{B}-2A_xB_x-2A_yB_y)-2A_zB_xC_z)\hat{x}+
-    (-C_y(\vec{A}\cdot\vec{B}-2A_yB_y)-2A_zB_yC_z-2A_xB_yC_x)\hat{y}+
-    (-C_z(\vec{A}\cdot\vec{B}-A_yB_y-A_zB_z)-2A_xB_zC_x-A_yB_zC_y-A_xB_zC_x)\hat{z}
-    $$
-    $$
-    (\vec{A}\cdot\vec{C})\vec{B}+(-1)
-    ((-1)C_x(\vec{A}\cdot\vec{B}-2A_xB_x-2A_yB_y)-2A_zB_xC_z)\hat{x}+
-    ((-1)C_y(\vec{A}\cdot\vec{B}-2A_yB_y)-2A_zB_yC_z-2A_xB_yC_x)\hat{y}+
-    ((-1)C_z(\vec{A}\cdot\vec{B}-A_yB_y-A_zB_z)-2A_xB_zC_x-A_yB_zC_y-A_xB_zC_x)\hat{z}
-    $$
-    $$
-    (\vec{A}\cdot\vec{C})\vec{B}
-    -(\vec{A}\cdot\vec{B})\vec{C}
-    +
-    ((-1)C_x(-2A_xB_x-2A_yB_y)-2A_zB_xC_z)\hat{x}+
-    ((-1)C_y(-2A_yB_y)-2A_zB_yC_z-2A_xB_yC_x)\hat{y}+
-    ((-1)C_z(-A_yB_y-A_zB_z)-2A_xB_zC_x-A_yB_zC_y-A_xB_zC_x)\hat{z}
-    $$
-    נמשיך עם צד ימין של התרגיל כדי לראות שהוא מתאפס
+    נוסיף $A_xB_xC_x\hat{x}+A_yB_yC_y\hat{y}+A_zB_zC_z\hat{z}$ לשני האגפים כך שיבטלו אחד את השני
 
     $$
-    ((-1)C_x(-2A_xB_x-2A_yB_y)-2A_zB_xC_z)\hat{x}+
-    ((-1)C_y(-2A_yB_y)-2A_zB_yC_z-2A_xB_yC_x)\hat{y}+
-    ((-1)C_z(-A_yB_y-A_zB_z)-2A_xB_zC_x-A_yB_zC_y-A_xB_zC_x)\hat{z} = 0
+    (B_x(A_yC_y+A_zC_z)+A_xB_xC_x)\hat{x}+
+    (B_y(A_zC_z+A_xC_x)+A_yB_yC_y)\hat{y}+
+    (B_z(A_xC_x+A_yC_y)+A_zB_zC_z)\hat{z}
+    -(
+    (C_x(A_yB_y+A_zB_z)+A_xB_xC_x)\hat{x}+
+    (C_y(A_zB_z+A_xB_x)+A_yB_yC_y)\hat{y}+
+    (C_z(A_xB_x+A_yB_y)+A_zB_zC_z)\hat{z}
+    )
     $$
     $$
-    (C_x(2A_xB_x+2A_yB_y)-2A_zB_xC_z)\hat{x}+
-    (C_y(2A_yB_y)-2A_zB_yC_z-2A_xB_yC_x)\hat{y}+
-    (C_z(A_yB_y+A_zB_z)-2A_xB_zC_x-A_yB_zC_y-A_xB_zC_x)\hat{z}
-    = 0
+    (B_x(A_xC_x+A_yC_y+A_zC_z))\hat{x}+
+    (B_y(A_xC_x+A_yC_y+A_zC_z))\hat{y}+
+    (B_z(A_xC_x+A_yC_y+A_zC_z))\hat{z}
+    -(
+    (C_x(A_xB_x+A_yB_y+A_zB_z))\hat{x}+
+    (C_y(A_xB_x+A_yB_y+A_zB_z))\hat{y}+
+    (C_z(A_xB_x+A_yB_y+A_zB_z))\hat{z}
+    )
     $$
     $$
-    (2A_xB_xC_x+2A_yB_yC_x-2A_zB_xC_z)\hat{x}+
-    (2A_yB_yC_y-2A_zB_yC_z-2A_xB_yC_x)\hat{y}+
-    (A_yB_yC_z+A_zB_zC_z-2A_xB_zC_x-A_yB_zC_y-A_xB_zC_x)\hat{z}
-    = 0
+    (B_x(\vec{A}\cdot\vec{C}))\hat{x}+
+    (B_y(\vec{A}\cdot\vec{C}))\hat{y}+
+    (B_z(\vec{A}\cdot\vec{C}))\hat{z}
+    -(
+    (C_x(\vec{A}\cdot\vec{B}))\hat{x}+
+    (C_y(\vec{A}\cdot\vec{B}))\hat{y}+
+    (C_z(\vec{A}\cdot\vec{B}))\hat{z}
+    )
     $$
     $$
-    2(A_xB_xC_x+A_yB_yC_x-A_zB_xC_z)\hat{x}+
-    2(A_yB_yC_y-A_zB_yC_z-A_xB_yC_x)\hat{y}+
-    (A_yB_yC_z+A_zB_zC_z-3A_xB_zC_x-A_yB_zC_y)\hat{z}
-    = 0
+    (B_x\hat{x}+B_y\hat{y}+B_z\hat{z})(\vec{A}\cdot\vec{C})
+    -
+    (C_x\hat{x}+C_y\hat{y}+C_z\hat{z})(\vec{A}\cdot\vec{B})
+    $$
+    $$
+    LHS=\vec{B}(\vec{A}\cdot\vec{C})
+    -
+    \vec{C}(\vec{A}\cdot\vec{B})=RHS
     $$
     
     </div>
