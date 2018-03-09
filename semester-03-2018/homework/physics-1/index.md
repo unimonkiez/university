@@ -414,8 +414,11 @@ $$|\vec{\alpha}| = \sqrt{3^2 + 5^2 + (-11)^2} \Rightarrow \sqrt{9 + 25 + 121} \R
     3.  כדי לאזן את t יש לשים לב לפעולה המתמטית שבין משתנים אלו לt, ולכן:
 
     $$ [\omega] = t^{-1}$$
-    $$ [\gamma] = t^{-1}$$
-    4. תמונות: 
+    $$ [\gamma] = t^{-1}$$  
+    
+    4. ציורים  
+        1. ![place](https://raw.githubusercontent.com/unimonkiez/university/master/semester-03-2018/homework/physics-1/15_1.png?sanitize=true)  
+        2. ![time](https://raw.githubusercontent.com/unimonkiez/university/master/semester-03-2018/homework/physics-1/15_2.png?sanitize=true)
 16. $r_{(t)} = B(t + \tau)^{-2}\epsilon^{-3}\cos{(at^3)}$  
     1.  כדי לאזן את t יש לשים לב לפעולה המתמטית שבין משתנים אלו לt, ולכן:
 
@@ -452,5 +455,9 @@ $$|\vec{\alpha}| = \sqrt{3^2 + 5^2 + (-11)^2} \Rightarrow \sqrt{9 + 25 + 121} \R
     +(t+c)^{-3}a(3t^2+2a)\sin{(at^3)}
     ] = acceleration
     $$
+    
+    3. ציורים  
+        1. ![place](https://raw.githubusercontent.com/unimonkiez/university/master/semester-03-2018/homework/physics-1/16_1.png?sanitize=true)  
+        2. ![time](https://raw.githubusercontent.com/unimonkiez/university/master/semester-03-2018/homework/physics-1/16_2.png?sanitize=true)
 
     
