@@ -201,7 +201,7 @@ $$|\vec{\alpha}| = \sqrt{3^2 + 5^2 + (-11)^2} \Rightarrow \sqrt{9 + 25 + 121} \R
     נחשב את צד שמאל
 
     $$\vec{A}\otimes(\vec{B}\otimes\vec{C})$$
-    <div style="font-size: 14px;">
+    <div style="font-size: 10px;">
 
     $$\vec{A}\otimes[
     (B_yC_z-B_zC_y)\hat{x}+
