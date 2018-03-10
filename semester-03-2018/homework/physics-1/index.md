@@ -41,13 +41,13 @@ $$ \alpha = 46 \degree$$
 $$ (5\sin{46}, 5\cos{46}) $$
 
 4. $\vec{a} = 5\cdot {m\Big/s^2}$  
-    1. $\alpha_y = 30\degree \Rightarrow \alpha_x = 120 \degree$ (המרה לציר X לצורך הנוחות)
+    1. $\alpha_y = 30\degree \Rightarrow \alpha_x = 60\degree$
 
-    $$ \vec{\alpha} = (5 \cdot \sin{120})\hat{x} + (5 \cdot \cos{120})\hat{y}\Rightarrow 5 (\sin{60}\hat{x} + \cos{60}\hat{y}) $$
+    $$ \vec{\alpha} = (5 \cdot \cos{60})\hat{x} + (5 \cdot \sin{60})\hat{y}\Rightarrow 5 (\cos{60}\hat{x} + \sin{60}\hat{y}) $$
 
-    2. $\alpha_y = -90\degree \Rightarrow \alpha_x = 0 \degree$ (המרה לציר X לצורך הנוחות)
+    2. $\alpha_y = -90\degree \Rightarrow \alpha_x = -180 \degree$ (המרה לציר X לצורך הנוחות)
 
-    $$ \vec{\alpha} = (5 \cdot \sin{0})\hat{x} + (5 \cdot \cos{0})\hat{y} \Rightarrow 5\hat{y} $$
+    $$ \vec{\alpha} = (5 \cdot \cos{(-180)})\hat{x} + (5 \cdot \sin{-180})\hat{y} \Rightarrow -5\hat{x} $$
 
 5.  
     1. $(x_2 - x_1, y_2 - y_1, z_2 - z_1)$
@@ -125,18 +125,18 @@ $$|\vec{\alpha}| = \sqrt{3^2 + 5^2 + (-11)^2} \Rightarrow \sqrt{9 + 25 + 121} \R
 
     $$(a_x\cdot b_x) + (a_y\cdot b_y) + (a_z \cdot y_z)$$
     $$\Downarrow$$
-    $$(1\cdot2) + (-2\cdot(-3)) + (1 \cdot (-1))$$
-    $$2 +6  -1 $$
+    $$(1\cdot2) + (-2\cdot 3) + (1 \cdot (-1))$$
+    $$2 -6  -1 $$
     $$\Downarrow$$
-    $$7$$
+    $$-5$$
     4. $\alpha\degree = ?$
 
     $$\cos\alpha = \frac{\vec{a} \cdot \vec{b}}{ |\vec{a}||\vec{b}| }$$
     $$\Downarrow$$
-    $$\cos\alpha = \frac{7}{ \sqrt{2^2+3^2+(-1)^2}\sqrt{1^2+(-2)^2+1^2} }$$
-    $$\cos\alpha = \frac{7}{ \sqrt{4+9+1}\sqrt{1+4+1} }$$
-    $$\cos\alpha = \frac{7}{ \sqrt{15}\sqrt{61} }$$
-    $$ \alpha \simeq 42.27\degree $$
+    $$\cos\alpha = \frac{-5}{ \sqrt{2^2+3^2+(-1)^2}\sqrt{1^2+(-2)^2+1^2} }$$
+    $$\cos\alpha = \frac{-5}{ \sqrt{4+9+1}\sqrt{1+4+1} }$$
+    $$\cos\alpha = \frac{-5}{ \sqrt{15}\sqrt{61} }$$
+    $$ \alpha \simeq 99.5\degree $$
     5. $\hat{a} \otimes \hat{b}$
 
     $$\bar{a} \otimes \bar{b} = (a_yb_z-a_zb_y)\hat{x} - (a_xb_z-a_zb_x)\hat{y} + (a_xb_y-a_yb_x)\hat{z}$$
@@ -414,8 +414,8 @@ $$|\vec{\alpha}| = \sqrt{3^2 + 5^2 + (-11)^2} \Rightarrow \sqrt{9 + 25 + 121} \R
     3.  כדי לאזן את t יש לשים לב לפעולה המתמטית שבין משתנים אלו לt, ולכן:
 
     $$ [\omega] = t^{-1}$$
-    $$ [\gamma] = t^{-1}$$  
-    
+    $$ [\gamma] = t^{-1}$$
+     
     4. ציורים  
         1. ![place](https://raw.githubusercontent.com/unimonkiez/university/master/semester-03-2018/homework/physics-1/15_1.png?sanitize=true)  
         2. ![time](https://raw.githubusercontent.com/unimonkiez/university/master/semester-03-2018/homework/physics-1/15_2.png?sanitize=true)
@@ -455,9 +455,9 @@ $$|\vec{\alpha}| = \sqrt{3^2 + 5^2 + (-11)^2} \Rightarrow \sqrt{9 + 25 + 121} \R
     +(t+c)^{-3}a(3t^2+2a)\sin{(at^3)}
     ] = acceleration
     $$
-    
+
     3. ציורים  
         1. ![place](https://raw.githubusercontent.com/unimonkiez/university/master/semester-03-2018/homework/physics-1/16_1.png?sanitize=true)  
         2. ![time](https://raw.githubusercontent.com/unimonkiez/university/master/semester-03-2018/homework/physics-1/16_2.png?sanitize=true)
 
-    
+     
