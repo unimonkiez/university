@@ -2,7 +2,7 @@
     html {
         direction: rtl;
     }
-    eqn {
+    eqn, table, .katex {
         direction: ltr;
     }
 </style>
