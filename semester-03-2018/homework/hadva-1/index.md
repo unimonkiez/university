@@ -101,11 +101,18 @@ $\frac{1}{1 \cdot 2} + \frac{1}{2 \cdot 3} + ...+ \frac{1}{(n-1) \cdot n} = \fra
     $$||x|-|y|| \leq |x-y|$$
 
 5. הוכח או הפרך:  
-    1. אם $\lim_{n \rightarrow \infty}a_n =L$ אז $\lim_{n \rightarrow \infty}|a_n|=|L|$
+    1. אם $\lim_{n \rightarrow \infty}a_n =L$ אז $\lim_{n \rightarrow \infty}|a_n|=|L|$  
+    הוכחה:  
+
     2. אם $\lim_{n \rightarrow \infty}|a_n| =|L|$ אז $\lim_{n \rightarrow \infty}a_n=L$  
     הפרכה:  
     
     $$a_n= -2 + \frac{1}{n}$$
+    $$\lim_{n \rightarrow \infty}|a_n| = |2| = 2$$
+    אך לא  
+
+    $$\lim_{n \rightarrow \infty}a_n = -2 \neq 2$$
+
 
 6. הוכח לפי ההגדרה כי:  
     1.  $\lim_{n \rightarrow \infty} \frac{8n+5}{3-4n}=-2$  
@@ -116,15 +123,17 @@ $\frac{1}{1 \cdot 2} + \frac{1}{2 \cdot 3} + ...+ \frac{1}{(n-1) \cdot n} = \fra
     $$|\frac{8n+5+2(3-4n)}{3-4n}|<\epsilon$$
     $$|\frac{8n+5+6-8n}{3-4n}|<\epsilon$$
     $$|\frac{11}{3-4n}|<\epsilon$$
-    $$\frac{11}{3-4n}<\epsilon$$
-    $$3-4n>\frac{11}{\epsilon}$$
-    $$-4n>\frac{11}{\epsilon}-3$$
-    $$n<\frac{3}{4}-\frac{11}{4\epsilon}$$  
-    כלומר אם ניקח $n_0 < \frac{3}{4}-\frac{11}{4\epsilon}$, ז"א $n_0 = [\frac{3}{4}-\frac{11}{4\epsilon}]+1$ אז לכל $n \geq n_0$ יתקיים $|\frac{8n+5}{3-4n}+2|< \epsilon$
+    $$\forall n \in N|3-4n < 0$$
+    $$\Downarrow$$
+    $$\frac{11}{3-4n}>\epsilon$$
+    $$3-4n<\frac{11}{\epsilon}$$
+    $$-4n<\frac{11}{\epsilon}-3$$
+    $$n>\frac{3}{4}-\frac{11}{4\epsilon}$$  
+    כלומר אם ניקח $n_0 > \frac{3}{4}-\frac{11}{4\epsilon}$, ז"א $n_0 = [\frac{3}{4}-\frac{11}{4\epsilon}]+1$ אז לכל $n \geq n_0$ יתקיים $|\frac{8n+5}{3-4n}+2|< \epsilon$
 
     2. יהיה $\epsilon = 0.01$, מצא מספר איברי הסדרה שנמצאים מחוץ לסביבה $(-2-\epsilon, -2+\epsilon)$.
 
-    נציב $\epsilon = 0.01$ - 
+    נציב $\epsilon = 0.01$:  
 
     $$n_0 = |[\frac{3}{4}-\frac{11}{4\cdot 0.01}]|+1$$
     $$n_0 = |[\frac{3}{4}-\frac{11}{0.04}]|+1$$
