@@ -150,6 +150,10 @@
     $$x_0=\frac{A}{B}$$
     6.  
     
+    $$\lim_{n \rightarrow \infty}v_{(t)} = \lim_{n \rightarrow \infty}U_{(t)} + \frac{F}{mk}$$
+    $$\lim_{n \rightarrow \infty}v_{(t)} = 0 + \frac{F}{mk}$$
+    $$\lim_{n \rightarrow \infty}v_{(t)} = \frac{F}{mk}$$
+    
 5.  רשות
 6.  
     1. $\vec{X}_{(t)}=bt\hat{x}-ct^2\hat{y}$
@@ -196,7 +200,34 @@
     $$\dot{\overline{(\vec{A}\cdot \vec{B})}} = (\dot{A_x}B_x + \dot{A_y}B_y + \dot{A_z}B_z) + (\dot{B_x}A_x + \dot{B_y}A_y + \dot{B_z}A_z)$$
     $$\Downarrow$$
     $$\dot{\overline{(\vec{A}\cdot \vec{B})}} = \dot{\vec{A}} \cdot \vec{B} + \vec{A} \cdot \dot{\vec{B}}$$
-    4. אחר כך
+    4. $\dot{\overline{(\vec{A}\otimes \vec{B})}} = \dot{\vec{A}} \otimes \vec{B} + \vec{A} \otimes \dot{\vec{B}}$
+
+    $$\dot{\overline{(\vec{A}\otimes \vec{B})}}=\dot{\overline{(A_yB_z-A_zB_y + A_zB_x-A_xB_z + A_xB_y-A_yB_x)}}$$
+    $$\dot{\overline{(\vec{A}\otimes \vec{B})}}=\dot{\overline{(A_yB_z+A_zB_x+A_xB_y)}} - \dot{\overline{(A_zB_y+A_xB_z+A_yB_x)}}$$
+    $$\dot{\overline{(\vec{A}\otimes \vec{B})}}=\dot{\overline{(A_yB_z+A_zB_x+A_xB_y)}} - \dot{\overline{(B_yA_z+B_zA_x+B_xA_y)}}$$
+    $$\dot{\overline{(\vec{A}\otimes \vec{B})}}=(\dot{A_y}B_z+A_y\dot{B_z}+\dot{A_z}B_x+A_z\dot{B_x}+\dot{A_x}B_y+A_x\dot{B_y}) - (\dot{B_y}A_z+B_y\dot{A_z}+\dot{B_z}A_x+B_z\dot{A_x}+\dot{B_x}A_y+B_x\dot{A_y})$$
+    $$\dot{\overline{(\vec{A}\otimes \vec{B})}}=
+    (
+        \dot{A_y}B_z-B_y\dot{A_z}+
+        \dot{A_z}B_x-B_z\dot{A_x}+
+        \dot{A_x}B_y-B_x\dot{A_y}
+    ) - (
+        \dot{B_y}A_z-A_y\dot{B_z}+
+        \dot{B_z}A_x-A_z\dot{B_x}+
+        \dot{B_x}A_y-A_x\dot{B_y}
+    )$$
+    $$\dot{\overline{(\vec{A}\otimes \vec{B})}}=
+    (
+        \dot{A_y}B_z-\dot{A_z}B_y+
+        \dot{A_z}B_x-\dot{A_x}B_z+
+        \dot{A_x}B_y-\dot{A_y}B_x
+    ) - (
+        \dot{B_y}A_z-\dot{B_z}A_y+
+        \dot{B_z}A_x-\dot{B_x}A_z+
+        \dot{B_x}A_y-\dot{B_y}A_x
+    )$$
+    $$\dot{\overline{(\vec{A}\otimes \vec{B})}}=\dot{\vec{A}}\otimes B -\dot{\vec{B}}\otimes A$$
+    $$\dot{\overline{(\vec{A}\otimes \vec{B})}}=\dot{\vec{A}}\otimes B+A\otimes \dot{\vec{B}}$$
 
 8. עשינו בכיתה
 9.  נתון:  
