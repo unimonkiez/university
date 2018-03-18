@@ -103,6 +103,21 @@ $\frac{1}{1 \cdot 2} + \frac{1}{2 \cdot 3} + ...+ \frac{1}{(n-1) \cdot n} = \fra
 5. הוכח או הפרך:  
     1. אם $\lim_{n \rightarrow \infty}a_n =L$ אז $\lim_{n \rightarrow \infty}|a_n|=|L|$  
     הוכחה:  
+    נתון: 
+
+    $$\forall \epsilon > 0 \exists n_0 \in N|\forall n \geq n_0: |a_n-L| < \epsilon$$
+    צ"ל:  
+
+    $$\forall \epsilon > 0 \exists n_0 \in N|\forall n \geq n_0: ||a_n|-|L|| < \epsilon$$
+
+    $$\Downarrow$$
+
+    $$|a_n-L| < \epsilon$$
+    $$||x| - |y|| \leq |x-y|$$
+    $$\Downarrow$$
+    $$||a_n| - |L|| \leq |a_n-L| < \epsilon$$
+    $$||a_n| - |L|| < \epsilon$$
+    מש"ל
 
     2. אם $\lim_{n \rightarrow \infty}|a_n| =|L|$ אז $\lim_{n \rightarrow \infty}a_n=L$  
     הפרכה:  
