@@ -122,11 +122,11 @@ $\frac{1}{1 \cdot 2} + \frac{1}{2 \cdot 3} + ...+ \frac{1}{(n-1) \cdot n} = \fra
     2. אם $\lim_{n \rightarrow \infty}|a_n| =|L|$ אז $\lim_{n \rightarrow \infty}a_n=L$  
     הפרכה:  
     
-    $$a_n= -2 + \frac{1}{n}$$
-    $$\lim_{n \rightarrow \infty}|a_n| = |2| = 2$$
-    אך לא  
+    $$a_n= (-1)^n$$
+    $$\lim_{n \rightarrow \infty}|a_n| = |(-1)^n| = 1$$
+    אך לא (סדרה ללא גבול, מתבדרת)
 
-    $$\lim_{n \rightarrow \infty}a_n = -2 \neq 2$$
+    $$\lim_{n \rightarrow \infty}a_n = \lim_{n \rightarrow \infty}(-1)^n \neq 1$$
 
 
 6. הוכח לפי ההגדרה כי:  
