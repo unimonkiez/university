@@ -131,5 +131,91 @@ $$\vec{a} = (1-t^2)\hat{r} + 4t\hat{\theta}$$
     $$N_2 = F\frac{m_3}{m_1 + m_2 + m_3}$$
 
 
-9.
+9. נתון:  
+
+    $$\vec{a} = -g\hat{r}$$
+    פתרון:  
+
+    $$g = \frac{GM}{R^2}$$
+    $$G = 6.67742 \cdot 10^{-11}\ \frac{m^3}{s^2kg}$$
+    $$M = 5.9736 \cdot 10^{24}\ kg$$
+    $$R = 6.37101 \cdot 10^{6}\ m$$
+    $$r_{(t)} = R$$
+    $$\dot{r}_{(t)} = 0$$
+    $$\ddot{r}_{(t)} = 0$$
+    נמצא את $\dot{\theta}$ לפי הנתון (תאוצה רדיאלית)
+
+    $$\ddot{\vec{r}} \cdot \hat{r} = -g = -\frac{GM}{R^2}$$
+    והנוסחא:  
+
+    $$\ddot{\vec{r}} \cdot \hat{r} = \ddot{r} - r\dot{\theta}^2$$
+    $$\Downarrow$$
+    $$-\frac{GM}{R^2} = 0 - R\dot{\theta}^2$$
+    $$R\dot{\theta}^2 = \frac{GM}{R^2}$$
+    $$\dot{\theta}^2 = \frac{GM}{R^3}$$
+    $$\dot{\theta} = \sqrt{\frac{GM}{R^3}}$$
+    $$\dot{\theta} = \sqrt{0.00000154248 \ \frac{1}{s^2}}$$
+    $$\dot{\theta} = 0.00124196679 \ \frac{1}{s}$$
+
+    מש"ל (?)
+
 10.
+    נתון
+
+    $$r_{(t=0)} = 0.5 \ m$$
+    $$\dot{\theta} = 0.2 \ \frac{rad}{s}$$
+    $$r_{(t=3)} = 2 \ m$$
+    1. .
+
+        $$r = \frac{t+1}{2}$$
+        $$\dot{r} = \frac{1}{2}$$
+        $$\ddot{r} = 0$$
+        $$\dot{\theta} = 0.2$$
+        $$\theta = 0.2t$$
+        $$\ddot{\theta} = 0$$
+        $$\vec{v} = \dot{r}\hat{r} + r\dot{\theta}\hat{\theta}$$
+        $$\Downarrow$$
+        $$\vec{v} = (\frac{1}{2})\hat{r} + (\frac{t+1}{2}\cdot 0.2)\hat{\theta}$$
+        $$\vec{v} = (\frac{1}{2})\hat{r} + (\frac{t+1}{10})\hat{\theta}$$
+        $$\vec{a} = (\ddot{r} - r\dot{\theta}^2)\hat{r} + (2\dot{r}\dot{\theta} + r\ddot{\theta})\hat{\theta}$$
+        $$\Downarrow$$
+        $$\vec{a} = (0 - \frac{t+1}{2} \cdot 0.2^2)\hat{r} + (2\frac{1}{2} \cdot 0.2 + \frac{t+1}{2} \cdot 0)\hat{\theta}$$
+        $$\vec{a} = (-\frac{t+1}{50})\hat{r} + (\frac{1}{5})\hat{\theta}$$
+
+    2. לילד שהולך במהירות קבועה על קרוסלה הנעה גם כן במהירות קבועה יש תאוצה כי כאשר הילד מתקדם תנועתו היחסית **לשאר העולם** משתנה, בנוסף מכיוון שבהליכתו באופן זה משנה את מרחקו ממרכז הקרוסלה, מהירותו הזוויתית גדלה.  
+    ככל שמתרחק יותר ממרכז הקרוסלה, מהירותו הזוויתית גדלה, ושינוי זה במהירותו היא למעשה התאוצה שלו.
+    3.
+11.
+    נתון
+    
+    $$r_{(\theta)} = \frac{R}{1 - \frac{\cos{\theta}}{2}} = \frac{2R}{2 - \cos{\theta}}$$
+    $$\theta = \omega t$$
+    $$\dot{\theta} = \omega$$
+    $$\ddot{\theta} = 0$$
+
+    1.
+
+    $$r_{(t)} = \frac{2R}{2 - \cos{(\omega t)}}$$
+    $$\vec{r} = \frac{2R}{2 - \cos{(\omega t)}}\hat{r} + \omega t \hat{\theta}$$
+    $$\dot{r} = \frac{\dot{\overline{(2-\cos{(\omega t)})}}\cdot 2R - \dot{\overline{2R}}(2-\cos{(\omega t)})}{(2-\cos{(\omega t)})^2}$$
+    $$\dot{r} = \frac{(\omega\sin{(\omega t)})\cdot 2R - 0(2-\cos{(\omega t)})}{(2-\cos{(\omega t)})^2}$$
+    $$\dot{r} = \frac{2\omega R\sin{(\omega t)}}{(2-\cos{(\omega t)})^2}$$
+    $$\vec{v} = \dot{r}\hat{r} + r\dot{\theta}\hat{\theta}$$
+    $$\Downarrow$$
+    $$\vec{v} = \frac{2\omega R\sin{(\omega t)}}{(2-\cos{(\omega t)})^2}\hat{r} + \frac{2R}{2 - \cos{(\omega t)}}\omega\hat{\theta}$$
+    $$\vec{v} = \frac{2\omega R}{2 - \cos{(\omega t)}}(\frac{\sin{(\omega t)}}{2 - \cos{(\omega t)}}\hat{r} + \hat{\theta})$$
+
+    מסלול החלילית הוא אליפסה, כאשר  
+    וקטור העתק שלו הוא 
+
+    $$\vec{r} = \frac{2R}{2 - \cos{(\omega t)}}\hat{r} + \omega t \hat{\theta}$$
+
+    ווקטור המהירות שלה הוא  
+    
+    $$\vec{v} = \frac{2\omega R}{2 - \cos{(\omega t)}}(\frac{\sin{(\omega t)}}{2 - \cos{(\omega t)}}\hat{r} + \hat{\theta})$$
+
+    2.  גודל המהירות היא רכיב ה $\hat{r}$:  
+
+    $$d_{(t)} =\frac{2\omega R\sin{(\omega t)}}{(2-\cos{(\omega t)})^2}$$
+    עבור $\omega t = 0$ ערך $\sin{(\omega t)}$ הוא 0 והביטוי כולו מתאפס, ומהירותו של החללית היא מינימאלית.
+
