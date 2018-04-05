@@ -28,9 +28,25 @@
     $$\lim_{n \rightarrow \infty}\sum^{2n}_{k=1} \frac{n+1}{n^2+k} = 2$$
 
     2. $$\lim_{n \rightarrow \infty}\frac{\sqrt[]{n} + a \cos{(bn)} - b \sin{an}}{\sqrt[]{n} - a \cos{(bn)} + b \sin{an}}$$
+    פתרון: 
+
+
+    $$\lim_{n \rightarrow \infty}\frac{1 + \frac{a \cos{(bn)}}{\sqrt[]{n}} - \frac{b \sin{an}}{\sqrt[]{n}}}{1 - \frac{a \cos{(bn)}}{\sqrt[]{n}} + \frac{b \sin{an}}{\sqrt[]{n}}}$$
+    $$\lim_{n \rightarrow \infty}\frac{1 + 0 - 0}{1 - 0 + 0} = 1$$
     3. $$\lim_{n \rightarrow \infty}\frac{2018 \cdot 2^n - 5 \cdot 3^n }{6 \cdot 3^{n+1} + 6 \cdot 2^n}$$
+    פתרון: 
+
+    $$\lim_{n \rightarrow \infty}\frac{2018 \cdot 2^n - 5 \cdot 3^n }{18 \cdot 3^n + 6 \cdot 2^n}$$
+
     4. $$\lim_{n \rightarrow \infty}\sqrt[n]{\frac{(2n)!}{n^{2n}}}$$
     5. $$\lim_{n \rightarrow \infty}(5n - \sqrt[]{25n^2 + 6n - 8})$$
+    פתרון: 
+
+    $$\lim_{n \rightarrow \infty}(5n - \sqrt[]{25n^2 + 6n - 8})$$
+    $$\lim_{n \rightarrow \infty}n(5 - \sqrt[]{25 + \frac{6}{n} - \frac{8}{n^2}})$$
+    $$\lim_{n \rightarrow \infty}n(5 - \sqrt[]{25})$$
+    $$\lim_{n \rightarrow \infty}n(0) = 0$$
+    
     6. $$\lim_{n \rightarrow \infty}(3 + \frac{1}{\sqrt[]{n}})^{\frac{2}{3}n}$$
     7. $$\lim_{n \rightarrow \infty}(\frac{1}{1 \cdot 4} + \frac{1}{4 \cdot 7} + ... + \frac{1}{(3n-2) \cdot (3n+1)})$$
 2. מצא עבור אילו ערכים $a, b$ מתקיים:  
