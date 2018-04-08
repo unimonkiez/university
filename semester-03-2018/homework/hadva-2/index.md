@@ -37,8 +37,24 @@
     פתרון: 
 
     $$\lim_{n \rightarrow \infty}\frac{2018 \cdot 2^n - 5 \cdot 3^n }{18 \cdot 3^n + 6 \cdot 2^n}$$
+    $$\lim_{n \rightarrow \infty}\frac{3^n(2018 \cdot \frac{2^n}{3^n} - 5)}{3^n(18 + 6 \cdot \frac{2^n}{3^n})}$$
+    $$\lim_{n \rightarrow \infty}\frac{2018 \cdot \frac{2}{3}^n - 5}{18 + 6 \cdot \frac{2}{3}^n}$$
+    $$\lim_{n \rightarrow \infty}\frac{2018 \cdot 0 - 5}{18 + 6 \cdot 0} = \frac{-5}{18}$$
 
     4. $$\lim_{n \rightarrow \infty}\sqrt[n]{\frac{(2n)!}{n^{2n}}}$$
+    פתרון: 
+       
+    $$an = \sqrt[n]{b_n}$$
+    $=\frac{b_n + 1}{b_n}$ מנת העוקבים
+
+    $$\Downarrow$$
+    $$b_n = \frac{(2n)!}{n^{2n}}$$
+    $$\frac{b_n + 1}{b_n}=\frac{ \frac{(2(n+1))!}{(n+1)^{2(n+1)}}}{\frac{(2n)!}{n^{2n}}}$$
+    $$\frac{ \frac{(2n+2)!}{(n+1)^{2n+2}}}{\frac{(2n)!}{n^{2n}}}$$
+    $$\frac{(2n+2)! \cdot n^{2n}}{(2n)! \cdot (n+1)^{2n+2}}$$
+    $$\frac{\cancel{(2n)!}(2n+1)(2n+2) \cdot n^{2n}}{\cancel{(2n)!} \cdot (n+1)^{2n+2}}$$
+    $$\frac{(2n+1)(2n+2) \cdot n^{2n}}{(n+1)^2(n+1)^{2n}}$$
+
     5. $$\lim_{n \rightarrow \infty}(5n - \sqrt[]{25n^2 + 6n - 8})$$
     פתרון: 
 
@@ -48,7 +64,17 @@
     $$\lim_{n \rightarrow \infty}n(0) = 0$$
     
     6. $$\lim_{n \rightarrow \infty}(3 + \frac{1}{\sqrt[]{n}})^{\frac{2}{3}n}$$
+    פתרון: 
+
+    $$\lim_{n \rightarrow \infty}(3(1 + \frac{1}{3\sqrt[]{n}}))^{\frac{2}{3}n}$$
+    $$\lim_{n \rightarrow \infty}(3(1 + \frac{1}{3\sqrt[]{n}})^{3\sqrt[]{n} \cdot \frac{1}{3\sqrt[]{n}}})^{\frac{2}{3}n}$$
+    $$\lim_{n \rightarrow \infty}(3e^{\frac{1}{3\sqrt[]{n}}})^{\frac{2}{3}n}$$
+    $$\lim_{n \rightarrow \infty}3^{\frac{2}{3}n}e^{\frac{1}{3\sqrt[]{n}} \cdot \frac{2}{3}n}$$
+    $$\lim_{n \rightarrow \infty}3^{\frac{2n}{3}}e^{\frac{2\sqrt[]{n}}{9}} = \infty$$
+
     7. $$\lim_{n \rightarrow \infty}(\frac{1}{1 \cdot 4} + \frac{1}{4 \cdot 7} + ... + \frac{1}{(3n-2) \cdot (3n+1)})$$
+    פתרון: 
+    
 2. מצא עבור אילו ערכים $a, b$ מתקיים:  
 
 $$\lim_{n \rightarrow \infty}(\frac{n^2 + 1}{n+1} - an - b) = 0$$
