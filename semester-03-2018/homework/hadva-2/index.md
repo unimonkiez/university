@@ -58,7 +58,19 @@
     $$\lim_{n \rightarrow \infty}\frac{4n^2 + 6n + 2}{n^2 + 2n + 1} \cdot (\frac{n}{n+1})^{2n}$$
     $$\lim_{n \rightarrow \infty}\frac{n^2(4 + \frac{6}{n} + \frac{4}{n^2})}{n^2(1 + \frac{2}{n} + \frac{1}{n^2})} \cdot (\frac{n(1)}{n(1+\frac{1}{n})})^{2n}$$
     $$\lim_{n \rightarrow \infty}\frac{4 + \frac{6}{n} + \frac{4}{n^2}}{1 + \frac{2}{n} + \frac{1}{n^2}} \cdot (\frac{1}{1+\frac{1}{n}})^{2n}$$
+    $$\Downarrow$$
+    $$c_n = \frac{4 + \frac{6}{n} + \frac{4}{n^2}}{1 + \frac{2}{n} + \frac{1}{n^2}}$$
+    $$d_n = (\frac{1}{1+\frac{1}{n}})^{2n}$$
+    $$\lim_{n \rightarrow \infty}\frac{4 + \frac{6}{n} + \frac{4}{n^2}}{1 + \frac{2}{n} + \frac{1}{n^2}} \cdot (\frac{1}{1+\frac{1}{n}})^{2n} = \lim_{n \rightarrow \infty}c_n \cdot \lim_{n \rightarrow \infty}d_n$$
     $$\lim_{n \rightarrow \infty}\frac{4 + 0 + 0}{1 + 0 + 0} \cdot 1 = 4$$
+    $$\Downarrow$$
+    $$\lim_{n \rightarrow \infty}c_n = \frac{4 + 0 + 0}{1 + 0 + 0} = 4$$
+    $$d_n = (\frac{1}{1+\frac{1}{n}})^{2n}$$
+    $$\lim_{n \rightarrow \infty}(\frac{1^n}{(1+\frac{1}{n})^n})^{2}$$
+    $$\lim_{n \rightarrow \infty}(\frac{1}{(1+\frac{1}{n})^n})^{2} = (\frac{1}{e})^2 = \frac{1}{e^2}$$
+    $$\lim_{n \rightarrow \infty}\frac{4 + \frac{6}{n} + \frac{4}{n^2}}{1 + \frac{2}{n} + \frac{1}{n^2}} \cdot (\frac{1}{1+\frac{1}{n}})^{2n} = 4 \cdot \frac{1}{e^2} = \frac{4}{e^2}$$
+    $$\Downarrow$$
+    $$\lim_{n \rightarrow \infty}\sqrt[n]{\frac{(2n)!}{n^{2n}}} = \frac{4}{e^2}$$
     
 
     5. $$\lim_{n \rightarrow \infty}(5n - \sqrt[]{25n^2 + 6n - 8})$$
