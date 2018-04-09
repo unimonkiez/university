@@ -45,15 +45,21 @@
     פתרון: 
        
     $$an = \sqrt[n]{b_n}$$
-    $=\frac{b_n + 1}{b_n}$ מנת העוקבים
+    $=\frac{b_n + 1}{b_n}$ מנת העוקבים היא גם הגבול של הסדרה עצמה (במקרה של $\sqrt[n]{b_n}$)
 
     $$\Downarrow$$
-    $$b_n = \frac{(2n)!}{n^{2n}}$$
-    $$\frac{b_n + 1}{b_n}=\frac{ \frac{(2(n+1))!}{(n+1)^{2(n+1)}}}{\frac{(2n)!}{n^{2n}}}$$
-    $$\frac{ \frac{(2n+2)!}{(n+1)^{2n+2}}}{\frac{(2n)!}{n^{2n}}}$$
-    $$\frac{(2n+2)! \cdot n^{2n}}{(2n)! \cdot (n+1)^{2n+2}}$$
-    $$\frac{\cancel{(2n)!}(2n+1)(2n+2) \cdot n^{2n}}{\cancel{(2n)!} \cdot (n+1)^{2n+2}}$$
-    $$\frac{(2n+1)(2n+2) \cdot n^{2n}}{(n+1)^2(n+1)^{2n}}$$
+    $$\lim_{n \rightarrow \infty}b_n = \frac{(2n)!}{n^{2n}}$$
+    $$\lim_{n \rightarrow \infty}\frac{b_n + 1}{b_n}=\frac{ \frac{(2(n+1))!}{(n+1)^{2(n+1)}}}{\frac{(2n)!}{n^{2n}}}$$
+    $$\lim_{n \rightarrow \infty}\frac{ \frac{(2n+2)!}{(n+1)^{2n+2}}}{\frac{(2n)!}{n^{2n}}}$$
+    $$\lim_{n \rightarrow \infty}\frac{(2n+2)! \cdot n^{2n}}{(2n)! \cdot (n+1)^{2n+2}}$$
+    $$\lim_{n \rightarrow \infty}\frac{\cancel{(2n)!}(2n+1)(2n+2) \cdot n^{2n}}{\cancel{(2n)!} \cdot (n+1)^{2n+2}}$$
+    $$\lim_{n \rightarrow \infty}\frac{(2n+1)(2n+2) \cdot n^{2n}}{(n+1)^2(n+1)^{2n}}$$
+    $$\lim_{n \rightarrow \infty}\frac{(2n+1)(2n+2)}{(n+1)^2} \cdot (\frac{n}{n+1})^{2n}$$
+    $$\lim_{n \rightarrow \infty}\frac{4n^2 + 6n + 2}{n^2 + 2n + 1} \cdot (\frac{n}{n+1})^{2n}$$
+    $$\lim_{n \rightarrow \infty}\frac{n^2(4 + \frac{6}{n} + \frac{4}{n^2})}{n^2(1 + \frac{2}{n} + \frac{1}{n^2})} \cdot (\frac{n(1)}{n(1+\frac{1}{n})})^{2n}$$
+    $$\lim_{n \rightarrow \infty}\frac{4 + \frac{6}{n} + \frac{4}{n^2}}{1 + \frac{2}{n} + \frac{1}{n^2}} \cdot (\frac{1}{1+\frac{1}{n}})^{2n}$$
+    $$\lim_{n \rightarrow \infty}\frac{4 + 0 + 0}{1 + 0 + 0} \cdot 1 = 4$$
+    
 
     5. $$\lim_{n \rightarrow \infty}(5n - \sqrt[]{25n^2 + 6n - 8})$$
     פתרון: 
@@ -173,4 +179,15 @@ $$II. \ \ b = -1$$
     הסדרה המונוטונית עולה אינה חסומה מלעיל ולכן שואפת ל-$\infty$.
 
 4. בתרגול הוכחנו שאם סדרת מספרים $\{a_n\}$ מתכנסת לגבול $L$ אזי שהממוצע החשבוני של $n$ האיברים הראשונים: $u_n = \frac{a_1 + a_2 + ... + a_n}{n}$ גם מתכנסת לאותו גבול, ז"א: $\lim_{n \rightarrow \infty}u_n = L$.  
-האם ההפך נכון? כלומר, אם $\lim_{n \rightarrow \infty}u_n = L$ אזי גם $\lim_{n \rightarrow \infty}a_n = L$? נמק!
+האם ההפך נכון? כלומר, אם $\lim_{n \rightarrow \infty}u_n = L$ אזי גם $\lim_{n \rightarrow \infty}a_n = L$? נמק!  
+פתרון  
+**ההפך לא נכון**, לדוגמא
+
+$$a_n = (-1)^n$$
+לסדרה אין גבול מכיוון שמתבדרת (עבור $n$ זוגי היא 1, עבור $n$ אי זוגי היא $-1$).  
+סכום הסדרה היא הוא 0 או 1 לסירוגין, וגבול הסדרות ממוצעים בשתי המקרים שואפות ל0:  
+
+$$\lim_{n \rightarrow \infty}\frac{0}{n} = 0$$
+$$\lim_{n \rightarrow \infty}\frac{1}{n} = 0$$
+
+לכן הטענה כי אם הסכום החשבוני של הסדרה מתכנס לגבול אז הסדרה עצמה גם כן מתכנסת לאותו הגבול **אינו נכון**.
