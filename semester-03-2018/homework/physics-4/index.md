@@ -12,9 +12,11 @@
 1. עשינו בכיתה
 2. נתון:  
 $R = 2m$  
-$\dot{\theta} = 21$  
+$T = \frac{60}{21}$  
+$f = \frac{21}{60}$  
+$\dot{\theta} = \omega = 2\pi\cdot \frac{21}{60} = \frac{21\pi}{30}$  
 צ"ל:  
-$\max{\dot{\theta}}$
+$\max{T}$
 פתרון:  
 נמצא את הכוח המקסימלי הפועל על החומרים כאשר $R=2m$ ולאחר מכן נמיר זאת לכל $R$.  
 
@@ -23,30 +25,37 @@ $$a = \vec{\ddot{r}} = (\ddot{r} - r\dot{\theta}^2)\hat{r} + (2\dot{r}\dot{\thet
 $$r = 2$$
 $$\dot{r} = 0$$
 $$\ddot{r} = 0$$
-$$\dot{\theta} = 21$$
+$$\dot{\theta} = \frac{21\pi}{30}$$
 $$\ddot{\theta} = 0$$
 $$\Downarrow$$
-$$a = (0 - 2\cdot 21^2)\hat{r} + (0 +0)\hat{\theta}$$
-$$a = -882\hat{r}$$
-$$F = (-882\hat{r})m$$
+$$a = (0 - 2\cdot (\frac{21\pi}{30})^2)\hat{r} + (0 +0)\hat{\theta}$$
+$$a = -(\frac{21\pi}{15})^2\hat{r}$$
+$$a = -(\frac{21\pi}{15})^2\hat{r}$$
+$$F = (-\frac{441\pi}{225}\hat{r})m$$
 $$F^1 = F^2$$
 $$\Downarrow$$
-$$(-882\hat{r})m = m \cdot ((\ddot{r} - r\dot{\theta}^2)\hat{r} + (2\dot{r}\dot{\theta} + r\ddot{\theta})\hat{\theta})$$
+$$(-\frac{441\pi}{225}\hat{r})m = m \cdot ((\ddot{r} - r\dot{\theta}^2)\hat{r} + (2\dot{r}\dot{\theta} + r\ddot{\theta})\hat{\theta})$$
 $$r = R$$
 $$\dot{r} = 0$$
 $$\ddot{r} = 0$$
 $$\dot{\theta} = x$$
 $$\ddot{\theta} = 0$$
 $$\Downarrow$$
-$$(-882\hat{r})m = m \cdot ((0 - Rx^2)\hat{r} + (0 + 0)\hat{\theta})$$
-$$-882\hat{r} = (0 - Rx^2)\hat{r} + (0 + 0)\hat{\theta}$$
-$$-882\hat{r} = -Rx^2\hat{r}$$
-$$-882 = -Rx^2$$
-$$Rx^2 = 882$$
-$$x^2 = \frac{882}{R}$$
-$$x = \sqrt[]{\frac{882}{R}} = \dot{\theta}$$
+$$(-\frac{441\pi}{225}\hat{r})m = m \cdot ((0 - Rx^2)\hat{r} + (0 + 0)\hat{\theta})$$
+$$-\frac{441\pi}{225}\hat{r} = (0 - Rx^2)\hat{r} + (0 + 0)\hat{\theta}$$
+$$-\frac{441\pi}{225}\hat{r} = -Rx^2\hat{r}$$
+$$-\frac{441\pi}{225} = -Rx^2$$
+$$Rx^2 = \frac{441\pi}{225}$$
+$$x^2 = \frac{441}{225}\cdot \frac{\pi}{R}$$
+$$x = \frac{21}{15} \cdot \sqrt[]{\frac{\pi}{R}}$$
+$$\Downarrow$$
+$$T = \frac{1}{f} = \frac{2\pi}{x}$$
+$$T = \frac{2\pi}{\frac{21}{15} \cdot \sqrt[]{\frac{\pi}{R}}}$$
+$$T = \frac{2\pi\sqrt[]{R}\cdot 15}{21\sqrt[]{\pi}}$$
+$$T_{sec} = \frac{30\sqrt[]{\pi}\sqrt[]{R}}{21}$$
+$$T_{min} = \frac{30\sqrt[]{\pi}\sqrt[]{R}}{21 \cdot 60} = \frac{\sqrt[]{\pi}\sqrt[]{R}}{42}$$
 
-קצב הסיבוב המקסימלי הוא $\sqrt[]{\frac{882}{R}}$ סל"ד.
+קצב הסיבוב המקסימלי הוא $\frac{\sqrt[]{\pi}\sqrt[]{R}}{42}$ סל"ד.
 
 3. תחילה נחשב את הכוח הצנטריפוגלי - 
 
