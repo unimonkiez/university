@@ -57,19 +57,9 @@ $$T_{min} = \frac{30\sqrt[]{\pi}\sqrt[]{R}}{21 \cdot 60} = \frac{\sqrt[]{\pi}\sq
 
 קצב הסיבוב המקסימלי הוא $\frac{\sqrt[]{\pi}\sqrt[]{R}}{42}$ סל"ד.
 
-3. תחילה נחשב את הכוח הצנטריפוגלי - 
+3. תחילה נחשב את הכוח הצנטריפיטלי - 
 
-$$r = R$$
-$$\dot{r} = 0$$
-$$\ddot{r} = 0$$
-$$\dot{\theta} = v_0$$
-$$\ddot{\theta} = 0$$
-$$F = ma = m \cdot ((\ddot{r} - r\dot{\theta}^2)\hat{r} + (2\dot{r}\dot{\theta} + r\ddot{\theta})\hat{\theta})$$
-$$F = m \cdot ((0 - Rv_0^2)\hat{r} + (0 + 0)\hat{\theta})$$
-$$F = m \cdot (-Rv_0^2)\hat{r}$$
-$$F = -mRv_0^2\hat{r}$$
-$$\Downarrow$$
-$$F = -mRv_0^2\hat{x}$$
+$$a = \frac{v^2}{r} = \frac{v_0^2}{R}$$
 
 נבחר x בכיוון מרכז החרוט, וy בכיוון הנגדי לכוח המשיכה - 
 
@@ -77,19 +67,19 @@ $$F = -mRv_0^2\hat{x}$$
 |:---:|:---:|:---:|
 |נורמלי|$N\cos{\theta}$|$N\sin{\theta}$|
 |כבידה||$-mg$|
-|צנטריפוגלי|$-mRv_0^2$||
+|צנטריפיטלי|$-\frac{v_0^2}{R}$||
 
-$$\sum F_x = 0$$
-$$\sum F_y = 0$$
+$$\sum F = 0$$
 $$\Downarrow$$
-$$I. \ \ \ N\cos{\theta} - mRv_0^2 = 0$$
+$$I. \ \ \ N\cos{\theta} - \frac{v_0^2}{R} = 0$$
 $$II. \ \ \ N\sin{\theta} - mg = 0$$
 $$II. \ \ \ N\sin{\theta} = mg$$
 $$II. \ \ \ N = \frac{mg}{\sin{\theta}}$$
-$$I. \ \ \ \frac{mg}{\sin{\theta}}\cos{\theta} - mRv_0^2 = 0$$
-$$I. \ \ \ mRv_0^2 = \frac{mg}{\sin{\theta}}\cos{\theta}$$
-$$I. \ \ \ Rv_0^2 = \frac{g\cos{\theta}}{\sin{\theta}}$$
-$$I. \ \ \ R = \frac{g\cos{\theta}}{v_0^2\sin{\theta}}$$
+$$I. \ \ \ \frac{mg}{\sin{\theta}}\cos{\theta} - \frac{v_0^2}{R} = 0$$
+$$I. \ \ \ \frac{v_0^2}{R} = \frac{\cos{\theta}mg}{\sin{\theta}}$$
+$$I. \ \ \ R \cos{\theta}mg = v_0^2 \sin{\theta}$$
+$$I. \ \ \ R  = \frac{v_0^2 \sin{\theta}}{\cos{\theta}mg}$$
+$$I. \ \ \ R  = \frac{v_0^2 \tan{\theta}}{mg}$$
 4. עשינו בכיתה
 5. **להשלים**
 6. נתון:  
@@ -171,21 +161,65 @@ $$v_{(t)} = (\frac{-gm}{k})^{\frac{1}{2}}tanh{[(\frac{-g(k+1)^2}{km})^{\frac{1}{
 
 
 8. עשינו בכיתה  
-צ"ל
+9. צ"ל
 
-$$N = mg(cos{\theta} - sin{\theta}(tan{\theta}))$$
+$$N = mg(cos{\theta} - sin{\theta}(tan{\phi}))$$
+פתרון:  
 
-|x|y|
-|:---:|:---:|
-||$N$|
-|$-mg\sin{\theta}$|$-mg\cos{\theta}$|
-|$T\cos{\theta}$|$T\sin{\theta}$|
+|שם|x|y|
+|:---:|:---:|:---:|
+|כבידה||$-mg$|
+|נורמלי|$N\sin{\theta}$|$N\cos{\theta}$|
+|מתיחות|$-T\cos{(\theta+\phi)}$|$T\sin{(\theta+\phi)}$|
 
-$$\sum F_x = 0$$
-$$\sum F_y = 0$$
+נתון מהירות קבועה לגוף, ז"א תאוצה אפסית
+
+$$\sum{\vec{F}} = 0$$
 $$\Downarrow$$
-$$I. \ \ \ N = mg\cos{\theta} -T \sin{\theta}$$
-$$II. \ \ \ mg\sin{\theta} = T\cos{\theta}$$
+$$I. \ \ \ N\sin{\theta} - T\cos{(\theta+\phi)} = 0$$
+$$II. \ \ \ -mg + N\cos{\theta} + T\sin{(\theta+\phi)} = 0$$
+$$\sin{(\alpha \pm \beta)} = \sin{\alpha}\cos{\beta} \pm \cos{\alpha}\sin{\beta}$$
+$$\cos{(\alpha \pm \beta)} = \cos{\alpha}\cos{\beta} \mp \sin{\alpha}\sin{\beta}$$
+$$\Downarrow$$
+$$I. \ \ \ N\sin{\theta} - T(\cos{\theta}\cos{\phi} - \sin{\theta}\sin{\phi}) = 0$$
+$$II. \ \ \ -mg + N\cos{\theta} + T(\sin{\theta}\cos{\phi} + \cos{\theta}\sin{\phi}) = 0$$
+$$I. \ \ \ T(\cos{\theta}\cos{\phi} - \sin{\theta}\sin{\phi}) = N\sin{\theta}$$
+$$I. \ \ \ T = \frac{N\sin{\theta}}{\cos{\theta}\cos{\phi} - \sin{\theta}\sin{\phi}}$$
+$$II. \ \ \ -mg + N\cos{\theta} + \frac{N\sin{\theta}(\sin{\theta}\cos{\phi} + \cos{\theta}\sin{\phi})}{\cos{\theta}\cos{\phi} - \sin{\theta}\sin{\phi}} = 0$$
+$$II. \ \ \ N\cos{\theta} + \frac{N\sin{\theta}(\sin{\theta}\cos{\phi} + \cos{\theta}\sin{\phi})}{\cos{\theta}\cos{\phi} - \sin{\theta}\sin{\phi}} = mg$$
+$$II. \ \ \ N(\cos{\theta} + \frac{\sin{\theta}(\sin{\theta}\cos{\phi} + \cos{\theta}\sin{\phi})}{\cos{\theta}\cos{\phi} - \sin{\theta}\sin{\phi}}) = mg$$
+$$II. \ \ \ N(\frac{\sin{\theta}(\sin{\theta}\cos{\phi} + \cos{\theta}\sin{\phi}) + \cos{\theta}(\cos{\theta}\cos{\phi} - \sin{\theta}\sin{\phi})}{\cos{\theta}\cos{\phi} - \sin{\theta}\sin{\phi}}) = mg$$
+$$II. \ \ \ N = mg\frac{1}{\frac{\sin{\theta}(\sin{\theta}\cos{\phi} + \cos{\theta}\sin{\phi}) + \cos{\theta}(\cos{\theta}\cos{\phi} - \sin{\theta}\sin{\phi})}{\cos{\theta}\cos{\phi} - \sin{\theta}\sin{\phi}}}$$
+$$II. \ \ \ N = mg\frac{\cos{\theta}\cos{\phi} - \sin{\theta}\sin{\phi}}{\sin{\theta}(\sin{\theta}\cos{\phi} + \cos{\theta}\sin{\phi}) + \cos{\theta}(\cos{\theta}\cos{\phi} - \sin{\theta}\sin{\phi})}$$
+$$II. \ \ \ N = mg\frac{\cos{\theta}\cos{\phi} - \sin{\theta}\sin{\phi}}{\sin^2{\theta}\cos{\phi} + \cancel{\sin{\theta}\cos{\theta}\sin{\phi}} + \cos^2{\theta}\cos{\phi} - \cancel{\cos{\theta}\sin{\theta}\sin{\phi}}}$$
+$$II. \ \ \ N = mg\frac{\cos{\theta}\cos{\phi} - \sin{\theta}\sin{\phi}}{\sin^2{\theta}\cos{\phi} + \cos^2{\theta}\cos{\phi}}$$
+$$II. \ \ \ N = mg\frac{\cos{\theta}\cos{\phi} - \sin{\theta}\sin{\phi}}{\cos{\phi}(\sin^2{\theta} + \cos^2{\theta})}$$
+$$\cos^2{\alpha} + \sin^2{\alpha} = 1$$
+$$II. \ \ \ N = mg\frac{\cos{\theta}\cos{\phi} - \sin{\theta}\sin{\phi}}{\cos{\phi}\cancel{(1)}}$$
+$$II. \ \ \ N = mg(\cos{\theta} - \sin{\theta}\tan{\phi})$$
 
-9. **להשלים**
-10. **להשלים**
+
+10. נתון:  
+
+$$N = mg(\cos{\theta} - \sin{\theta}\tan{\phi})$$
+$$\theta + \phi = 90\degree \Longrightarrow \theta = 90\degree - \phi$$
+צ"ל  
+
+$$N = 0$$
+פתרון 
+
+$$N = mg(\cos{(90\degree - \phi)} - \sin{(90\degree - \phi)}\tan{\phi})$$
+$$\sin{(\alpha \pm \beta)} = \sin{\alpha}\cos{\beta} \pm \cos{\alpha}\sin{\beta}$$
+$$\cos{(\alpha \pm \beta)} = \cos{\alpha}\cos{\beta} \mp \sin{\alpha}\sin{\beta}$$
+$$\Downarrow$$
+$$N = mg((\cos{90\degree}\cos{\phi} + \sin{90\degree}\sin{\phi}) - \tan{\phi}(\sin{90\degree}\cos{\phi} - \cos{90\degree}\sin{\phi}))$$
+$$\sin{90\degree} = 1$$
+$$\cos{90\degree} = 0$$
+$$\Downarrow$$
+$$N = mg(\sin{\phi} - \tan{\phi}\cos{\phi})$$
+$$N = mg(\sin{\phi} - \frac{\sin{\phi}}{\cos{\phi}}\cos{\phi})$$
+$$N = mg(\sin{\phi} - \sin{\phi})$$
+$$N = mg \cdot 0 = 0$$
+מש"ל.  
+דבר זה קורה מכיוון שאם 2 הזוויות שוות $90\degree$, ז"א שהחוט מקביל לכוח המשיכה.  
+בגלל שנתון תנועה קבועה בכיוון החוט, ז"א שהמגלשה מרחפת למעלה ולא נוגעת בתריס, ולכן הכוח הנורמלי מתאפס.  
