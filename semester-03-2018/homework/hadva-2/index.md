@@ -77,9 +77,12 @@
     פתרון: 
 
     $$\lim_{n \rightarrow \infty}(5n - \sqrt[]{25n^2 + 6n - 8})$$
-    $$\lim_{n \rightarrow \infty}n(5 - \sqrt[]{25 + \frac{6}{n} - \frac{8}{n^2}})$$
-    $$\lim_{n \rightarrow \infty}n(5 - \sqrt[]{25})$$
-    $$\lim_{n \rightarrow \infty}n(0) = 0$$
+    $$\lim_{n \rightarrow \infty}\frac{(5n - \sqrt[]{25n^2 + 6n - 8})(5n + \sqrt[]{25n^2 + 6n - 8})}{5n + \sqrt[]{25n^2 + 6n - 8}}$$
+    $$\lim_{n \rightarrow \infty}\frac{25n^2 - 25n^2 + 6n - 8}{5n + \sqrt[]{25n^2 + 6n - 8}}$$
+    $$\lim_{n \rightarrow \infty}\frac{6n - 8}{5n + \sqrt[]{25n^2 + 6n - 8}}$$
+    $$\lim_{n \rightarrow \infty}\frac{n(6 - \frac{8}{n})}{n(5 + \sqrt[]{25 + \frac{6}{n} - \frac{8}{n^2}})}$$
+    $$\lim_{n \rightarrow \infty}\frac{6 - \frac{8}{n}}{5 + \sqrt[]{25 + \frac{6}{n} - \frac{8}{n^2}}}$$
+    $$\lim_{n \rightarrow \infty}\frac{6 - 0}{5 + \sqrt[]{25 + 0 - 0}} = \frac{6}{5 + 5} = \frac{6}{10}$$
     
     6. $$\lim_{n \rightarrow \infty}(3 + \frac{1}{\sqrt[]{n}})^{\frac{2}{3}n}$$
     פתרון: 
