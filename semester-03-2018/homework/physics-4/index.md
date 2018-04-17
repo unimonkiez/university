@@ -29,33 +29,31 @@ $$\dot{\theta} = \frac{21\pi}{30}$$
 $$\ddot{\theta} = 0$$
 $$\Downarrow$$
 $$a = (0 - 2\cdot (\frac{21\pi}{30})^2)\hat{r} + (0 +0)\hat{\theta}$$
-$$a = -(\frac{21\pi}{15})^2\hat{r}$$
-$$a = -(\frac{21\pi}{15})^2\hat{r}$$
-$$F = (-\frac{441\pi}{225}\hat{r})m$$
+$$a = -2(\frac{21\pi}{30})^2\hat{r}$$
+$$F = (-\frac{49\pi^2}{50}\hat{r})m$$
 $$F^1 = F^2$$
 $$\Downarrow$$
-$$(-\frac{441\pi}{225}\hat{r})m = m \cdot ((\ddot{r} - r\dot{\theta}^2)\hat{r} + (2\dot{r}\dot{\theta} + r\ddot{\theta})\hat{\theta})$$
+$$(-\frac{49\pi^2}{50}\hat{r})m = m \cdot ((\ddot{r} - r\dot{\theta}^2)\hat{r} + (2\dot{r}\dot{\theta} + r\ddot{\theta})\hat{\theta})$$
 $$r = R$$
 $$\dot{r} = 0$$
 $$\ddot{r} = 0$$
 $$\dot{\theta} = x$$
 $$\ddot{\theta} = 0$$
 $$\Downarrow$$
-$$(-\frac{441\pi}{225}\hat{r})m = m \cdot ((0 - Rx^2)\hat{r} + (0 + 0)\hat{\theta})$$
-$$-\frac{441\pi}{225}\hat{r} = (0 - Rx^2)\hat{r} + (0 + 0)\hat{\theta}$$
-$$-\frac{441\pi}{225}\hat{r} = -Rx^2\hat{r}$$
-$$-\frac{441\pi}{225} = -Rx^2$$
-$$Rx^2 = \frac{441\pi}{225}$$
-$$x^2 = \frac{441}{225}\cdot \frac{\pi}{R}$$
-$$x = \frac{21}{15} \cdot \sqrt[]{\frac{\pi}{R}}$$
+$$(-\frac{49\pi^2}{50}\hat{r})m = m \cdot ((0 - Rx^2)\hat{r} + (0 + 0)\hat{\theta})$$
+$$-\frac{49\pi^2}{50}\hat{r} = (0 - Rx^2)\hat{r} + (0 + 0)\hat{\theta}$$
+$$-\frac{49\pi^2}{50}\hat{r} = -Rx^2\hat{r}$$
+$$-\frac{49\pi^2}{50} = -Rx^2$$
+$$Rx^2 = \frac{49\pi^2}{50}$$
+$$x^2 = \frac{49\pi^2}{50}\cdot \frac{1}{R}$$
+$$x = \sqrt[]{2}\cdot \frac{21\pi}{30} \cdot \sqrt[]{\frac{1}{R}}$$
+$$x = \frac{21\pi}{30} \cdot \sqrt[]{\frac{2}{R}}$$
 $$\Downarrow$$
-$$T = \frac{1}{f} = \frac{2\pi}{x}$$
-$$T = \frac{2\pi}{\frac{21}{15} \cdot \sqrt[]{\frac{\pi}{R}}}$$
-$$T = \frac{2\pi\sqrt[]{R}\cdot 15}{21\sqrt[]{\pi}}$$
-$$T_{sec} = \frac{30\sqrt[]{\pi}\sqrt[]{R}}{21}$$
-$$T_{min} = \frac{30\sqrt[]{\pi}\sqrt[]{R}}{21 \cdot 60} = \frac{\sqrt[]{\pi}\sqrt[]{R}}{42}$$
+$$f = \frac{x}{2\pi}$$
+$$f = \frac{\frac{21\pi}{30} \cdot \sqrt[]{\frac{2}{R}}}{2\pi}$$
+$$f = \frac{21\sqrt[]{\frac{2}{R}}}{60}$$
 
-קצב הסיבוב המקסימלי הוא $\frac{\sqrt[]{\pi}\sqrt[]{R}}{42}$ סל"ד.
+קצב הסיבוב המקסימלי הוא $21\sqrt[]{\frac{2}{R}}$ סל"ד.
 
 3. תחילה נחשב את הכוח הצנטריפיטלי - 
 
@@ -81,7 +79,82 @@ $$I. \ \ \ R \cos{\theta}mg = v_0^2 \sin{\theta}$$
 $$I. \ \ \ R  = \frac{v_0^2 \sin{\theta}}{\cos{\theta}mg}$$
 $$I. \ \ \ R  = \frac{v_0^2 \tan{\theta}}{mg}$$
 4. עשינו בכיתה
-5. **להשלים**
+5. נתון:  
+
+    $$a = -\alpha v -\beta v^2$$
+    1.
+    
+    $$a = -\alpha v -\beta v^2$$
+    $$\dot{v} = -\alpha v -\beta v^2$$
+    2.
+    
+    $$v_{(t)} = \frac{\alpha}{C \alpha e^{\alpha t} - \beta}$$
+    צ"ל
+
+    $$\dot{v} = -\alpha v -\beta v^2$$
+    פתרון:  
+
+    $$\dot{v} = \dot{\overline{(\frac{\alpha}{C \alpha e^{\alpha t} - \beta})}}$$
+    $$\dot{v} = \frac{-\alpha \cdot (\dot{\overline{C \alpha e^{\alpha t} - \beta}})}{(C \alpha e^{\alpha t} - \beta)^{2}}$$
+    $$\dot{v} = \frac{-\alpha \cdot (C \alpha^2 e^{\alpha t})}{(C \alpha e^{\alpha t} - \beta)^{2}}$$
+    $$\dot{v} = \frac{-C \alpha^3 e^{\alpha t}}{(C \alpha e^{\alpha t} - \beta)^{2}}$$
+    כעת נבדוק את הצד השני של המשוואה: 
+
+    $$-\alpha v -\beta v^2 = -\alpha(\frac{\alpha}{C \alpha e^{\alpha t} - \beta}) -\beta(\frac{\alpha}{C \alpha e^{\alpha t} - \beta})^2$$
+    $$-\alpha v -\beta v^2 = -\frac{\alpha^2}{C \alpha e^{\alpha t} - \beta} -\frac{\alpha^2\beta}{(C \alpha e^{\alpha t} - \beta)^2}$$
+    $$-\alpha v -\beta v^2 = -\frac{\alpha^2(C \alpha e^{\alpha t} - \beta)}{(C \alpha e^{\alpha t} - \beta)^2} -\frac{\alpha^2\beta}{(C \alpha e^{\alpha t} - \beta)^2}$$
+    $$-\alpha v -\beta v^2 = -\frac{\alpha^2(C \alpha e^{\alpha t} - \beta) + \alpha^2\beta}{(C \alpha e^{\alpha t} - \beta)^2}$$
+    $$-\alpha v -\beta v^2 = -\frac{\alpha^2(C \alpha e^{\alpha t} \cancel{-\beta} \cancel{+\beta})}{(C \alpha e^{\alpha t} - \beta)^2}$$
+    $$-\alpha v -\beta v^2 = -\frac{C \alpha^3 e^{\alpha t}}{(C \alpha e^{\alpha t} - \beta)^2}$$
+    $$\Downarrow$$
+    $$\dot{v} = -\alpha v -\beta v^2 = \frac{-C \alpha^3 e^{\alpha t}}{(C \alpha e^{\alpha t} - \beta)^{2}}$$
+    3. נתון:  
+    
+    $$v_{t=t_0} = v_0$$
+    צ"ל:  
+    
+    $$C=?$$
+    פתרון:  
+
+    $$v_{(t)} = \frac{\alpha}{C \alpha e^{\alpha t} - \beta}$$
+    $$t=t_0$$
+    $$\Downarrow$$
+    $$v_0 = \frac{\alpha}{C \alpha e^{\alpha t_0} - \beta}$$
+    $$v_0(C \alpha e^{\alpha t_0} - \beta) = \alpha$$
+    $$C \alpha e^{\alpha t_0} - \beta = \frac{\alpha}{v_0}$$
+    $$C \alpha e^{\alpha t_0} = \frac{\alpha}{v_0} + \beta$$
+    $$C \alpha e^{\alpha t_0} = \frac{\alpha + v_0\beta}{v_0}$$
+    $$C = \frac{\alpha + v_0\beta}{v_0\alpha e^{\alpha t_0}}$$
+
+    4. נתון:  
+    
+    $$x_{t=t_0} = x_0 = 0$$
+    $$\int\frac{\delta x}{r + se^{px}} = \frac{1}{pr}\ln{(\frac{1}{re^{-px} + s})}$$
+    צ"ל:  
+    
+    $$x_{(t)}=?$$
+    פתרון:  
+
+    $$\int_{0}^{t}v_{(t)} = x_{(t)} +x_0$$
+    $$x_{(t)} = \int_{t_0}^{t}v_{(t)} \cancel{-0}$$
+    $$x_{(t)} = \int_{t_0}^{t}\frac{\alpha}{C \alpha e^{\alpha t} - \beta}$$
+    $$\int\frac{\delta x}{r + se^{px}} = \frac{1}{pr}\ln{(\frac{1}{re^{-px} + s})}$$
+    $$r=-\beta$$
+    $$s=C\alpha$$
+    $$p=\alpha$$
+    $$\Downarrow$$
+    $$x_{(t)} = \frac{1}{-\beta \alpha}\ln{(\frac{1}{-\beta e^{-\alpha x} + C\alpha})}$$
+    $$C = \frac{\alpha + v_0\beta}{v_0\alpha e^{\alpha t_0}}$$
+    $$\Downarrow$$
+    $$x_{(t)} = \frac{1}{-\beta \alpha}\ln{(\frac{1}{-\beta e^{-\alpha x} + \frac{\alpha + v_0\beta}{v_0\alpha e^{\alpha t_0}}\alpha})}$$
+    $$x_{(t)} = \frac{1}{-\beta \alpha}\ln{(\frac{1}{\frac{\alpha^2 + v_0\alpha\beta-\beta e^{-\alpha x}(v_0\alpha e^{\alpha t_0})}{v_0\alpha e^{\alpha t_0}}})}$$
+    $$x_{(t)} = \frac{1}{-\beta \alpha}\ln{(\frac{v_0\alpha e^{\alpha t_0}}{\alpha^2 + v_0\alpha\beta-\beta e^{-\alpha x}(v_0\alpha e^{\alpha t_0})})}$$
+    $$x_{(t)} = \frac{1}{-\beta \alpha}\ln{(\frac{v_0\alpha e^{\alpha t_0}}{\alpha^2 + v_0\alpha\beta-v_0\alpha\beta e^{\alpha t_0-\alpha x}})}$$
+    $$x_{(t)} = \frac{1}{-\beta \alpha}\ln{(\frac{v_0\alpha e^{\alpha t_0}}{\alpha^2 + v_0\alpha\beta-v_0\alpha\beta e^{\alpha (t_0-x)}})}$$
+    $$x_{(t)} = \frac{1}{-\beta \alpha}\ln{(\frac{v_0\alpha e^{\alpha t_0}}{\alpha^2 + v_0\alpha\beta(1 - e^{\alpha (t_0-x)})})}$$
+    5. אין מצב שאני מצליח (כנראה טעיתי בסעיף הקודם).
+    6. ראה סעיף 5.
+
 6. נתון:  
 
     $$\dot{\theta}_{t=0} = \omega_0$$
@@ -90,6 +163,8 @@ $$I. \ \ \ R  = \frac{v_0^2 \tan{\theta}}{mg}$$
     1. צ"ל  
 
     $$\vec{v_{AB}} = ?\hat{r}$$
+    פתרון:  
+
     $$\vec{v_{AB}} = F_{AB} = m_B \cdot \vec{a}$$
     $$\vec{a} = \vec{\ddot{r}} = (\ddot{r} - r\dot{\theta}^2)\hat{r} + (2\dot{r}\dot{\theta} + r\ddot{\theta})\hat{\theta}$$
     $$r = R_0-v_0t$$
@@ -108,16 +183,27 @@ $$I. \ \ \ R  = \frac{v_0^2 \tan{\theta}}{mg}$$
     $$2\dot{L}\dot{\theta} + L\ddot{\theta} = 0$$
     $$2\dot{L}\dot{\theta} =- L\ddot{\theta}$$
     3.
-    $$L = R_0-v_0t$$
-    $$\dot{L} = v_0$$
-    $$2\dot{L}\dot{\theta} =- L\ddot{\theta}$$
+    4. 
+    
+    $$\dot{\theta} = \frac{B}{(R_0-v_0(t-t_0))^2}$$
+    $$\dot{\theta}_{(t=t_0)} = \omega_0$$
     $$\Downarrow$$
-    $$2\dot{L}\dot{\theta} =- L\ddot{\theta}$$
-    $$2\dot{L}\dot{\theta} =- L\ddot{\theta}$$
+    $$\omega_0 = \frac{B}{(R_0-v_0(t_0-t_0))^2}$$
+    $$\omega_0 = \frac{B}{R_0^2}$$
+    $$B = \omega_0 R_0^2$$
 
+    5.
+
+    $$\dot{\theta} = \frac{B}{(R_0-v_0(t-t_0))^2}$$
+    $$B = \omega_0 R_0^2$$
+    $$\Downarrow$$
+    $$\dot{\theta} = \frac{\omega_0 R_0^2}{(R_0-v_0(t-t_0))^2}$$
+
+    6. לפי הנוסחא ($\dot{\theta} = \frac{\omega_0 R_0^2}{(R_0-v_0(t-t_0))^2}$), המכנה קטן ככל שהזמן גדל, גדילת המכנה מביאה לגדילת ערך המהירות בריבוע, לפי כך ניתן להבין כי המהירות תגדל בקצב מרובע ככך שהזמן יעבור.  
+    7. כפי שאמרנו קודם, המהירות גדלה בקצב מרובע לשינוי בזמן, גדילה מרובעת ז"א תאוצה קבועה.  
 7. נתון  
 
-$$Ay_{(x)} + Cy_{(x)}^2 - B = 0 \Rightarrow y_{(x)} = (\frac{B}{C})^{\frac{1}{2}}tanh{[A^{-1}(\frac{B}{C})^{\frac{1}{2}}(x+C)]}$$
+$$Ay'_{(x)} + Cy_{(x)}^2 - B = 0 \Rightarrow y_{(x)} = (\frac{B}{C})^{\frac{1}{2}}tanh{[A^{-1}(BC)^{\frac{1}{2}}(x+C_1)]}$$
 $$F = -kv^2$$
 $$v_0 = 0$$
 נבחר ציר x וציר y בכיוון כוח המשיכה.  
@@ -133,32 +219,18 @@ $$\Downarrow$$
 $$ma_x = 0$$
 $$a_x = 0$$
 $$ma_y = mg-kv^2$$
-$$a_y = g-\frac{kv^2}{m}$$
-$$v_x = \int a_x$$
-$$v_{x(t)} = v_{x0}$$
-$$v_{x(t)} = 0$$
-$$v_y = \int a_y$$
-$$v_{y(t)} = (g-\frac{kv^2}{m})t + v_{y0}$$
-$$v_{y(t)} = (g-\frac{kv^2}{m})t$$
-$$v = (g-\frac{kv^2}{m})t$$
-$$v = gt -\frac{kv^2t}{m}$$
-$$v+\frac{kv^2t}{m} = gt$$
-$$\frac{kv^2t+vm}{m} = gt$$
-$$kv^2t+vm = gtm$$
-$$ktv^2+mv-gtm = 0$$
-$$Ay_{(x)} + Cy_{(x)}^2 - B = 0 \Rightarrow y_{(x)} = (\frac{B}{C})^{\frac{1}{2}}tanh{[A^{-1}(\frac{B}{C})^{\frac{1}{2}}(x+C)]}$$
-$$ktv^2+mv-gtm = 0$$
-$$A = m$$
-$$B = -gtm$$
-$$C = kt$$
+$$mg-kv^2-ma_y = 0$$
+$$mg-kv^2-m\dot{v} = 0$$
+$$Ay'_{(x)} + Cy_{(x)}^2 - B = 0 \Rightarrow y_{(x)} = (\frac{B}{C})^{\frac{1}{2}}tanh{[A^{-1}(BC)^{\frac{1}{2}}(x+C_1)]}$$
+$$A=m$$
+$$B=mg$$
+$$C=k$$
+$$C_1=0$$
 $$\Downarrow$$
-$$v_{y(t)} = (\frac{-gtm}{kt})^{\frac{1}{2}}tanh{[m^{-1}(\frac{-gtm}{kt})^{\frac{1}{2}}(t+kt)]}$$
-$$v_{y(t)} = (\frac{-gm}{k})^{\frac{1}{2}}tanh{[\frac{1}{m}(\frac{-gm}{k})^{\frac{1}{2}}(k+1)t]}$$
-$$v_{y(t)} = (\frac{-gm}{k})^{\frac{1}{2}}tanh{[(\frac{-gm}{km^2})^{\frac{1}{2}}(k+1)t]}$$
-$$v_{y(t)} = (\frac{-gm}{k})^{\frac{1}{2}}tanh{[(\frac{-g}{km})^{\frac{1}{2}}(k+1)t]}$$
-$$v_{y(t)} = (\frac{-gm}{k})^{\frac{1}{2}}tanh{[(\frac{-g(k+1)^2}{km})^{\frac{1}{2}}t]}$$
-$$v_{(t)} = (\frac{-gm}{k})^{\frac{1}{2}}tanh{[(\frac{-g(k+1)^2}{km})^{\frac{1}{2}}t]}\hat{y}$$
-
+$$v_{(t)} = (\frac{mg}{k})^{\frac{1}{2}}tanh{[m^{-1}(mgk)^{\frac{1}{2}}(t+0)]}$$
+$$v_{(t)} = (\frac{mg}{k})^{\frac{1}{2}}tanh{[(\frac{mgk}{m^2})^{\frac{1}{2}}t]}$$
+$$v_{(t)} = (\frac{mg}{k})^{\frac{1}{2}}tanh{[(\frac{gk}{m})^{\frac{1}{2}}t]}$$
+$$v_{(t)} = \sqrt[]{\frac{mg}{k}}tanh{[\sqrt[]{\frac{gk}{m}}t]}$$
 
 8. עשינו בכיתה  
 9. צ"ל
