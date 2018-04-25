@@ -117,30 +117,103 @@
 |:-:|:-:|:-:|:-:|
 |מעלית|$m_1$||$m_1A$|
 |משיכה|$m_1$||$-m_1g$|
-|נגיעת הגופים|$m_1$||$F_{m_1}$|
+|נגיעת הגופים|$m_1$|$-\sin{\theta}N_1$|$\cos{\theta}N_1$|
 |מעלית|$m_2$||$m_2A$|
 |משיכה|$m_2$||$-m_2g$|
-|נגיעת הגופים|$m_2$|$\sin{\theta}F_{m_1}$|$-\cos{\theta}F_{m_1}$|
+|נגיעת הגופים|$m_2$|$\sin{\theta}N_1$|$-\cos{\theta}N_1$|
 |נורמלי|$m_2$||$N_2$|
 
-$$I. \ \ \ \sum F_{x_{m_1}} = 0 \Rightarrow a_{x_{m_1}} = 0$$
-$$II. \ \ \ F_{y_{m_1}} = m_1A -m_1g = F_{m_1}$$
-$$III. \ \ \ F_{x_{m_2}} = \sin{\theta}F_{m_1}$$
-$$IV. \ \ \ \sum F_{y_{m_2}} = m_2A -m_2g-\cos{\theta}F_{m_1}+N_2 = m_2A$$
+$$I. \ \ \ a_{y_{m_1}} = 0 \Rightarrow \sum F_{y_{m_1}} = 0 \Rightarrow m_1A - m_1g -\cos{(\theta)}N_1 = 0$$
+$$II. \ \ \ \sum F_{x_{m_1}} = m_1a_{x_{m_1}} \Rightarrow -\sin{(\theta)}N_1 = m_1a_{x_{m_1}}$$
+$$III. \ \ \ a_{y_{m_2}} = 0 \Rightarrow \sum F_{y_{m_2}} = 0 \Rightarrow m_2A - m_2g -\cos{(\theta)}N_1 + N_2 = 0$$
+$$IV. \ \ \ \sum F_{x_{m_2}} = m_2a_{x_{m_2}} \Rightarrow \sin{(\theta)}N_1 = m_2a_{x_{m_2}}$$
 $$\Downarrow$$
-$$III. \ \ \ F_{x_{m_2}} = \sin{\theta}(m_1A -m_1g)$$
+$$I. \ \ \ m_1A - m_1g -\cos{(\theta)}N_1 = 0$$
+$$II. \ \ \ -\sin{(\theta)}N_1 = m_1a_{x_{m_1}}$$
+$$III. \ \ \ m_2A - m_2g -\cos{(\theta)}N_1 + N_2 = 0$$
+$$IV. \ \ \ \sin{(\theta)}N_1 = m_2a_{x_{m_2}}$$
 $$\Downarrow$$
-$$a_{x_{m_1}} = 0$$
-$$a_{y_{m_1}} = m_1A -m_1g$$
-$$a_{x_{m_2}} = \frac{\sin{\theta}(m_1A -m_1g)}{m_2}$$
-$$a_{y_{m_2}} = A$$
+$$I. \ \ \ m_1A - m_1g =\cos{(\theta)}N_1$$
+$$I. \ \ \ N_1 = \frac{m_1A - m_1g}{\cos{(\theta)}}$$
+$$II. \ \ \ -\sin{(\theta)}\frac{m_1A - m_1g}{\cos{(\theta)}} = m_1a_{x_{m_1}}$$
+$$II. \ \ \ -\tan{(\theta)}(m_1A - m_1g) = m_1a_{x_{m_1}}$$
+$$II. \ \ \ a_{x_{m_1}}=\tan{(\theta)}(g - A)$$
+$$IV. \ \ \ \sin{(\theta)}\frac{m_1A - m_1g}{\cos{(\theta)}} = m_2a_{x_{m_2}}$$
+$$IV. \ \ \ \tan{(\theta)}(m_1A - m_1g) = m_2a_{x_{m_2}}$$
+$$IV. \ \ \ a_{x_{m_2}} = \tan{(\theta)}(A - g)\frac{m_1}{m_2}$$
+$$\Downarrow$$
+$$a_{x_{m_1}} = \tan{(\theta)}(g - A)$$
+$$a_{y_{m_1}} = 0$$
+$$a_{x_{m_2}} = \tan{(\theta)}(A - g)\frac{m_1}{m_2}$$
+$$a_{y_{m_2}} = 0$$
 
 
 4. נתון:  
-בלוק - $m_1$  
-טריז - $m_2$  
-זווית הטריז - $\frac{\pi}{4}$  
-תאוצת הטריז - $A$  
+    בלוק - $m_1$  
+    טריז - $m_2$  
+    זווית הטריז - $\theta = \frac{\pi}{4}$  
+    תאוצת הטריז - $A$  
+    נבנה טבלת כוחות (X מקביל לשולחן בכיוון הכוח המופעל, Y מאונך לשולחן כלפי מעלה)
+
+    |שם כוח|גוף|X|Y|
+    |:-:|:-:|:-:|:-:|
+    |משיכה|$m_1$||$-m_1g$|
+    |נגיעת הגופים|$m_1$|$\sin{\theta}N_1$|$\cos{\theta}N_1$|
+    |כוח חיצוני|$m_2$|$F$||
+    |משיכה|$m_2$||$-m_2g$|
+    |נגיעת הגופים|$m_2$|$-\sin{\theta}N_1$|$-\cos{\theta}N_1$|
+    |נורמלי|$m_2$||$N_2$|
+
+    $$I. \ \ \ \sum F_{x_{m_1}} = m_1a_{x_{m_1}} \Rightarrow \sin{(\theta)}N_1 = m_1a_{x_{m_1}}$$
+    $$II. \ \ \ \sum F_{y_{m_1}} = m_1a_{y_{m_1}} \Rightarrow \cos{(\theta)}N_1-m_1g = m_1a_{y_{m_1}}$$
+    $$III. \ \ \ a_{x_{m_2}} = A \Rightarrow \sum F_{x_{m_2}} = m_2A \Rightarrow F-\sin{(\theta)}N_1 = m_2A$$
+    $$IV. \ \ \ a_{y_{m_2}} = 0 \Rightarrow \sum F_{y_{m_2}} = 0 \Rightarrow  - m_2g -\cos{(\theta)}N_1 + N_2 = 0$$
+    $$V. \ \ A=3g \Rightarrow \ a_{y_{m_1}}=g$$
+    נתון סעיף א'   
+    
+    $$\Downarrow$$
+    $$I. \ \ \ \sin{(\theta)}N_1 = m_1a_{x_{m_1}}$$
+    $$II. \ \ \ \cos{(\theta)}N_1-m_1g = m_1a_{y_{m_1}}$$
+    $$III. \ \ \ F-\sin{(\theta)}N_1 = m_2A$$
+    $$IV. \ \ \ - m_2g -\cos{(\theta)}N_1 + N_2 = 0$$
+    $$V. \ \ A=3g \Rightarrow \ a_{y_{m_1}}=g$$
+    1. צ"ל $a_{x_{m_1}}, a_{y_{m_1}}$:  
+
+    $$\Downarrow$$
+    $$II. \ \ \ \cos{(\theta)}N_1 = m_1a_{y_{m_1}}+m_1g$$
+    $$II. \ \ \ N_1 = (a_{y_{m_1}}+g)\frac{m_1}{\cos{(\theta)}}$$
+    $$III. \ \ \ F-\sin{(\theta)}(a_{y_{m_1}}+g)\frac{m_1}{\cos{(\theta)}} = m_2A$$
+    $$V. \ \ A=3g, \ a_{y_{m_1}}=g$$
+    $$\Downarrow$$
+    $$III. \ \ \ F-\sin{(\theta)}(g+g)\frac{m_1}{\cos{(\theta)}} = m_23g$$
+    $$III. \ \ \ F-\tan{(\theta)}(2g\cdot m_1) = m_23g$$
+    $$III. \ \ \ F = m_23g+\tan{(\theta)}(2g\cdot m_1)$$
+    $$III. \ \ \ F = g(3m_2 +\tan{(\theta)}(2m_1))$$
+    $$\tan{(\theta)} = 1$$
+    $$III. \ \ \ F = g(3m_2+2m_1)$$
+    $$III. \ \ \ F-\sin{(\theta)}N_1 = m_2A$$
+    $$III. \ \ \ g(3m_2+2m_1)-\sin{(\theta)}N_1 = m_2A$$
+    $$III. \ \ \ \sin{(\theta)}N_1=g(3m_2+2m_1)-m_2A$$
+    $$III. \ \ \ N_1=\frac{g(3m_2+2m_1)-m_2A}{\sin{(\theta)}}$$
+    $$I. \ \ \ \sin{(\theta)}\frac{g(3m_2+2m_1)-m_2A}{\sin{(\theta)}} = m_1a_{x_{m_1}}$$
+    $$I. \ \ \ g(3m_2+2m_1)-m_2A = m_1a_{x_{m_1}}$$
+    $$I. \ \ \ a_{x_{m_1}} = \frac{g(3m_2+2m_1)-m_2A}{m_1}$$
+    $$II. \ \ \ \cos{(\theta)}\frac{g(3m_2+2m_1)-m_2A}{\sin{(\theta)}}-m_1g = m_1a_{y_{m_1}}$$
+    $$II. \ \ \ \tan^{-1}{(\theta)}(g(3m_2+2m_1)-m_2A)-m_1g = m_1a_{y_{m_1}}$$
+    $$\tan{(\theta)} = \tan^{-1}{(\theta)} = 1$$
+    $$II. \ \ \ a_{y_{m_1}} = \frac{g(3m_2+2m_1)-m_2A-m_1g}{m_1}$$
+    $$II. \ \ \ a_{y_{m_1}} = \frac{3m_2g+2m_1g-m_2A-m_1g}{m_1}$$
+    $$II. \ \ \ a_{y_{m_1}} = \frac{m_1g+m_2(3g-A)}{m_1}$$
+    $$II. \ \ \ a_{y_{m_1}} = g+\frac{m_2(3g-A)}{m_1}$$
+    $$\Downarrow$$
+    $$a_{x_{m_1}} = \frac{g(3m_2+2m_1)-m_2A}{m_1}, a_{y_{m_1}} = g+\frac{m_2(3g-A)}{m_1}$$
+    2. נמצא קודם לכן: 
+     
+    $$F = g(3m_2+2m_1)$$
+    3.
+    
+
+
 5. **עשינו בכיתה**
 6. נתון:  
 מסות: $M_1, M_2$  
