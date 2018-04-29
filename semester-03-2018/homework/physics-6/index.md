@@ -46,7 +46,7 @@
     3. $y_{(t)} = ?$:  
     נוסחאת מיקום תנועה הרמונית פשוטה:  
     
-    $$y_{(t)} = A\cos{\omega t}$$
+    $$y_{(t)} = A\cos{(\omega t + \phi)} \ \ \  \phi = 0$$
     $$\Downarrow$$
     $$y_{(t)} = l_1 + A_1\cos{(\omega t)} + l_2 + A_2\cos{(\omega t)}$$
     $$y_{(t)} = l_1 + l_2 + (A_1 + A_2)\cos{(\omega t)}$$
@@ -61,32 +61,83 @@
     $$M$$
     $$L$$
     $$k$$
-    $$\alpha_0$$
-    1. צ"ל $\alpha$
+    $$\theta_0$$
+    1. צ"ל $\theta_{(t)}$
 
-    $$I.\ \ \ \sin{\alpha} = \frac{\Delta x}{L}$$
-    $$II.\ \ \ \sin{\alpha_0} = \frac{\Delta x_0}{L}$$
-    $$III.\ \ \ \Delta x_0 = A$$
-    $$IV.\ \ \ \omega = \frac{\sqrt[]{k}}{\sqrt[]{m}}$$
-    $$V.\ \ \ x_{(t)} = l_0 + A\cos{(\omega t + \phi)}$$
-    $$VI.\ \ \ \tan{\phi} = \frac{v_0 = 0}{\omega \Delta x_0} \Rightarrow \phi = 0$$
+    ניצור משוואת כוחות בצירים פולאריים (בכיוון המוט)
+    |שם|$\hat{r}$|$\hat{\theta}$|
+    |:-:|:-:|:-:|
+    |משיכה|$mg\cos{\theta}$|$-mg\sin{\theta}$|
+    |מתיחות|$T$||
+    |קפיץ||$-k\Delta x$|
+
+    סכום הכוחות בכיוון $\hat{\theta}$ שווה לנוסחאת התאוצה בפואלית בכיוון $\hat{\theta}$ חלקי $M$.
+
+    $$-mg\sin{\theta} - k\Delta x = F_{\hat{\theta}}$$
+    $$a = (\ddot{r} - r\dot{\theta}^2)\hat{r} + (2\dot{r}\dot{\theta} + r\ddot{\theta})\hat{\theta}$$
+    $$F_{\hat{\theta}} = ma_{\hat{\theta}}$$
     $$\Downarrow$$
-    $$II.\ \ \ \Delta x_0 = L\sin{\alpha_0}$$
-    $$III.\ \ \ A = L\sin{\alpha_0}$$
-    $$V.\ \ \ x_{(t)} = l_0 + L\sin{\alpha_0}\cos{(\frac{\sqrt[]{k}}{\sqrt[]{m}} t)}$$
-    $$I.\ \ \ \sin{\alpha} = \frac{x - l_0}{L}$$
-    $$I.\ \ \ L\sin{\alpha} = x - l_0$$
-    $$I.\ \ \ x = L\sin{\alpha} + l_0$$
-    $$V.\ \ \ \cancel{L}\sin{\alpha} + \cancel{l_0} = \cancel{l_0} + \cancel{L}\sin{\alpha_0}\cos{(\frac{\sqrt[]{k}}{\sqrt[]{m}} t)}$$
-    $$V.\ \ \ \sin{\alpha} = \sin{\alpha_0}\cos{(\frac{\sqrt[]{k}}{\sqrt[]{m}} t)}$$
-    $$\alpha_{(t)} = \arcsin{(k\sin{(\alpha_0)}\cos{(\frac{\sqrt[]{k}}{\sqrt[]{m}} t)})}$$
+    $$-mg\sin{\theta} - k\Delta x = m(2\dot{r}\dot{\theta} + r\ddot{\theta})$$
+    $$\sin{\theta} = \frac{\Delta x}{L} \Rightarrow \Delta x = L\sin{\theta}$$
+    $$r=L$$
+    $$\dot{r}=0$$
+    $$\Downarrow$$
+    $$-mg\sin{\theta} - kL\sin{\theta} = m(0 + L\ddot{\theta})$$
+    $$\sin{\theta}(-mg-kL) = mL\ddot{\theta}$$
+    נתון $\sin{\theta} = \theta$ (קירוב זוויות)
+
+    $$\theta(-mg-kL) = mL\ddot{\theta}$$
+    $$\ddot{\theta} = -\frac{mg+kL}{mL}\theta$$
+
+    יצאה לנו משוואה דפרנציאלית של מתעד הרמוני:  
+
+    $$\theta_{(t)} = A\cos{(\omega t + \phi)}$$
+    $$\phi = 0$$
+    $$\omega = \sqrt[]{\frac{mg+kL}{mL}}$$
+    $$\theta_{(t=0)} = \theta_0$$
+    נציב $t=0$ על מנת למצוא את $A$:  
+    
+    $$\theta_{(t=0)} = \theta_0 = A\cos{(\sqrt[]{\frac{mg+kL}{mL}} \cdot 0 + 0)}$$
+    $$\theta_0 = A\cos{(0)}$$
+    $$A = \theta_0$$
+    $$\Downarrow$$
+    $$\theta_{(t)} = \theta_0\cos{(\sqrt[]{\frac{mg+kL}{mL}} t)}$$
+    
     2. המתיחות במוט מושפעת מהכוחות המופעלים על המסה בכיוון המוט, המצב אנכי מופעל כוח הכבידה על המסה, וגם כן כוח צנטירפיטאלי.
     נחשב את הכוח הצנטרפיטאלי על מנת לחברו לכוח המשיכה ובכך נמצא את מתיחות החוט:  
     
     $$r = L$$
     $$\dot{r} = 0$$
     $$\ddot{r} = 0$$
-    $$\theta_{(t)} = \arctan{(k\tan{(\alpha_0)}\cos{(\frac{\sqrt[]{k}}{\sqrt[]{m}} t)})}$$
+    $$\theta = \theta_0\cos{(\sqrt[]{\frac{mg+kL}{mL}} t)}$$
+    $$\dot{\theta} = -\sqrt[]{\frac{mg+kL}{mL}}\theta_0\sin{(\sqrt[]{\frac{mg+kL}{mL}} t)}$$
+    $$\ddot{\theta} = -\frac{mg+kL}{mL}\theta_0\cos{(\sqrt[]{\frac{mg+kL}{mL}} t)}$$
+    $$a = (\ddot{r} - r\dot{\theta}^2)\hat{r} + (2\dot{r}\dot{\theta} + r\ddot{\theta})\hat{\theta}$$
+    נמצא את $a_{\hat{r}}$ מכיוון שאנחנו רוצים למצוא את המתיחות בחוט בלבד ($ma_{\hat{r}} = mg-T$):  
+
+    $$\Downarrow$$
+    $$a_{\hat{r}} = \ddot{r} - r\dot{\theta}^2$$
+    $$a_{\hat{r}} = 0 - L(-\sqrt[]{\frac{mg+kL}{mL}}\theta_0\sin{(\sqrt[]{\frac{mg+kL}{mL}} t)})^2$$
+    $$a_{\hat{r}} = -\cancel{L}\frac{mg+kL}{m\cancel{L}}\theta_0^2\sin^2{(\sqrt[]{\frac{mg+kL}{mL}} t)}$$
+    $$a_{\hat{r}} = -\frac{mg+kL}{m}\theta_0^2\sin^2{(\sqrt[]{\frac{mg+kL}{mL}} t)}$$
+    $$ma_{\hat{r}} = T-mg$$
+    $$T = ma_{\hat{r}}-mg$$
+    $$T = m(a_{\hat{r}}-g)$$
+    $$\Downarrow$$
+    $$T = m(g-\frac{mg+kL}{m}\theta_0^2\sin^2{(\sqrt[]{\frac{mg+kL}{mL}} t)})$$
+    $$T = mg-(mg+kL)\theta_0^2\sin^2{(\sqrt[]{\frac{mg+kL}{mL}} t)}$$
+    נמצא את הזמן $(t)$ כאשר הזווית היא 0 כנתון המערכת במאונך:  
+
+    $$\theta_0\cos{(\sqrt[]{\frac{mg+kL}{mL}} t)} = 0$$
+    $$\cos{(\sqrt[]{\frac{mg+kL}{mL}} t)} = 0$$
+    $$\sqrt[]{\frac{mg+kL}{mL}} t = \frac{\pi}{2}$$
+    $$\frac{\sqrt[]{mg+kL}}{\sqrt[]{mL}} t = \frac{\pi}{2}$$
+    $$t = \frac{\sqrt[]{mL}}{\sqrt[]{mg+kL}}\frac{\pi}{2}$$
+    $$\Downarrow$$
+    $$T = mg-(mg+kL)\theta_0^2\sin^2{(\sqrt[]{\frac{mg+kL}{mL}} \frac{\sqrt[]{mL}}{\sqrt[]{mg+kL}}\frac{\pi}{2})}$$
+    $$T = mg-(mg+kL)\theta_0^2\sin^2{(\frac{\pi}{2})}$$
+    $$T = mg-(mg+kL)\theta_0^2$$
+
 5. נתון
 
     $$m$$
