@@ -64,21 +64,22 @@
     $$\alpha_0$$
     1. צ"ל $\alpha$
 
-    $$I.\ \ \ \tan{\alpha} = \frac{\Delta x}{L}$$
-    $$II.\ \ \ \tan{\alpha_0} = \frac{\Delta x_0}{L}$$
-    $$III.\ \ \ \Delta x_0k = A$$
+    $$I.\ \ \ \sin{\alpha} = \frac{\Delta x}{L}$$
+    $$II.\ \ \ \sin{\alpha_0} = \frac{\Delta x_0}{L}$$
+    $$III.\ \ \ \Delta x_0 = A$$
     $$IV.\ \ \ \omega = \frac{\sqrt[]{k}}{\sqrt[]{m}}$$
-    $$V.\ \ \ x_{(t)} = l_0 + A\cos{(\omega t)}$$
+    $$V.\ \ \ x_{(t)} = l_0 + A\cos{(\omega t + \phi)}$$
+    $$VI.\ \ \ \tan{\phi} = \frac{v_0 = 0}{\omega \Delta x_0} \Rightarrow \phi = 0$$
     $$\Downarrow$$
-    $$II.\ \ \ \Delta x_0 = L\tan{\alpha_0}$$
-    $$III.\ \ \ A = Lk\tan{\alpha_0}$$
-    $$V.\ \ \ x_{(t)} = l_0 + Lk\tan{\alpha_0}\cos{(\frac{\sqrt[]{k}}{\sqrt[]{m}} t)}$$
-    $$I.\ \ \ \tan{\alpha} = \frac{x - l_0}{L}$$
-    $$I.\ \ \ L\tan{\alpha} = x - l_0$$
-    $$I.\ \ \ x = L\tan{\alpha} + l_0$$
-    $$V.\ \ \ \cancel{L}\tan{\alpha} + \cancel{l_0} = \cancel{l_0} + \cancel{L}k\tan{\alpha_0}\cos{(\frac{\sqrt[]{k}}{\sqrt[]{m}} t)}$$
-    $$V.\ \ \ \tan{\alpha} = k\tan{\alpha_0}\cos{(\frac{\sqrt[]{k}}{\sqrt[]{m}} t)}$$
-    $$\alpha_{(t)} = \arctan{(k\tan{(\alpha_0)}\cos{(\frac{\sqrt[]{k}}{\sqrt[]{m}} t)})}$$
+    $$II.\ \ \ \Delta x_0 = L\sin{\alpha_0}$$
+    $$III.\ \ \ A = L\sin{\alpha_0}$$
+    $$V.\ \ \ x_{(t)} = l_0 + L\sin{\alpha_0}\cos{(\frac{\sqrt[]{k}}{\sqrt[]{m}} t)}$$
+    $$I.\ \ \ \sin{\alpha} = \frac{x - l_0}{L}$$
+    $$I.\ \ \ L\sin{\alpha} = x - l_0$$
+    $$I.\ \ \ x = L\sin{\alpha} + l_0$$
+    $$V.\ \ \ \cancel{L}\sin{\alpha} + \cancel{l_0} = \cancel{l_0} + \cancel{L}\sin{\alpha_0}\cos{(\frac{\sqrt[]{k}}{\sqrt[]{m}} t)}$$
+    $$V.\ \ \ \sin{\alpha} = \sin{\alpha_0}\cos{(\frac{\sqrt[]{k}}{\sqrt[]{m}} t)}$$
+    $$\alpha_{(t)} = \arcsin{(k\sin{(\alpha_0)}\cos{(\frac{\sqrt[]{k}}{\sqrt[]{m}} t)})}$$
     2. המתיחות במוט מושפעת מהכוחות המופעלים על המסה בכיוון המוט, המצב אנכי מופעל כוח הכבידה על המסה, וגם כן כוח צנטירפיטאלי.
     נחשב את הכוח הצנטרפיטאלי על מנת לחברו לכוח המשיכה ובכך נמצא את מתיחות החוט:  
     
