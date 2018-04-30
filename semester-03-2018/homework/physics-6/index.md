@@ -164,7 +164,40 @@
     $$T = \frac{2 \pi}{\omega}$$
     $$T = \frac{2 \pi\sqrt[]{m}}{\sqrt[]{2Aa}}$$
 6. **עשינו בכיתה**
-7. **להשלים**
+7. 
+    1.
+
+    $$x_2 = A\cos{(\omega_2 t + \phi)}$$
+    $$A = -\frac{l}{2}$$
+    $$\phi = 0$$
+    $$x_2 = -\frac{l}{2}\cos{(\omega_2 t)}$$
+    $m_1$ מתחילה לזוז כש-$m_2$ מגיעה למצב שיווי משקל, וזאת מכיוון שברגע זה הקפיץ כבר לא דוחף את הגופים, אלא מושך - זאת אומרת כאשר $x_2 = 0$: 
+
+    $$0 = -\frac{l}{2}\cos{(\omega_2 t)}$$
+    $$0 = \cos{(\omega_2 t)}$$
+    $$\omega_2 t = \frac{\pi}{2}$$
+    $$\omega_2 = \sqrt[]{\frac{k}{m_2}}$$
+    $$\sqrt[]{\frac{k}{m_2}} t = \frac{\pi}{2}$$
+    $$ t = \frac{\pi}{2}\sqrt[]{\frac{m_2}{k}}$$
+
+    2.
+    
+    $$x_{cm} = \frac{m_1x_1 + m_2x_2}{m_1+m_2} = -\frac{m_1 l}{m_1+m_2}$$
+    $$v_{cm_{(t)}} = v_{cm_{(t = t_0)}}$$
+    $$v_2 = -\omega \frac{l}{2}\sin{(\omega t_0)}$$
+    $$t_0 = \frac{\frac{\pi}{2}}{\omega}$$
+    $$\Downarrow$$
+    $$v_2 = -\omega \frac{l}{2}\sin{(\omega \frac{\frac{\pi}{2}}{\omega})}$$
+    $$v_2 = -\omega \frac{l}{2}\sin{(\frac{\pi}{2})}$$
+    $$v_2 = -\omega \frac{l}{2}\cdot 1 $$
+    $$v_2 = -\omega \frac{l}{2} $$
+    $$v_1 = 0$$
+    $$v_{cm} = \frac{m_1v_1+m_2v_2}{m_1+m_2}$$
+    $$v_{cm} = \frac{0-m_2\omega \frac{l}{2}}{m_1+m_2}$$
+    $$v_{cm} = -\frac{m_2\omega \frac{l}{2}}{m_1+m_2}$$
+    $$x_{cm} = v_{cm} t + x_{cm_{0}}$$
+    $$x_{cm} = -\frac{m_2\omega \frac{l}{2}}{m_1+m_2} t - \frac{m_1l}{m_1+m_2}$$
+
 8. **עשינו בכיתה**
 9. 
 
