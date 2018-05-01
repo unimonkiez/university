@@ -9,14 +9,39 @@
 
 ### מטלה 3 חדו"א - יובל סרף
 1. חשב את הגבולות הבאים:  
-    1. $$\lim_{x \rightarrow 8}\frac{\sqrt[]{1 - x} - 3}{2+\sqrt[3]{x}}$$  
-    <!-- פתרון:   -->
+    1. $$\lim_{x \rightarrow -8}\frac{\sqrt[]{1 - x} - 3}{2+\sqrt[3]{x}}$$  
+    פתרון:  
 
-    2. $$\lim_{x \rightarrow 5}\frac{x^3-10x^2+25x}{x^4-50x^2+625}$$  
+    $$x = t^3$$
+    $$x \rightarrow -8 = t \rightarrow -2$$
+    $$\lim_{t \rightarrow -2}\frac{\sqrt[]{1 - t^3} - 3}{2+\sqrt[3]{t^3}}$$  
+    $$\lim_{t \rightarrow -2}\frac{\sqrt[]{1 - t^3} - 3}{2+t}$$  
+    $$\lim_{t \rightarrow -2}\frac{(\sqrt[]{1 - t^3} - 3)(\sqrt[]{1 - t^3} + 3)}{(2+t)(\sqrt[]{1 - t^3} + 3)}$$  
+    $$\lim_{t \rightarrow -2}\frac{1-t^3-9}{(2+t)(\sqrt[]{1 - t^3} + 3)}$$  
+    $$\lim_{t \rightarrow -2}\frac{-t^3-8}{(2+t)(\sqrt[]{1 - t^3} + 3)}$$  
+    $$\lim_{t \rightarrow -2}\frac{-(t^3+8)}{(2+t)(\sqrt[]{1 - t^3} + 3)}$$  
+    $$\lim_{t \rightarrow -2}\frac{-(t+2)(t^2-2t+4)}{(2+t)(\sqrt[]{1 - t^3} + 3)}$$  
+    $$\lim_{t \rightarrow -2}\frac{-t^2+2t-4}{\sqrt[]{1 - t^3} + 3} = \frac{-4-4-4}{\sqrt[]{1+8}+3} = \frac{-12}{6} = -2$$  
 
-    3. $$\lim_{x \rightarrow \frac{\pi}{4}}\frac{cos{x}-\sin{x}}{\cos{2x}}$$  
+    2. $$\lim_{x \rightarrow 5}\frac{x^3-10x^2+25x}{x^4-50x^2+625}$$ 
+    $$\lim_{x \rightarrow 5}\frac{x(x^2-10x+25)}{(x^2-25)^2}$$ 
+    $$\lim_{x \rightarrow 5}\frac{x(x-5)^2}{((x+5)(x-5))^2}$$ 
+    $$\lim_{x \rightarrow 5}\frac{x(x-5)^2}{(x+5)^2(x-5)^2}$$ 
+    $$\lim_{x \rightarrow 5}\frac{x}{(x+5)^2} = \frac{5}{10^2} = \frac{1}{20}$$ 
 
-    4. $$\lim_{x \rightarrow \infty}\frac{1+\sqrt[]{x}+\sqrt[3]{x}}{1+\sqrt[4]{x}+\sqrt[3]{x}}$$  
+    3. $$\lim_{x \rightarrow \frac{\pi}{4}}\frac{cos{x}-\sin{x}}{\cos{2x}}$$
+    $$\lim_{x \rightarrow \frac{\pi}{4}}\frac{cos{x}-\sin{x}}{\cos^2{x}-\sin^2{x}}$$  
+    $$\lim_{x \rightarrow \frac{\pi}{4}}\frac{cos{x}-\sin{x}}{(\cos{x}-\sin{x})(\cos{x}+\sin{x})}$$  
+    $$\lim_{x \rightarrow \frac{\pi}{4}}\frac{1}{\cos{x}+\sin{x}}=\sqrt[]{\frac{1}{2}}$$
+
+    4. $$\lim_{x \rightarrow \infty}\frac{\ln(1+\sqrt[]{x}+\sqrt[3]{x})}{\ln(1+\sqrt[4]{x}+\sqrt[3]{x})}$$
+    $$\lim_{x \rightarrow \infty}\frac{\ln(\sqrt[]{x}(1+\frac{1}{\sqrt[]{x}}+\frac{\sqrt[3]{x}}{\sqrt[]{x}}))}{\ln(\sqrt[3]{x}(1+\frac{1}{\sqrt[3]{x}}+\frac{\sqrt[4]{x}}{\sqrt[3]{x}}))}$$
+    $$\lim_{x \rightarrow \infty}\frac{\ln(x^{\frac{1}{2}}(1+x^{-\frac{1}{2}}+x^{-\frac{1}{6}}))}{\ln(x^{\frac{1}{3}}(1+x^{-\frac{1}{3}}+x^{-\frac{1}{12}}))}$$
+    $$\lim_{x \rightarrow \infty}\frac{\ln{(x^{\frac{1}{2}})}+\ln(1+x^{-\frac{1}{2}}+x^{-\frac{1}{6}})}{\ln{(x^{\frac{1}{3}})}+\ln(1+x^{-\frac{1}{3}}+x^{-\frac{1}{12}})}$$
+    $$\lim_{x \rightarrow \infty}\frac{\frac{1}{2}\ln{(x)}+\ln(1+x^{-\frac{1}{2}}+x^{-\frac{1}{6}})}{\frac{1}{3}\ln{(x)}+\ln(1+x^{-\frac{1}{3}}+x^{-\frac{1}{12}})} =
+    \frac{\frac{1}{2}\ln{(x)}+\ln(1+0+0)}{\frac{1}{3}\ln{(x)}+\ln(1+0+0)}=
+    \frac{\frac{1}{2}\ln{(x)}+0}{\frac{1}{3}\ln{(x)}+0}= \frac{\frac{1}{2}}{\frac{1}{3}} = \frac{3}{2}
+    $$
 
     5. $$\lim_{x \rightarrow 0}(1+x^2)^{\cot^2{x}}$$  
 
