@@ -103,6 +103,19 @@
     $$v = \frac{F\Delta t}{M+m}$$
     $$\Downarrow$$
     $$v = \frac{100 \cdot 10}{500+200} = \frac{1000}{700} = \frac{10}{7}_{\frac{m}{s}}$$
-8. **להשלים**
+8. 
+    $$\Delta p = F\Delta t$$
+    $$P_0 = \Delta mu + M_{(t)}v_{(t)}$$
+    $$P_1 = (M_{(t)} + \Delta m)v_{(t + \Delta t)}$$
+    $$-\Delta mu - M_{(t)}v_{(t)} + (M_{(t)} + \Delta m)v_{(t + \Delta t)} = F\Delta t$$
+    $$-\Delta mu - M_{(t)}v_{(t)} + (M_{(t)} + \Delta m)(v_{(t)} + \frac{\delta v}{\delta t}\Delta t) = F\Delta t$$
+    $$-\Delta mu - M_{(t)}v_{(t)} - M_{(t)}v_{(t)} + M_{(t)}\frac{\delta v}{\delta t}\Delta t + \Delta mv_{(t)} \cancel{+ \Delta m\frac{\delta v}{\delta t}\Delta t}= F\Delta t$$
+    $$-\Delta mu + M_{(t)}\frac{\delta v}{\delta t}\Delta t + \Delta mv_{(t)}= F\Delta t$$
+    $$\Delta m(v-u) + M_{(t)}\frac{\delta v}{\delta t}\Delta t= F\Delta t$$
+    $$M\frac{\delta v}{\delta t}\Delta t= F\Delta t - \Delta m(v-u)$$
+    $$M\frac{\delta v}{\delta t}\Delta t= F\Delta t + \Delta m(u-v)$$
+    $$\frac{\delta v}{\delta t}= \frac{F\Delta t + \Delta m(u-v)}{M\Delta t}$$
+    $$\frac{\delta v}{\delta t}= \frac{F\Delta t + B\Delta t(u-v)}{M\Delta t}$$
+    $$\frac{\delta v}{\delta t}= \frac{F + B(u-v)}{M}$$
 9. **עשינו בכיתה**
 10. **להשלים**
