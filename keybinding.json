@@ -1,0 +1,99 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    {
+        "key": "cmd+m 4",
+        "command": "editor.action.insertSnippet",
+        "args": { "snippet": "$$1$" },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+m enter",
+        "command": "editor.action.insertSnippet",
+        "args": { "snippet": "\n\n$$$1$$" },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+m shift+enter",
+        "command": "editor.action.insertSnippet",
+        "args": { "snippet": "\n$$$1$$" },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+m e",
+        "command": "editor.action.insertSnippet",
+        "args": { "snippet": "\\epsilon" },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+m i",
+        "command": "editor.action.insertSnippet",
+        "args": { "snippet": "\\infty" },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+m l",
+        "command": "editor.action.insertSnippet",
+        "args": { "snippet": "\\lim_{n \\rightarrow \\infty}" },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+m cmd+l",
+        "command": "editor.action.insertSnippet",
+        "args": { "snippet": "\\lim_{x \\rightarrow x_0}" },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+m f",
+        "command": "editor.action.insertSnippet",
+        "args": { "snippet": "\\frac{$1}{}" },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+m h",
+        "command": "editor.action.insertSnippet",
+        "args": { "snippet": "\\hat{$1}" },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+m s",
+        "command": "editor.action.insertSnippet",
+        "args": { "snippet": "\\sqrt[]{$1}" },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+m v",
+        "command": "editor.action.insertSnippet",
+        "args": { "snippet": "\\vec{$1}" },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+m shift+6",
+        "command": "editor.action.insertSnippet",
+        "args": { "snippet": "^{$1}" },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+m shift+-",
+        "command": "editor.action.insertSnippet",
+        "args": { "snippet": "_{$1}" },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+m shift+1",
+        "command": "editor.action.insertSnippet",
+        "args": { "snippet": "\\urcorner" },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+m shift+\\",
+        "command": "editor.action.insertSnippet",
+        "args": { "snippet": "\\vee" },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+m shift+7",
+        "command": "editor.action.insertSnippet",
+        "args": { "snippet": "\\wedge" },
+        "when": "editorTextFocus"
+    },
+]
