@@ -44,23 +44,48 @@
 
 6. **להשלים**
 7. 1.
-    $$$$
-8. **להשלים**
-9. **להשלים**
-10.
-    $$G = -6.67\cdot 10^{-11}_{\frac{m}{s^2}}$$
-    $$M_e = 6\cdot 10^{24}_{kg}$$
-    $$M_m = 7\cdot 3\cdot 10^{22}_{kg}$$
-    $$R_e = 6.4\cdot 10^6_{m}$$
-    $$R_m = 1.7\cdot 10^6_{m}$$
-    $$R_{me} = 3.8\cdot 10^{8}_{m}$$
-    $$m=50_{kg}$$
+    $$\dot{\theta}_1 = \omega_1$$
+    $$r_1 = l_1$$
+    $$r_2 = l_2$$
+    $$\dot{\theta}_2 = ?$$
     $$\Downarrow$$
+    $$\vec{F}_1 = T_1 = ma_1$$
+    $$\vec{F}_2 = T_2 = ma_2$$
+    $$\Downarrow$$
+    $$a_1 = (0 - l_1\omega_1^2)\hat{r} + 0\hat{\theta}$$
+    $$a_2 = (0 - l_2\dot{\theta}_2^2)\hat{r} + 0\hat{\theta}$$
+    $$\Downarrow$$
+    $$-l_1\omega_1^2 = -l_2\dot{\theta}_2^2$$
+    $$\dot{\theta}_2^2=\frac{l_1}{l_2}\omega_1^2$$
+    $$\dot{\theta}_2=\sqrt{\frac{l_1}{l_2}}\omega_1$$
+    2.
+    $$E_{k_1} = \frac{1}{2}mv_1^2 = \frac{1}{2}m(\omega_1l_1)^2 = \frac{1}{2}ml_1^2\omega_1^2$$
+    $$E_{k_2} = \frac{1}{2}mv_2^2 = \frac{1}{2}m(\sqrt{\frac{l_1}{l_2}}\omega_1l_2)^2 = \frac{1}{2}ml_1l_2\omega_1^2$$
+    $$\Delta E_k = E_{k_2}-E_{k_1}$$
+    $$\Downarrow$$
+    $$\Delta E_k = \frac{1}{2}ml_1l_2\omega_1^2 - \frac{1}{2}ml_1^2\omega_1^2$$
+    $$\Delta E_k = \frac{1}{2}ml_1\omega_1^2(l_2 - l_1)$$
+    חישבנו את השינוי באנרגיה הקינטית, כעת נחשב את העבודה שנעשתה במשיכה ונקווה שהם זהים.  
+    מכיוון שהחוט נמשך במהירות זהה, אז תאוצתו אפסית, ולכן המתיחות שלו בהתחלה שווה למתיחות שלו בסוף (לא מופעלים כוחות נוספים).
 
-    $$u_e = -\frac{GM_em}{R_e}$$
-    $$u_m = -\frac{GM_mm}{R_{me}}$$
 
+    $$T_1 = m((0 - l_1\omega_1^2)\hat{r} + 0\hat{\theta}) = -ml_1\omega_1^2$$
+    $$W = \int_{l_1}^{l_2}\sum F_{(r)}$$
+    $$\sum F_{(r)} = T_{(r)} = T_1$$
+    $$\Downarrow$$
+    $$W = \int_{l_1}^{l_2}-ml_1\omega_1^2 \delta x$$
+    $$W =-ml_1\omega_1^2x |_{l_1}^{l_2}$$
+    $$W =-ml_1\omega_1^2(l_2 - l_1)$$
 
-    $$u_T^E = -G(\frac{M_em}{R_e} + \frac{M_mm}{R_{me}}) = -3.1\cdot 10^9_J$$
-    $$u_T^M = -G(\frac{M_em}{R_{me}} + \frac{M_mm}{R_{m}}) = -2\cdot 10^8_J$$
-    $$\Delta u = u_T^M - u_T^E = 6.9\cdot 10^9_{J} = 6.9\cdot 10^5_{kal}$$
+8. **עשינו בכיתה**
+9. 
+    $$E_1 = mg(-6L+3L) = -3mgL$$
+    $$E_2 = -9mgL + \frac{1}{2}mv^2$$
+    $$E_1 = E_2$$
+    $$\Downarrow$$
+    $$-3mgL = -9mgL + \frac{1}{2}mv^2$$
+    $$\frac{1}{2}mv^2=6mgL$$
+    $$mv^2=12mgL$$
+    $$v^2=12gL$$
+    $$|v|=\sqrt{12gL}$$
+10. **עשינו בכיתה**
