@@ -55,8 +55,50 @@
     $$y=1-x$$
 
 3. $$g_{(x)} = (1-x^2)f_{(x)}$$
+    הפונקציה $g_{(x)}$ גם כן גזירה ורציפה בקטע $[-1, 1]$ מכיוון שהיא הרכבה של 2 פונקציות רציפות (אחת נתון השנייה אלמנטרית).  
+    בנוסף:  
+    
+    $$g(-1) = (1-(-1)^2)f_{(x)} = 0\cdot f_{(x)} = 0$$
+    $$g(1) = (1-1^2)f_{(x)} = 0\cdot f_{(x)} = 0$$
+
+    $g_{(1)} = g_{(-1)}$, ולכן, עפ"י משפט רול, קיימת נקודה $c$ כאשר $-1<c<1$ כך ש-$g'(c) = 0$, מש"ל.
 
 4.  
+    1. צ"ל: $(a-b)e^{-a}<e^{-b} - e^{-a}<(a-b)e^{-b}$  
+        
+        נגדיר $f_{(x)} = e^{-x}$, רציפה וגזירה לכל $x$, בפרט בקטע $[a, b]$.  
+        לפי משפט לגרנג', אז קיימת נקודה $c$ כך ש-$a<c<b$ וגם $f'_{(c)}=\frac{f_{(b)} - f_{(a)}}{b-a}$
+
+        $$f'_{(c)}=\frac{f_{(b)} - f_{(a)}}{b-a}$$
+        $$-e^{-c}=\frac{e^{-b} - e^{-a}}{b-a}$$
+        $$e^{-c}=\frac{e^{-b} - e^{-a}}{a-b}$$
+        $$a<c<b$$
+        $$\Downarrow$$
+        $$e^a<e^c<e^b$$
+        $$e^{-b}<e^{-c}<e^{-a}$$
+        $$\Downarrow$$
+        $$e^{-b}<\frac{e^{-b} - e^{-a}}{a-b}<e^{-a}$$
+        $$(a-b)e^{-a}<e^{-b} - e^{-a}<(a-b)e^{-b}$$
+
+        מש"ל
+
+    2. צ"ל: $\frac{x}{1+x}<\ln{(1+x)}<x$, לכל $x>0$
+
+        נגדיר $f_{(x)} = ln{(1+x)}$, רציפה וגזירה לכל $x\geq 0$, בפרט בקטע $[1, x]$.  
+        לפי משפט לגרנג', אז קיימת נקודה $c$ כך ש-$0<c<x$ וגם $f'_{(c)}=\frac{f_{(x)} - f_{(0)}}{x-0}$
+
+        $$f'_{(c)}=\frac{f_{(x)} - f_{(0)}}{x-0}$$
+        $$\frac{1}{1+c}=\frac{\ln{(1+x)} - 0}{x-0}$$
+        $$\frac{1}{1+c}=\frac{\ln{(1+x)}}{x}$$
+        $$1+c=\frac{x}{\ln{(1+x)}}$$
+        $$0<c<x$$
+        $$1<1+c<1+x$$
+        $$\Downarrow$$
+        $$1<\frac{x}{\ln{(1+x)}}<1+x$$
+        $$\frac{1}{1+x}<\frac{\ln{(1+x)}}{x}<1$$
+        $$\frac{x}{1+x}<\ln{(1+x)}<x$$
+
+        מש"ל
 5.  
 6. 
     1. $$\lim_{x \rightarrow 0}\frac{\ln{(\cos{(\arcsin{x})})}}{x\cdot\cos{x}\cdot e^x}$$
@@ -66,7 +108,18 @@
     $$\lim_{x \rightarrow 0}\frac{-x}{\sqrt[]{1-x^2}\cos{(\arcsin{x})}e^x(\cos{x}-x\sin{x}+x\cos{x})} = \frac{0}{1 \cdot 1 \cdot 1(1 - 0 + 0)} = 0$$
     
     2. $$\lim_{x \rightarrow 0^+}x^{\sin{x}}$$
-    $$\lim_{x \rightarrow 0^+}0^0 = 1$$
+    $$\lim_{x \rightarrow 0^+}e^{\ln{(x^{\sin{x}})}}$$
+    $$e^{\lim_{x \rightarrow 0^+}\ln{(x^{\sin{x}})}}$$
+    $$\Downarrow$$
+    $$\lim_{x \rightarrow 0^+}\ln{(x^{\sin{x}})}$$
+    $$\lim_{x \rightarrow 0^+}\sin{x}\cdot \ln{x}$$
+    $$\lim_{x \rightarrow 0^+}\frac{\ln{x}}{\frac{1}{\sin{x}}}$$
+    $$(\frac{0}{0}) \Downarrow (Lupital)$$
+    $$\lim_{x \rightarrow 0^+}\frac{\frac{1}{x}}{\frac{-\cos{x}}{\sin^2{x}}}$$
+    $$\lim_{x \rightarrow 0^+}\frac{\sin^2{x}}{-x\cos{x}}$$
+    $$\lim_{x \rightarrow 0^+}\cancel{\frac{\sin{x}}{x}}\frac{\sin{x}}{-\cos{x}} = 0$$
+    $$\Downarrow$$
+    $$\lim_{x \rightarrow 0^+}x^{\sin{x}} = e^0 = 1$$
 
     3. $$\lim_{x \rightarrow \infty}(e^{3x}-5x)^{\frac{1}{x}}$$
     $$\lim_{x \rightarrow \infty}e^{\ln{(e^{3x}-5x)^{\frac{1}{x}}}}$$
@@ -83,6 +136,15 @@
     4. $$\lim_{x \rightarrow \frac{\pi}{4}}\frac{\sqrt[3]{\tan{x}} - 1}{2\sin^2{x} - 1}$$
     $$(\frac{0}{0}) \Downarrow (Lupital)$$
     $$\lim_{x \rightarrow \frac{\pi}{4}}\frac{(\tan^{\frac{1}{3}}{x})'}{(2\sin^2{x})'}$$
-    $$\lim_{x \rightarrow \frac{\pi}{4}}\frac{\frac{\cos{x}}{3\sin^{\frac{2}{3}}{x}}\frac{1}{\cos^{\frac{1}{3}}{x}} - \sin^{\frac{1}{3}}{x}\frac{3\cos^{\frac{2}{3}}{x}}{\sin{x}}}{4\sin{x}\cos{x}}$$
-    $$\lim_{x \rightarrow \frac{\pi}{4}}\frac{\frac{\cos^{\frac{2}{3}}{x}}{3\sin^{\frac{2}{3}}{x}}-\frac{3\cos^{\frac{2}{3}}{x}}{\sin^{}\frac{2}{3}{x}}}{4\sin{x}\cos{x}}$$
-    $$\lim_{x \rightarrow \frac{\pi}{4}}\frac{0}{4\sin{x}\cos{x}}$$
+    $$\lim_{x \rightarrow \frac{\pi}{4}}\frac{\frac{1}{3tan^{\frac{2}{3}}{x}\cos^2{x}}}{4\sin{x}\cos{x}}$$
+    $$\lim_{x \rightarrow \frac{\pi}{4}}\frac{1}{3tan^{\frac{2}{3}}{x}\cos^2{x}4\sin{x}\cos{x}}$$
+    $$\lim_{x \rightarrow \frac{\pi}{4}}\frac{1}{12tan^{\frac{2}{3}}{x}\cos^3{x}\sin{x}}$$
+    $$\lim_{x \rightarrow \frac{\pi}{4}}\frac{1}{12\cos^{\frac{7}{3}}{x}\sin^{\frac{5}{3}}{x}}$$
+    $$\lim_{x \rightarrow \frac{\pi}{4}}(\frac{1}{12^3\cos^7{x}\sin^5{x}})^{\frac{1}{3}}$$
+    $$\lim_{x \rightarrow \frac{\pi}{4}}(\frac{1}{2^{\frac{1}{5}}12^3\cos^2{x}(2\cos{x}\sin{x})^5})^{\frac{1}{3}}$$
+    $$2\cos{x}\sin{x} = \sin{(2x)}$$
+    $$\Downarrow$$
+    $$\lim_{x \rightarrow \frac{\pi}{4}}(\frac{1}{2^{\frac{1}{5}}12^3\cos^2{x}\sin^5{(2x)}})^{\frac{1}{3}}$$
+    $$\lim_{x \rightarrow \frac{\pi}{4}}\frac{1}{2^{\frac{1}{15}}12\cos^{\frac{2}{3}}{x}\sin^{\frac{5}{3}}{(2x)}}$$
+    $$\lim_{x \rightarrow \frac{\pi}{4}}\frac{1}{2^{\frac{1}{15}}\cdot 12\cdot 1^{\frac{2}{3}}\cdot 1^{\frac{5}{3}}}=\frac{1}{12\cdot 2^{\frac{1}{15}}}$$
+    
