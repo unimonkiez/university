@@ -115,7 +115,7 @@
         $$E_{pot} - 0 = \int^{\infty}_r (\vec{F}) \delta r$$
         $$E_{pot} = \int^{\infty}_r (\frac{kq_1q_2}{r^2}) \delta r$$
         $$E_{pot} = -(\frac{kq_1q_2}{r})|^{\infty}_r$$
-        $$E_{pot} = \frac{kq_1q_2}{r}$$
+        $$E_{pot} = -\frac{kq_1q_2}{r}$$
     2.
         מכיוון ש-$\vec{r}, \vec{F}$ מקבילים, זאת אומרת ש-
         
@@ -124,13 +124,41 @@
         $$\vec{L} = cosnt = \vec{r}\times \vec{v}$$
 
         וקטור התנע הזוויתי מאונך למישור שמוגדר ע"י $\vec{r},\vec{v}$ ומכיוון שהוא עצמו קבוע, גם מישור זה קבוע
+    3.
+        $$\vec{L} = mr^2\dot{\theta}\hat{z}$$
+        $$|L| = mr^2\dot{\theta}$$
+        $$\dot{\theta} = \frac{|L|}{mr^2}$$
+    4.
+        $$E_{(t=0)} = E_0$$
+        $$L_{(t=0)} = L_E$$
+        $$\Downarrow$$
+        $$E_{(t)} = \frac{1}{2}m\dot{r}^2 + \frac{L^2}{2mr^2}-\frac{kq_1q_2}{r}$$
+        כאשר מרחק מקסימלי\מינימלי אז $\dot{r} = 0$
+
+        $$\Downarrow$$
+        $$E_{(min, max)} = \frac{L^2}{2mr^2}-\frac{kq_1q_2}{r}$$
+        שימור אנרגיה וגם תנע זווויתי, לכן: 
+        
+        $$E_0 = \frac{L_0^2}{2mr^2}-\frac{kq_1q_2}{r}$$
+        $$x = \frac{1}{r}$$
+        $$E_0 = \frac{L_0^2}{2m}x^2-kq_1q_2x$$
+        $$\frac{L_0^2}{2m}x^2-kq_1q_2x-E_0=0$$
+        $$x_{1,2} = \frac{kq_1q_2\pm\sqrt[]{(kq_1q_2)^2-\frac{4E_0L_0^2}{2m}}}{\frac{L_0^2}{2m}}$$
+        $$x_{1,2} = \frac{kq_1q_2\pm\sqrt[]{(kq_1q_2)^2-\frac{2E_0L_0^2}{m}}}{\frac{L_0^2}{2m}}$$
+        $$x_{1,2} = \frac{2mkq_1q_2\pm\sqrt[]{(2mkq_1q_2)^2-8mE_0L_0^2}}{L_0^2}$$
+        $$r=\frac{1}{x} \Downarrow$$
+        $$r_{1,2} = \frac{L_0^2}{2mkq_1q_2\pm\sqrt[]{(2mkq_1q_2)^2-8mE_0L_0^2}}$$
 9. 
     1.
         $$\vec{L} = \vec{r}\times \vec{p}$$
-        $$\vec{r} = 0$$
+        $$\vec{L} = \vec{r}\times m\vec{v}$$
+        $$\vec{r} = v_0\cos{\theta_0}t\hat{x} + (v_0\cos{\theta_0}t-\frac{1}{2}gt^2)\hat{y}$$
+        $$\vec{v} = v_0\cos{\theta_0}\hat{x} + (v_0\cos{\theta_0}-gt)\hat{y}$$
         $$\Downarrow$$
-        $$\vec{L} = 0$$
+        $$\vec{L} = m(\cancel{v_0^2\cos{\theta_0}\cos{\theta_0}}-gv_0\cos{\theta_0}t^2-\cancel{v_0^2\cos{\theta_0}\cos{\theta_0}}+\frac{1}{2}gv_0\cos{\theta_0}t^2)\hat{z}$$
+        $$\vec{L} = m(\frac{1}{2}gv_0\cos{\theta_0}t^2-gv_0\cos{\theta_0}t^2)\hat{z}$$
+        $$\vec{L} = -\frac{m}{2}gv_0\cos{\theta_0}t^2\hat{z}$$
     2.
-        $$\vec{F} = \frac{\Delta \vec{L}}{\delta t}$$
-        $$\vec{F} = \frac{\vec{L}_{max}}{\delta t}$$
-
+        $$\vec{\tau} = \frac{\delta \vec{L}}{\delta t}$$
+        $$\vec{\tau} = -mgv_0\cos{\theta_0}t\hat{z}$$
+        
