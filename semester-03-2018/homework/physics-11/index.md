@@ -76,30 +76,61 @@
     3.
 
 6. 
-    $$v_0 = (\frac{GM_e}{R_e})^{\frac{1}{2}}$$
-    $$E = E_k +U_{eff}$$
-    $$E = E_{t=0} = E_{t_0}$$
+    $$\vec{L_1} = \vec{L_0}$$
+    $$E_1 = E_0$$
     $$\Downarrow$$
-    $$\frac{1}{2}mv_0^2-\frac{GMm}{R_e}= 0-\frac{GMm}{R_e + h}$$
-    $$v_0^2-\frac{2GM}{R_e}=-\frac{2GM}{R_e + h}$$
-    $$v_0^2=\frac{2GM(R_e + h)-2GMR_e}{R_e(R_e + h)}$$
-    $$v_0^2=\frac{2GM((R_e + h)-R_e)}{R_e(R_e + h)}$$
-    $$v_0^2=\frac{2GMh}{R_e(R_e + h)}$$
-    $$v_0^2R_e(R_e + h)=2GMh$$
-    $$v_0^2R_e^2 + v_0^2R_eh=2GMh$$
-    $$2GMh-v_0^2R_eh=v_0^2R_e^2$$
-    $$h(2GM-v_0^2R_e)=v_0^2R_e^2$$
-    $$h=\frac{v_0^2R_e^2}{2GM-v_0^2R_e}$$
-    $$\Downarrow$$
-    $$h=\frac{v_0^2R_e^2}{2GM-v_0^2R_e}$$
-    $$v_{r_0} = v_0 \cdot \cos{\alpha}$$
-    $$\Downarrow$$
-    $$h=\frac{(\frac{GM_e}{R_e})\cos^2{\alpha}R_e^2}{2GM-(\frac{GM_e}{R_e})\cos^2{\alpha}R_e}$$
-    $$h=\frac{(GM_e)\cos^2{\alpha}R_e}{2GM-(GM_e)\cos^2{\alpha}}$$
-    $$h=\frac{(GM_e)\cos^2{\alpha}R_e}{GM(2-\cos^2{\alpha})}$$
-    $$h=\frac{\cos^2{\alpha}R_e}{2-\cos^2{\alpha}}$$
-    $$\alpha=60\deg \rightarrow \cos{\alpha} = 0.5 \Downarrow$$
-    $$h=\frac{0.25R_e}{2-0.25} = \frac{R_e}{7}$$
+    $$1. \ \ \ mr_1v_1 = mRv_0\sin{\alpha}$$
+    $$2. \ \ \ \frac{1}{2}mv_1^2 - \frac{GMm}{r_1} = \frac{1}{2}mv_0^2-\frac{GMm}{R}$$
+    $$1. \ \ \ r_1v_1 = Rv_0\sin{\alpha}$$
+    $$1. \ \ \ v_1 = \frac{Rv_0\sin{\alpha}}{r_1}$$
+    $$2. \ \ \ v_1^2 - \frac{2GM}{r_1} = v_0^2-\frac{2GM}{R}$$
+    $$v_1 = \frac{Rv_0\sin{\alpha}}{r_1} \Downarrow$$
+    $$\frac{R^2v_0^2\sin^2{\alpha}}{r_1^2} - \frac{2GM}{r_1} = v_0^2-\frac{2GM}{R}$$
+    $$\frac{R^2v_0^2\sin^2{\alpha}}{r_1^2} - v_0^2=\frac{2GM}{r_1}-\frac{2GM}{R}$$
+    $$v_0^2(\frac{R^2\sin^2{\alpha}}{r_1^2} - 1)=2GM(\frac{1}{r_1}-\frac{1}{R})$$
+    $$v_0 = (\frac{GM}{R})^{\frac{1}{2}} \Downarrow$$
+    $$\frac{GM}{R}(\frac{R^2\sin^2{\alpha}}{r_1^2} - 1)=2GM(\frac{1}{r_1}-\frac{1}{R})$$
+    $$\frac{R\sin^2{\alpha}}{r_1^2} -\frac{1}{R}=\frac{2}{r_1}-\frac{2}{R}$$
+    $$\frac{R\sin^2{\alpha}}{r_1^2} +\frac{1}{R}-\frac{2}{r_1}=0$$
+    $$x = \frac{1}{r_1} \Downarrow$$
+    $$R\sin^2{\alpha}x^2-2x +\frac{1}{R}=0$$
+    $$x_{1,2} = \frac{2\pm\sqrt[]{4-4\sin^2{\alpha}}}{2R\sin^2{\alpha}}$$
+    $$x_{1,2} = \frac{2\pm\sqrt[]{4(1-\sin^2{\alpha})}}{2R\sin^2{\alpha}}$$
+    $$x_{1,2} = \frac{2\pm\sqrt[]{4\cos^2{\alpha}}}{2R\sin^2{\alpha}}$$
+    $$x_{1,2} = \frac{2\pm2\cos{\alpha}}{2R\sin^2{\alpha}}$$
+    $$x_{1,2} = \frac{1\pm\cos{\alpha}}{R\sin^2{\alpha}}$$
+    $$r_1 = \frac{1}{x} \Downarrow$$
+    $$r_{1_{1,2}} = \frac{R\sin^2{\alpha}}{1\pm\cos{\alpha}}$$
+    נבטל את הפיתרון עבורו $r_1 < R$  
+
+    $$r_1 = \frac{R\sin^2{\alpha}}{1-\cos{\alpha}}$$
+    נבדוק את הפתרון עבור $\alpha=60\degree$  
+
+    $$\alpha=60\degree \Rightarrow \cos{\alpha} = 0.5, \sin^2{\alpha} = 0.75 \Downarrow$$
+    $$r_1 = \frac{0.75R}{1-0.5} = \frac{3}{2}R$$
 7. **עשינו בכיתה**
-8. להשלים
-9. להשלים
+8. 
+    1.
+        $$\vec{F} = \frac{kq_1q_2}{r^2}\hat{r}$$
+        $$E_{pot} - 0 = \int^{\infty}_r (\vec{F}) \delta r$$
+        $$E_{pot} = \int^{\infty}_r (\frac{kq_1q_2}{r^2}) \delta r$$
+        $$E_{pot} = -(\frac{kq_1q_2}{r})|^{\infty}_r$$
+        $$E_{pot} = \frac{kq_1q_2}{r}$$
+    2.
+        מכיוון ש-$\vec{r}, \vec{F}$ מקבילים, זאת אומרת ש-
+        
+        $$\dot{\vec{L}} = \vec{r}\times \vec{F} = 0$$
+        $$\Downarrow$$
+        $$\vec{L} = cosnt = \vec{r}\times \vec{v}$$
+
+        וקטור התנע הזוויתי מאונך למישור שמוגדר ע"י $\vec{r},\vec{v}$ ומכיוון שהוא עצמו קבוע, גם מישור זה קבוע
+9. 
+    1.
+        $$\vec{L} = \vec{r}\times \vec{p}$$
+        $$\vec{r} = 0$$
+        $$\Downarrow$$
+        $$\vec{L} = 0$$
+    2.
+        $$\vec{F} = \frac{\Delta \vec{L}}{\delta t}$$
+        $$\vec{F} = \frac{\vec{L}_{max}}{\delta t}$$
+
