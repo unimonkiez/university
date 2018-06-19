@@ -135,6 +135,35 @@
         $$I = \frac{2M}{LW}\int_{0}^{\frac{L}{2}} (Wx^2 + \frac{1}{3}W^3) \Delta x $$
         $$I = \frac{2M}{LW} (\frac{1}{3}Wx^3 + \frac{1}{3}W^3x) |_{0}^{\frac{L}{2}} $$
         $$I = \frac{2M}{LW} (\frac{1}{24}WL^3 + \frac{1}{6}W^3L)$$
-        $$I = \frac{M}{3} (\frac{1}{4}L^2 + W^2)$$
+        $$I = \frac{M}{3} (\frac{1}{4}L^2 + W^2)$$      
+7.
+    $$I_{cm} = \int (x^2+y^2)\delta m$$
+    $$I_s = \int ((x-r)^2+y^2)\delta m$$
+    $$I_s = \int (x^2 - 2xr + r^2 +y^2)\delta m$$
+    $$I_s = \int (x^2+y^2)\delta m + \int r^2\delta m \cancel{- \int (2xr)\delta m}$$
+    הרכיב השלישי מתבטל משום ש-$x$ נמדד ממרכז המסה, אינטגרל זה שואף ל-0
+
+    $$I_s = I_{cm} + \int r^2\delta m$$
+    $$I_s = I_{cm} + mr^2$$
         
-        
+8.
+    נחשב את מומנט ההתמד עבור העיגול השלם ומחסיר ממנו את מומנט ההתמד של העיגולים (מסה שלילית)
+    
+    $$I = I_{circle} - 4I_{mini\ circle}$$
+    $$I_{circle} = \frac{1}{2}MR^2$$
+    $$I_{mini\ circle} = I_{cm_{mini\ circle}} + M_{mini\ circle}D^2$$
+    $$D = \frac{R}{2}$$
+    $$M_{before} = \pi R^2 \cdot p$$
+    $$p = \frac{M}{\pi R^2}$$
+    $$M_{mini\ circle} = \frac{\pi R^2}{9} p$$
+    $$M_{mini\ circle} = \frac{\pi R^2}{9} \frac{M}{\pi R^2}$$
+    $$M_{mini\ circle} = \frac{M}{9}$$
+    $$\Downarrow$$
+    $$I_{mini\ circle} = \frac{M}{9}\frac{1}{2}\frac{R^2}{9} + \frac{M}{9}\frac{R^2}{4}$$
+    $$I_{mini\ circle} = \frac{13MR^2}{324}$$
+    $$\Downarrow$$
+    $$I = I_{circle} - 4I_{mini\ circle}$$
+    $$\Downarrow$$
+    $$I = \frac{1}{2}MR^2 - 4\frac{13MR^2}{324}$$
+    $$I = \frac{81MR^2}{162} - \frac{26MR^2}{162}$$
+    $$I = \frac{55MR^2}{162}$$
