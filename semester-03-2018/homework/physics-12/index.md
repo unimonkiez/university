@@ -98,23 +98,43 @@
     4. **עשינו בכיתה**
     5. **עשינו בכיתה**
     6.
-        נחלק את הלבנה לפרוסות שטוחות בגובה $\Delta L$
+        נחלק את הלבנה לנקודות בגודל $\Delta x \Delta y \Delta z$
 
         $$M = p HWL$$
         $$p = \frac{M}{HWL}$$
-        $$m = p HW\Delta L$$
-        $$m = \frac{M}{HWL} HW\Delta L$$
-        $$m = \frac{M\Delta L}{L} $$
+        $$m_i = p \Delta x\Delta y\Delta z$$
+        $$m_i = \frac{M \Delta x\Delta y\Delta z}{HWL}$$
+        $$r_i = \sqrt[]{x^2 + y^2}$$
         $$I = \sum_{i=1}^{N}m_ir_i^2$$
-        $$r_i = \sqrt[]{x^2 + y^2} \Downarrow$$
-        $$I = \int_0^{\frac{H}{2}} \int_0^{\frac{W}{2}} \int_0^{\frac{L}{2}} (\frac{M\Delta L}{L})[(x^2 + y^2)\Delta x \Delta y]$$
-        $$I = M\int_0^{\frac{H}{2}} \int_0^{\frac{W}{2}} [(x^2 + y^2)\Delta x \Delta y] (\int_0^{\frac{L}{2}} \frac{1}{L}\Delta L)$$
-        $$I = M\int_0^{\frac{H}{2}} \int_0^{\frac{W}{2}} [(x^2 + y^2)\Delta x \Delta y] (\frac{L}{L}|_0^{\frac{L}{2}})$$
-        $$I = M\int_0^{\frac{H}{2}} \int_0^{\frac{W}{2}} [(x^2 + y^2)\Delta x \Delta y]$$
-        $$I = M\int_0^{\frac{H}{2}} [(\frac{1}{3}x^3 + y^2x |_0^{\frac{W}{2}}) \Delta y]$$
-        $$I = M\int_0^{\frac{H}{2}} [(\frac{W^3}{24} + \frac{Wy^2}{2}) \Delta y]$$
-        $$I = M[(\frac{W^3y}{24} + \frac{Wy^3}{6}) |_0^{\frac{H}{2}}]$$
-        $$I = M(\frac{W^3H}{48} + \frac{WH^3}{48})$$
-        $$I = \frac{MWH}{48}(W^2 + H^2)$$
+        $$\Downarrow$$
+        $$I = \int_{-\frac{H}{2}}^{\frac{H}{2}} \int_{-\frac{W}{2}}^{\frac{W}{2}} \int_{-\frac{L}{2}}^{\frac{L}{2}} m_ir_i^2$$
+        $$I = 4\int_{0}^{\frac{H}{2}} \int_{0}^{\frac{W}{2}} \int_{-\frac{L}{2}}^{\frac{L}{2}} m_ir_i^2$$
+        $$\Downarrow$$
+        $$I = 4\int_{0}^{\frac{H}{2}} \int_{0}^{\frac{W}{2}} \int_{-\frac{L}{2}}^{\frac{L}{2}} \frac{M \Delta x\Delta y\Delta z}{HWL} (x^2 + y^2)$$
+        $$I = 4\int_{0}^{\frac{H}{2}} \int_{0}^{\frac{W}{2}} \frac{M \Delta x\Delta y}{HW} (x^2 + y^2)  \int_{-\frac{L}{2}}^{\frac{L}{2}} \frac{\Delta z}{L}$$
+        $$I = 4\int_{0}^{\frac{H}{2}} \int_{0}^{\frac{W}{2}} \frac{M \Delta x\Delta y}{HW} (x^2 + y^2) (\frac{z}{L} |_{-\frac{L}{2}}^{\frac{L}{2}})$$
+        $$I = 4\int_{0}^{\frac{H}{2}} \int_{0}^{\frac{W}{2}} \frac{M \Delta x\Delta y}{HW} (x^2 + y^2) \cancel{(\frac{L}{L})}$$
+        $$I = 4\frac{M}{HW}\int_{0}^{\frac{H}{2}} \int_{0}^{\frac{W}{2}} (x^2 + y^2)\Delta x\Delta y $$
+        $$I = 4\frac{M}{HW}\int_{0}^{\frac{H}{2}} [(x^2y + \frac{1}{3}y^3)\Delta x |_{0}^{\frac{W}{2}}] $$
+        $$I = 4\frac{M}{HW}\int_{0}^{\frac{H}{2}} (\frac{1}{2}x^2W + \frac{1}{24}W^3)\Delta x $$
+        $$I = 4\frac{M}{HW} (\frac{1}{6}x^3W + \frac{1}{24}xW^3 |_{0}^{\frac{H}{2}}) $$
+        $$I = 4\frac{M}{HW} (\frac{1}{48}H^3W + \frac{1}{48}HW^3) $$
+        $$I = \frac{M}{12} (H^2 + W^2) $$
+        
+    7.
+        נחלק כמו סעיף קודם, לכן:  
+
+        $$I = \int_{-\frac{L}{2}}^{\frac{L}{2}} \int_{0}^{W} \int_{-\frac{H}{2}}^{\frac{H}{2}} m_ir_i^2$$
+        $$I = 2\int_{0}^{\frac{L}{2}} \int_{0}^{W} \int_{-\frac{H}{2}}^{\frac{H}{2}} m_ir_i^2$$
+        $$I = 2\int_{0}^{\frac{L}{2}} \int_{0}^{W} \int_{-\frac{H}{2}}^{\frac{H}{2}} m_ir_i^2$$
+        $$\Downarrow$$
+        $$I = 2\int_{0}^{\frac{L}{2}} \int_{0}^{W} \int_{-\frac{H}{2}}^{\frac{H}{2}} \frac{M \Delta x\Delta y\Delta z}{HWL} (x^2 + y^2)$$
+        $$I = \frac{2M}{LW}\int_{0}^{\frac{L}{2}} \int_{0}^{W} [(x^2 + y^2) \Delta x\Delta y] \int_{-\frac{H}{2}}^{\frac{H}{2}} \frac{\Delta H}{H}$$
+        $$I = \frac{2M}{LW}\int_{0}^{\frac{L}{2}} \int_{0}^{W} [(x^2 + y^2) \Delta x\Delta y] \cancel{\frac{H}{H}}$$
+        $$I = \frac{2M}{LW}\int_{0}^{\frac{L}{2}} [(yx^2 + \frac{1}{3}y^3) \Delta x |_{0}^{W} ] $$
+        $$I = \frac{2M}{LW}\int_{0}^{\frac{L}{2}} (Wx^2 + \frac{1}{3}W^3) \Delta x $$
+        $$I = \frac{2M}{LW} (\frac{1}{3}Wx^3 + \frac{1}{3}W^3x) |_{0}^{\frac{L}{2}} $$
+        $$I = \frac{2M}{LW} (\frac{1}{24}WL^3 + \frac{1}{6}W^3L)$$
+        $$I = \frac{M}{3} (\frac{1}{4}L^2 + W^2)$$
         
         
