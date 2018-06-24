@@ -258,3 +258,8 @@
         $$x = t^2 \rightarrow \delta x = 2t\delta t$$
         $$\int \frac{t^2}{1+t}2t\delta t$$
         $$2\int \frac{t^3}{1+t}\delta t$$
+        $$2\int (t^2-t+1+\frac{1}{t+1})\delta t$$
+        $$\frac{2}{3}t^3-t^2+2t+2\ln|t+1| +C$$
+        $$t=x^{\frac{1}{2}} \Downarrow$$
+        $$\frac{2}{3}x^{\frac{3}{2}}-x+2x^{\frac{1}{2}}+2\ln|x^{\frac{1}{2}}+1| +C$$
+        
