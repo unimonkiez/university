@@ -109,31 +109,49 @@
 
 3.
     $$\sum_{n=3}^{\infty}5\frac{2^{1-2n}}{3^n}$$
-    $$f_{(x)} = 5\frac{2^{1-2n}}{3^n}$$
-    הפונקציה יורדת חיובית ורציפה, לכן ניתן לחשב את האינטגרל:  
+    הטור חיובי, לכן נשתמש במבחן מנה (דלמבר)
+
+    $$a_n = 5\frac{2^{1-2n}}{3^n}$$
+    $$L = \lim_{n \rightarrow \infty}\frac{a_{n+1}}{a_n}$$
+    $$L = \lim_{n \rightarrow \infty}\frac{2^{-1-2n}3^n}{2^{1-2n}3^{n+1}}$$
+    $$L = \lim_{n \rightarrow \infty}\frac{1}{2^{2}3} = \frac{1}{12}$$
+    מכיוון ש$L<1$ הטור מתכנס.
+
+    כעת נבדוק את הסכום:
+
+    $$\sum_{n=3}^{\infty}5\frac{2\cdot 2^{-2n}}{3^n}$$
+    $$\sum_{n=3}^{\infty}10\frac{2^{-2n}}{3^n}$$
+    $$\sum_{n=3}^{\infty}10(\frac{2^{-2}}{3})^n$$
+    $$\sum_{n=3}^{\infty}10(\frac{1}{12})^n$$
+    $$10\sum_{n=3}^{\infty}(\frac{1}{12})^n$$
+    $$10(\sum_{n=3}^{\infty}(\frac{1}{12})^n -\sum_{n=0}^{2}(\frac{1}{12})^n)$$
+    $$10(\sum_{n=0}^{\infty}(\frac{1}{12})^n -1- \frac{1}{12} - \frac{1}{12^2})$$
+    $$\sum_{n=0}^{\infty}q^n = \frac{1}{1-q} : |q|< 1$$
+    $$\Downarrow$$
+    $$10(\frac{1}{1-\frac{1}{12}} -1- \frac{1}{12} - \frac{1}{12^2})$$
+    $$10(\frac{1}{\frac{11}{12}} -1- \frac{1}{12} - \frac{1}{12^2})$$
+    $$10(\frac{12}{11} -1- \frac{1}{12} - \frac{1}{12^2})$$
+    $$10(\frac{1}{11}-\frac{13}{12^2})$$
     
-    $$\int_3^{\infty}5\frac{2^{1-2n}}{3^n}\delta n$$
-    $$5\int_3^{\infty}\frac{2^{1-2n}}{3^n}\delta n$$
-    $$t= \frac{2^{1-2n}}{3^n}$$
-    $$\delta t= \frac{-2\ln(2)2^{1-2n}3^n -\ln(3)2^{1-2n}3^n}{3^{2n}}\delta n$$
-    $$\delta t= \frac{-2\ln(2)2^{1-2n} -\ln(3)2^{1-2n}}{3^n}\delta n$$
-    $$\delta t= (-2\ln(2) -\ln(3))t\ \delta n$$
-    $$\Downarrow$$
-    $$\delta n = \frac{1}{-2\ln(2) -\ln(3)}\frac{1}{t}\delta t$$
-    $$\Downarrow$$
-    $$5\int_3^{\infty}t\frac{1}{-2\ln(2) -\ln(3)}\frac{1}{t}\delta t$$
-    $$5\int_3^{\infty}\frac{1}{-2\ln(2) -\ln(3)}\delta t$$
-    $$\frac{5}{-2\ln(2) -\ln(3)}\int_3^{\infty}\delta t$$
-    $$\frac{5}{-2\ln(2) -\ln(3)}(t|_3^{\infty})$$
-    $$\frac{5}{-2\ln(2) -\ln(3)}(\frac{2^{1-2n}}{3^n}|_3^{\infty})$$
-    $$-\frac{5}{2\ln(2) +\ln(3)}(\lim_{n \rightarrow \infty} \frac{2^{1-2n}}{3^n} - \frac{2^{-5}}{3^3})$$
-    $$-\frac{5}{2\ln(2) +\ln(3)}(0 - \frac{2^{-5}}{3^3})$$
-    $$\frac{5\cdot 2^{-5}}{9(2\ln(2) +\ln(3))}$$
-    האינטגרל מתכנס למספר סופי ולכן גם הטור מתכנס לאותו המספר.
 4. הוכח או הפרך
 
     1.
     $$\sum_1^{\infty}a_n = const \Rightarrow \sum_1^{\infty}a_n^2 = const$$
+    נכון, בגלל שהטור $\sum_1^{\infty}a_n$ מתכנס אז 
+    
+    $$\lim_{n \rightarrow \infty}a_n = 0$$
+    זאת אומרת :
+    
+    $$\exists\epsilon>0 \in N|n_0>n|a_n<\epsilon$$
+    בפרט עבור $\epsilon = 1$, $a_{n_0}<1$
+    
+    כעת נגדיר טור נוסף
+
+    $$\sum_{n_0}^{\infty}b_n = \sum_{n_0}^{\infty}a_n^2$$
+    אך ידוע כי $0\leq b_n \leq a_n$ בקטע $[n_0, \infty]$ ולכן לפי מבחן ההשוואה בין טורים, אם $\sum_1^{\infty}a_n$ מתכנס אז גם $\sum_{n_0}^{\infty}b_n$ מתכנס.
+
+    $$\sum_1^{\infty}a_n^2 = \sum_1^{n_0 - 1}a_n^2 + \sum_{n_0}^{\infty}b_n$$
+    אך ידוע כי שינוי במספר **סופי** של איברים אינו משפיע על ההתכנסות או ההתבדרות של טור, לכן גם $\sum_1^{\infty}a_n^2$ מתכנס.
 
     2.
     $$\sum_1^{\infty}a_n^2 = const \Rightarrow \sum_1^{\infty}a_n = const$$
