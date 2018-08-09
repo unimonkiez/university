@@ -159,3 +159,68 @@
     
     $$a_n = \frac{1}{x} = \infty$$
     $$a_n^2 = \frac{1}{x^2} = const$$
+
+5.
+    1.
+        $$\sum_{n=1}^{\infty}(-1)^{n+1}\frac{n-1}{n+1}\frac{1}{\sqrt[n]{n}}$$
+        נבדוק מתכנס בהחלט
+
+        $$\sum_{n=1}^{\infty}\frac{n-1}{n+1}\frac{1}{\sqrt[n]{n}}$$
+        $$a_n = \frac{n-1}{n+1}\frac{1}{\sqrt[n]{n}}$$
+        $$\lim_{n \rightarrow \infty}a_n = \lim_{n \rightarrow \infty}\frac{n-1}{n+1}\frac{1}{\sqrt[n]{n}}$$
+        $$\lim_{n \rightarrow \infty}\frac{n-1}{n+1}\frac{1}{\sqrt[n]{n}} = 1 \cdot 1 = 1$$
+        לא מתכנס, נבדוק מתכנס בתנאי 
+
+        $$a_n = (-1)^{n+1}\frac{n-1}{n+1}\frac{1}{\sqrt[n]{n}}$$
+        $$\lim_{n \rightarrow \infty}a_n = \lim_{n \rightarrow \infty}(-1)^{n+1}\frac{n-1}{n+1}\frac{1}{\sqrt[n]{n}}$$
+        $$\lim_{n \rightarrow \infty}(-1)^{n+1}\frac{n-1}{n+1}\frac{1}{\sqrt[n]{n}}$$
+        $$\lim_{n \rightarrow \infty}(-1)^{n+1}\cdot 1$$
+        לא מתכנס, ולכן הטור מתבדר.
+    
+    2.
+        $$\sum_{n=2}^{\infty}\frac{\cos (2^n)}{n \ln^2 (n)}$$
+        $$a_n = |\frac{\cos (2^n)}{n \ln^2 (n)}|$$
+        $$b_n = \frac{1}{n \ln^2 (n)}$$
+        $$0 \leq a_n \leq b_n$$
+        $$\Downarrow$$
+        $$f_{(x)}=b_x = \frac{1}{x \ln^2 (x)}$$
+        $f_{(x)}$ רציפה חיובית ויורדת, לכן נשתמש במבחן האינטגרל:  
+
+        $$f_{(x)}=\int_2^{\infty}\frac{1}{x \ln^2 (x)}\delta x$$
+        $$t = \ln(x)$$
+        $$\delta t = \frac{1}{x}\delta x$$
+        $$\delta x = x\delta t$$
+        $$\Downarrow$$
+        $$f_{(t)}=\int_2^{\infty}\frac{1}{x t^2}x\delta t$$
+        $$f_{(t)}=\int_2^{\infty}\frac{1}{t^2}\delta t$$
+        $$f_{(t)}=-\frac{1}{t}|_2^{\infty}$$
+        $$f_{(x)}=-\frac{1}{\ln(x)}|_2^{\infty}$$
+        $$f_{(x)}=\lim_{x \rightarrow \infty}(-\frac{1}{\ln(x)}) + \frac{1}{\ln(2)} = \frac{1}{\ln(2)}$$
+        האינטרגל מתכנס, לכן הטור של $b_n$ מתכנס, לפי מבחן ההשוואה הראשון גם הטור המקורי מתכנס בהחלט.
+    3.
+        $$\sum_{n=2018}^{\infty}(-1)^{n+1}\frac{1}{n+2018\sin{n}}$$
+        תחילה נבדוק התכנסות בהחלט
+
+        $$\sum_{n=2018}^{\infty}\frac{1}{n+2018\sin{n}}$$
+        לפי סעיף $.4.1$ מתבדר.  
+        העת נבדוק התכנסות בתנאי:  
+        
+        $$\sum_{n=2018}^{\infty}(-1)^{n+1}\frac{1}{n+2018\sin{n}}$$
+
+        לפי מבחן לייבניץ, אם האיבר שלא כולל הסימן המתחלף ($a_n = \frac{1}{n+2018\sin{n}}$) חיובית מונוטונית ויורדת ל-0, אז הטור מתכנס:  
+
+        $$\lim_{n \rightarrow \infty}a_n = \lim_{n \rightarrow \infty}\frac{1}{n+2018\sin{n}} = 0$$
+        כעת נבדוק אם מונוטנית יורדת
+
+        $$f_{(x)} = \frac{1}{x+2018\sin{x}}$$
+        $$f_{(x)}' = \frac{-1-2018\cos{x} }{(x+2018\sin{x})^2}$$
+    4.
+        $$\sum_{n=1}^{\infty}\frac{\sin{n}}{n^2}$$
+        נבדוק מתכנס בהחלט
+
+        $$\sum_{n=1}^{\infty}\frac{|\sin{n}|}{n^2}$$
+        $$a_n = \frac{|\sin{n}|}{n^2}$$
+        $$b_n = \frac{1}{n^2}$$
+        $$0 \leq a_n \leq b_n$$
+        $$\Downarrow$$
+         הטור של האיבר הכללי $b_n = \frac{1}{n^2}$ ידוע כי מתכנס, ולכן לפי המבחן ההשואה בין טורים חיובים, גם הטור החיובי מתכנס בהחלט.
