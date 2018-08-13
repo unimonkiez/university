@@ -88,5 +88,31 @@
 
         $$\Downarrow$$
         תחום ההתכנסות של הטור המקורי הינו $(1,3]$.
+    3.
+        $$\sum_{n=1}^{\infty}\frac{1}{2}^{n^2}x^n$$
+        $$a_n = \frac{1}{2}^{n^2}$$
+        $$R = \frac{1}{\lim_{n \rightarrow \infty} \sqrt[n]{|a_n|}}$$
+        $$\lim_{n \rightarrow \infty} \sqrt[n]{|a_n|}$$
+        $$\lim_{n \rightarrow \infty} \sqrt[n]{\frac{1}{2}^{n^2}}$$
+        $$\lim_{n \rightarrow \infty} \frac{1}{2}^{n} = 0$$
+        $$\Downarrow$$
+        $$R \Rightarrow \infty$$
+
+        תחום ההתכנסות של הטור הינו $\forall x\in R$.
+    4.
+        $$\sum_{n=1}^{\infty}2^{n^2}x^n$$
+        $$a_n = 2^{n^2}$$
+        $$R = \frac{1}{\lim_{n \rightarrow \infty} \sqrt[n]{|a_n|}}$$
+        $$\lim_{n \rightarrow \infty} \sqrt[n]{|a_n|}$$
+        $$\lim_{n \rightarrow \infty} \sqrt[n]{2^{n^2}}$$
+        $$\lim_{n \rightarrow \infty} 2^{n} \Rightarrow \infty$$
+        $$\Downarrow$$
+        $$R = 0$$
+        תחןם ההתכנסות רדיוס 0 סביב הנקודה $x_0 = 0$, נבדוק את הנקודה:  
         
+        $$x_0 = 0$$
+        $$\sum_{n=1}^{\infty}2^{n^2}0^n = 0$$
+
+        תחום ההתכנסות של הטור הינו $x=0$ בלבד.
+
         
