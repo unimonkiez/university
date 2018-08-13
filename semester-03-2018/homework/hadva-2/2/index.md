@@ -66,4 +66,27 @@
         כעת נבדוק לפי ליבניץ את הגבול של $a_n = \frac{1}{(n+1)\ln(n+1)}$:  
 
         $$\lim_{n \rightarrow \infty}\frac{1}{(n+1)\ln(n+1)} = 0$$
+        ולכן הטור מתכנס ב-$x_0 = 3$
+        
+        $$x_0 = 1$$
+        $$\sum_{n=1}^{\infty}(-1)^n\frac{1}{(n+1)\ln(n+1)}(1-2)^n$$
+        $$\sum_{n=1}^{\infty}\frac{1}{(n+1)\ln(n+1)}\cancel{(-1)^{2n}}$$
+        $$\sum_{n=1}^{\infty}\frac{1}{(n+1)\ln(n+1)}$$
+        הסדרה חיובית, מוטונית יורדת ורציפה, נשתמש במבחן האינטגרל:  
+
+        $$\Downarrow$$
+        $$\int_{1}^{\infty}\frac{\delta x}{(n+1)\ln(n+1)}$$
+        $$t = \ln (n+1)$$
+        $$\delta t = \frac{1}{n+1}\delta x$$
+        $$\delta x = (n+1)\delta t$$
+        $$\Downarrow$$
+        $$\int_{1}^{\infty}\frac{\cancel{(n+1)}\delta t}{\cancel{(n+1)}t}$$
+        $$\int_{1}^{\infty}\frac{\delta t}{t}$$
+        $$\ln(t)|_{1}^{\infty}$$
+        $$\ln(\ln(n+1))|_{1}^{\infty}$$
+        האינטגרל מתבדר, ולכן גם הטור מתבדר בנקודה $x_0 = 1$
+
+        $$\Downarrow$$
+        תחום ההתכנסות של הטור המקורי הינו $(1,3]$.
+        
         
