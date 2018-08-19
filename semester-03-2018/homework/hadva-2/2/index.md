@@ -196,3 +196,27 @@
         $$x_0=0$$
         $$\sum_{n=1}^{\infty}((-1)^{n+1}+1)\frac{1}{n}0^{n} = 0$$
         הטור מתכנס ב-$x=0$ בלבד.
+6.
+    1.
+        $$\sum_{n=0}^{\infty}\frac{n}{4^n}$$
+        $$\sum_{n=0}^{\infty}n(\frac{1}{4})^n$$
+        $$\frac{\frac{1}{4}}{(1-\frac{1}{4})^2}$$
+        $$\frac{\frac{1}{4}}{\frac{3}{4}^2}$$
+        $$\frac{\frac{1}{4}}{\frac{9}{16}}$$
+        $$\frac{1}{4}\cdot \frac{16}{9}$$
+        $$\sum_{n=0}^{\infty}\frac{n}{4^n} = \frac{4}{9}$$
+    2.
+        $$\sum_{n=0}^{\infty}\frac{n^2}{2^n}$$
+        $$\sum_{n=0}^{\infty}n^2(\frac{1}{2})^n$$
+        $$\sum_{n=0}^{\infty}x^n = \frac{1}{1-x} \ \ / ()'$$
+        $$\sum_{n=0}^{\infty}nx^{n-1} = \frac{1}{(1-x)^2} \ \ / \cdot x$$
+        $$\sum_{n=0}^{\infty}nx^n = \frac{x}{(1-x)^2} \ \ / ()'$$
+        $$\sum_{n=0}^{\infty}n^2x^{n-1} = \frac{x+1}{(1-x)^3} \ \ / \cdot x$$
+        $$\sum_{n=0}^{\infty}n^2x^n = \frac{x^2+x}{(1-x)^3}$$
+        $$\sum_{n=0}^{\infty}n^2x^n = \frac{x^2+x}{(1-x)^3}$$
+        $$\sum_{n=0}^{\infty}n^2x^n = \frac{x^2+x}{(1-x)^3}$$
+        $$\downarrow x= \frac{1}{2}$$
+        $$\sum_{n=0}^{\infty}n^2(\frac{1}{2})^n = \frac{\frac{1}{2}^2+\frac{1}{2}}{(1-\frac{1}{2})^3}$$
+        $$\sum_{n=0}^{\infty}n^2(\frac{1}{2})^n = \frac{\frac{3}{4}}{\frac{1}{2}^3}$$
+        $$\sum_{n=0}^{\infty}n^2(\frac{1}{2})^n = \frac{\frac{3}{4}}{\frac{1}{8}}$$
+        $$\sum_{n=0}^{\infty}n^2(\frac{1}{2})^n = 8 \cdot \frac{3}{4} = 6$$
