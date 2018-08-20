@@ -24,6 +24,25 @@
     ואכן, עבור כל $\epsilon>0$ נוכל לקחת $n_0>\frac{1}{\epsilon}$, ואז לכל $n>n_0$ נקבל את הנדרש.
 2.
     $$\sum_{k=1}^{\infty}x^k(1-x)^k$$
+    $$\sum_{k=1}^{\infty}(x-x^2)^k$$
+    נגדיר $f_{(x)} = (x-x^2)^k$ ונמצא את נקודת המקסימום בקטע $[0,1]$:
+    
+    $$f_{(x)} = (x-x^2)^k$$
+    $$f'_{(x)} = (1-2x)(x-x^2)^{k-1}$$
+    $$f'_{(x)} = (1-2x)x^{k-1}(1-x)^{k-1}$$
+    $$f'_{(x)} = 0$$
+    $$\Downarrow$$
+    $$x = 0,\frac{1}{2},1$$
+    נציב בפונקציה המקורית
+
+    $$f_{(0)} = 0$$
+    $$f_{(\frac{1}{2})} = (\frac{1}{4})^k$$
+    $$f_{(1)} = 0$$
+    לכן $(\frac{1}{2}, (\frac{1}{4})^k)$ נקודת קיצון
+
+    $$\forall x \in [0,1]: 0\leq x^k(1-x)^k \leq (\frac{1}{4})^k$$
+
+    ידוע כי $\sum_{n=0}^{\infty}(\frac{1}{4})^k$ מתכנס (סדרה הנדסית $|q|<1$) ולכן על פי מבחן ה-$M$ של ווירשטראס גם $\sum_{k=1}^{\infty}x^k(1-x)^k$ מתכנס באותו הקטע במ"ש.
 3.
     1.
         $$\sum_{n=1}^{\infty}\frac{1}{n\cdot 2^n}x^n$$
@@ -200,6 +219,10 @@
     1.
         $$\sum_{n=0}^{\infty}\frac{n}{4^n}$$
         $$\sum_{n=0}^{\infty}n(\frac{1}{4})^n$$
+        $$\sum_{n=0}^{\infty}x^n = \frac{1}{1-x} \ \ / ()'$$
+        $$\sum_{n=0}^{\infty}nx^{n-1} = \frac{1}{(1-x)^2} \ \ / \cdot x$$
+        $$\sum_{n=0}^{\infty}nx^n = \frac{x}{(1-x)^2}$$
+        $$\Downarrow x= \frac{1}{4}$$
         $$\frac{\frac{1}{4}}{(1-\frac{1}{4})^2}$$
         $$\frac{\frac{1}{4}}{\frac{3}{4}^2}$$
         $$\frac{\frac{1}{4}}{\frac{9}{16}}$$
@@ -215,7 +238,7 @@
         $$\sum_{n=0}^{\infty}n^2x^n = \frac{x^2+x}{(1-x)^3}$$
         $$\sum_{n=0}^{\infty}n^2x^n = \frac{x^2+x}{(1-x)^3}$$
         $$\sum_{n=0}^{\infty}n^2x^n = \frac{x^2+x}{(1-x)^3}$$
-        $$\downarrow x= \frac{1}{2}$$
+        $$\Downarrow x= \frac{1}{2}$$
         $$\sum_{n=0}^{\infty}n^2(\frac{1}{2})^n = \frac{\frac{1}{2}^2+\frac{1}{2}}{(1-\frac{1}{2})^3}$$
         $$\sum_{n=0}^{\infty}n^2(\frac{1}{2})^n = \frac{\frac{3}{4}}{\frac{1}{2}^3}$$
         $$\sum_{n=0}^{\infty}n^2(\frac{1}{2})^n = \frac{\frac{3}{4}}{\frac{1}{8}}$$
