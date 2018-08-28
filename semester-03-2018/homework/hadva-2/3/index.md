@@ -50,6 +50,22 @@
     $$\frac{\delta f}{\delta x} = \frac{\sin(y)(3x^4-y^4+2x^2y^2) +\sin(y)(-2x^4+2x^2y^2)}{(x^2+y^2)^2}$$
     $$\frac{\delta f}{\delta x} = \frac{\sin(y)(3x^4-y^4+2x^2y^2-2x^4+2x^2y^2)}{(x^2+y^2)^2}$$
     $$\frac{\delta f}{\delta x} = \frac{\sin(y)(x^4+4x^2y^2-y^4)}{(x^2+y^2)^2}$$
+    $$\frac{\delta^2 f}{\delta x \delta y} = \frac{\frac{\sin(y)(x^4+4x^2y^2-y^4)}{(x^2+y^2)^2}}{\delta y}$$
+    $$\frac{\delta^2 f}{\delta x \delta y} = \cos(y)\frac{(x^4+4x^2y^2-y^4)}{(x^2+y^2)^2} + \sin(y)\frac{\frac{(x^4+4x^2y^2-y^4)}{(x^2+y^2)^2}}{\delta y}$$
+    $$\frac{\delta^2 f}{\delta x \delta y} = \cos(y)\frac{(x^4+4x^2y^2-y^4)}{(x^2+y^2)^2} + \sin(y)\frac{(x^2+y^2)^2(8x^2y-4y^3)-(x^4+4x^2y^2-y^4)4y(x^2+y^2)}{(x^2+y^2)^4}$$
+    $$\frac{\delta^2 f}{\delta x \delta y} = \cos(y)\frac{(x^4+4x^2y^2-y^4)}{(x^2+y^2)^2} + \sin(y)\frac{(x^2+y^2)(8x^2y-4y^3)-(x^4+4x^2y^2-y^4)4y}{(x^2+y^2)^3}$$
+    $$\frac{\delta^2 f}{\delta x \delta y} = \cos(y)\frac{(x^4+4x^2y^2-y^4)}{(x^2+y^2)^2} + \sin(y)\frac{8x^4y-4x^2y^3+8x^2y^3-4y^5-4x^4y-16x^2y^3+4y^5}{(x^2+y^2)^3}$$
+    $$\frac{\delta^2 f}{\delta x \delta y} = \cos(y)\frac{(x^4+4x^2y^2-y^4)}{(x^2+y^2)^2} + \sin(y)\frac{4x^4y-12x^2y^3}{(x^2+y^2)^3}$$
 
-    2. $$\frac{\delta^2 f}{\delta y \delta x} = \frac{\frac{x^3\sin(y)-xy^2\sin(y)}{x^2+y^2}}{\delta y \delta x}$$
-    
+    2. $$\frac{\delta^2 f}{\delta y \delta x} = \frac{x\sin(y) \frac{x^2-y^2}{x^2+y^2}}{\delta y \delta x}$$
+    $$\frac{\delta^2 f}{\delta y \delta x} = \frac{\sin(y) \frac{x^3-xy^2}{x^2+y^2}}{\delta y \delta x}$$
+    $$\frac{\delta f}{\delta y} = \frac{\sin(y) \frac{x^3-xy^2}{x^2+y^2}}{\delta y}$$
+    $$\frac{\delta f}{\delta y} = \sin(y) \frac{\frac{x^3-xy^2}{x^2+y^2}}{\delta y}+\cos(y)\frac{x^3-xy^2}{x^2+y^2}$$
+    $$\frac{\delta f}{\delta y} = \sin(y) \frac{-2xy(x^2+y^2)-2y(x^3-xy^2)}{(x^2+y^2)^2}+\cos(y)\frac{x^3-xy^2}{x^2+y^2}$$
+    $$\frac{\delta f}{\delta y} = \sin(y) \frac{-2y(x^3+xy^2)-2y(x^3-xy^2)}{(x^2+y^2)^2}+\cos(y)\frac{x^3-xy^2}{x^2+y^2}$$
+    $$\frac{\delta f}{\delta y} = \sin(y) \frac{-4x^3y}{(x^2+y^2)^2}+\cos(y)\frac{x^3-xy^2}{x^2+y^2}$$
+    $$\frac{\delta^2 f}{\delta y \delta x} = \frac{\sin(y) \frac{-4x^3y}{(x^2+y^2)^2}+\cos(y)\frac{x^3-xy^2}{x^2+y^2}}{\delta x}$$
+    $$\frac{\delta^2 f}{\delta y \delta x} = \sin(y) \frac{-12x^2y(x^2+y^2)^2+4x^3y(4x(x^2+y^2))}{(x^2+y^2)^4}+\cos(y)\frac{(3x^2-y^2)(x^2+y^2)-2x(x^3-xy^2)}{(x^2+y^2)^2}$$
+    $$\frac{\delta^2 f}{\delta y \delta x} = \sin(y) \frac{-12x^2y(x^2+y^2)+16x^4y}{(x^2+y^2)^3}+\cos(y)\frac{3x^4+3x^2y^2-x^2y^2-y^4-2x^4+2x^2y^2}{(x^2+y^2)^2}$$
+    $$\frac{\delta^2 f}{\delta y \delta x} = \sin(y) \frac{-12x^4y-12x^2y^3+16x^4y}{(x^2+y^2)^3}+\cos(y)\frac{3x^4+3x^2y^2-x^2y^2-y^4-2x^4+2x^2y^2}{(x^2+y^2)^2}$$
+    $$\frac{\delta^2 f}{\delta y \delta x} = \sin(y) \frac{-12x^4y-12x^2y^3+16x^4y}{(x^2+y^2)^3}+\cos(y)\frac{x^4+4x^2y^2-y^4}{(x^2+y^2)^2}$$
