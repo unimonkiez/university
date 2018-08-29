@@ -42,7 +42,7 @@
     $$\lim_{(x,y) \rightarrow (0,0)}\epsilon(x,y) = \lim_{(x,y) \rightarrow (0,0)}\frac{\sin{x^2y}}{(x^2+y^2)^{\frac{3}{2}}}  = 0$$
     ולכן הפונקציה דיפרנציאבילית ב-$(0,0)$
 2.
-    $$f_{(x,y)} = \{ (x,y)\neq (0,0) : x\sin(y) \frac{x^2-y^2}{x^2+y^2}, (x,y)= (0,0) : x0 \}$$
+    $$f_{(x,y)} = \{ (x,y)\neq (0,0) : x\sin(y) \frac{x^2-y^2}{x^2+y^2}, (x,y)= (0,0) : 0 \}$$
     1. $$\frac{\delta^2 f}{\delta x \delta y} = \frac{x\sin(y) \frac{x^2-y^2}{x^2+y^2}}{\delta x \delta y}$$
     $$\frac{\delta f}{\delta x} = \frac{\frac{x^3\sin(y)-xy^2\sin(y)}{x^2+y^2}}{\delta x}$$
     $$\frac{\delta f}{\delta x} = \frac{(3x^2\sin(y)-y^2\sin(y))(x^2+y^2) - 2x(x^3\sin(y)-xy^2\sin(y))}{(x^2+y^2)^2}$$
@@ -69,3 +69,19 @@
     $$\frac{\delta^2 f}{\delta y \delta x} = \sin(y) \frac{-12x^2y(x^2+y^2)+16x^4y}{(x^2+y^2)^3}+\cos(y)\frac{3x^4+3x^2y^2-x^2y^2-y^4-2x^4+2x^2y^2}{(x^2+y^2)^2}$$
     $$\frac{\delta^2 f}{\delta y \delta x} = \sin(y) \frac{-12x^4y-12x^2y^3+16x^4y}{(x^2+y^2)^3}+\cos(y)\frac{3x^4+3x^2y^2-x^2y^2-y^4-2x^4+2x^2y^2}{(x^2+y^2)^2}$$
     $$\frac{\delta^2 f}{\delta y \delta x} = \sin(y) \frac{-12x^4y-12x^2y^3+16x^4y}{(x^2+y^2)^3}+\cos(y)\frac{x^4+4x^2y^2-y^4}{(x^2+y^2)^2}$$
+3.
+    $$f_{(x,y)} = \{ (x,y)\neq (0,0) : x\sin(y) \frac{(x^2+y^2)^{\alpha}}{\ln (x^2+y^2)}, (x,y)= (0,0) : 0 \}, x^2+y^2<1$$
+    1. צ"ל:  
+
+    $$\lim_{(x,y) \rightarrow (0,0)}\frac{(x^2+y^2)^{\alpha}}{\ln (x^2+y^2)} = 0$$
+
+    פתרון:  
+
+    $$\lim_{(x,y) \rightarrow (0,0)}\frac{(x^2+y^2)^{\alpha}}{\ln (x^2+y^2)}$$
+    $$t = x^2+y^2$$
+    $$(x,y) \rightarrow (0,0), t\rightarrow 0+$$
+    $$\lim_{t \rightarrow 0+}\frac{t^{\alpha}}{\ln t}$$
+    $$\alpha \geq 0 \Rightarrow \lim_{t \rightarrow 0+}\frac{t^{\alpha}}{\ln t} = 0$$
+    $$\alpha < 0 \Rightarrow \lim_{t \rightarrow 0+}\frac{t^{\alpha}}{\ln t} = \infty$$
+    $$\Downarrow$$
+    $$\alpha \geq 0$$
