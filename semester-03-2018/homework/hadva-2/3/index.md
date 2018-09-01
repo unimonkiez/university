@@ -103,3 +103,29 @@
     $$\lim_{(\Delta x,\Delta y) \rightarrow (0,0)}\epsilon(\Delta x,\Delta y) = \lim_{t \rightarrow 0+}\frac{\frac{t^{\alpha}}{\ln t}}{\sqrt[]{t}}$$
     $$\lim_{(\Delta x,\Delta y) \rightarrow (0,0)}\epsilon(\Delta x,\Delta y) = \lim_{t \rightarrow 0+}\frac{t^{\alpha - \frac{1}{2}}}{\ln t}$$
     $$\lim_{(\Delta x,\Delta y) \rightarrow (0,0)}\epsilon(\Delta x,\Delta y) \Longleftrightarrow \alpha \geq \frac{1}{2}$$
+
+4.
+    $$f_{(x,y,z)} = axy^2+byz+cx^3z^2$$
+    הפונקציה פולינום ולכן דפרינציאבלית, כעת נחשב את הוקטור:
+    
+    $$\vec{v} = (f_x, f_y, f_z)$$
+    $$\vec{v}_{(x,y,z)} = (ay^2+3cx^2z^2, 2axy+bz, by+2cx^3z)$$
+    $$\vec{v}_{(1,2,-1)} = (4a+3c, 4a-b, 2b-2c)$$
+
+    מקביל לציר $z$ ז"א $x,y=0$, ואורך 64 ז"א $z=64$
+
+    $$I. \ \ 4a+3c = 0$$
+    $$II. \ \ 4a-b = 0$$
+    $$III. \ \ 2b-2c = 64$$
+
+    $$II. \ \ b= 4a$$
+    $$I. \ \ c = -\frac{4}{3}a$$
+    $$III. \ \ 8a+2\cdot \frac{4}{3}a = 64$$
+    $$III. \ \ 8a+\frac{8}{3}a = 64$$
+    $$III. \ \ a+\frac{1}{3}a = 8$$
+    $$III. \ \ \frac{4}{3}a = 8$$
+    $$III. \ \ \frac{1}{3}a = 2$$
+    $$a = 6$$
+    $$b= 24$$
+    $$c = -8$$
+    
