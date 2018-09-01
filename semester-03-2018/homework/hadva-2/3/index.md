@@ -85,3 +85,21 @@
     $$\alpha < 0 \Rightarrow \lim_{t \rightarrow 0+}\frac{t^{\alpha}}{\ln t} = \infty$$
     $$\Downarrow$$
     $$\alpha \geq 0$$
+    2. 
+
+    $$\lim_{(\Delta x,\Delta y) \rightarrow (0,0)}\epsilon(\Delta x,\Delta y)$$
+    $$\lim_{(\Delta x,\Delta y) \rightarrow (0,0)}\epsilon(\Delta x,\Delta y) = \lim_{(\Delta x,\Delta y) \rightarrow (0,0)}\frac{\frac{(\Delta x^2+\Delta y^2)^{\alpha}}{\ln (\Delta x^2+\Delta y^2)} -\Delta x \cdot f_{x(0,0)} -\Delta y\cdot f_{y(0,0)}}{\sqrt[]{\Delta x^2+\Delta y^2}}$$
+    $$\Downarrow$$
+    $$f_{x(0,0)} = \lim_{\Delta x \rightarrow 0}\frac{f_{(\Delta x,0)} - f_{(0,0)}}{\Delta x}$$
+    $$f_{x(0,0)} = \lim_{\Delta x \rightarrow 0}\frac{\Delta x^{2\alpha - 1}}{\ln (\Delta x^2)}$$
+    $$\alpha \geq \frac{1}{2} \Rightarrow f_{x(0,0)} = 0$$
+    $$f_{y(0,0)} = \lim_{\Delta y \rightarrow 0}\frac{f_{(\Delta y,0)} - f_{(0,0)}}{\Delta y}$$
+    $$f_{y(0,0)} = \lim_{\Delta y \rightarrow 0}\frac{\Delta y^{2\alpha - 1}}{\ln (\Delta y^2)}$$
+    $$\alpha \geq \frac{1}{2} \Rightarrow f_{y(0,0)} = 0$$
+    $$\alpha \geq \frac{1}{2} \Downarrow$$
+    $$\lim_{(\Delta x,\Delta y) \rightarrow (0,0)}\epsilon(\Delta x,\Delta y) = \lim_{(\Delta x,\Delta y) \rightarrow (0,0)}\frac{\frac{(\Delta x^2+\Delta y^2)^{\alpha}}{\ln (\Delta x^2+\Delta y^2)} -\Delta x \cdot 0 -\Delta y\cdot 0}{\sqrt[]{\Delta x^2+\Delta y^2}}$$
+    $$\lim_{(\Delta x,\Delta y) \rightarrow (0,0)}\epsilon(\Delta x,\Delta y) = \lim_{(\Delta x,\Delta y) \rightarrow (0,0)}\frac{\frac{(\Delta x^2+\Delta y^2)^{\alpha}}{\ln (\Delta x^2+\Delta y^2)}}{\sqrt[]{\Delta x^2+\Delta y^2}}$$
+    $$t = \Delta x^2+\Delta y^2, t \rightarrow 0+$$
+    $$\lim_{(\Delta x,\Delta y) \rightarrow (0,0)}\epsilon(\Delta x,\Delta y) = \lim_{t \rightarrow 0+}\frac{\frac{t^{\alpha}}{\ln t}}{\sqrt[]{t}}$$
+    $$\lim_{(\Delta x,\Delta y) \rightarrow (0,0)}\epsilon(\Delta x,\Delta y) = \lim_{t \rightarrow 0+}\frac{t^{\alpha - \frac{1}{2}}}{\ln t}$$
+    $$\lim_{(\Delta x,\Delta y) \rightarrow (0,0)}\epsilon(\Delta x,\Delta y) \Longleftrightarrow \alpha \geq \frac{1}{2}$$
