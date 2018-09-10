@@ -164,12 +164,106 @@
     1.
         $$\int\int_D xy \delta x \delta y$$
         $$D: 4\leq x^2+y^2\leq 25$$
+        $$x\leq 0$$
+        $$y\leq 0$$
+        פתרון:
+
+        נעבור לקורדינטות פולאריות
+
+        $$x=r\cos(\theta)$$
+        $$y=r\sin(\theta)$$
+        $$\Downarrow$$
+        $$2 \leq r \leq 5$$
+        $$\pi \leq \theta \leq \frac{3}{2}\pi$$
+        $$J = \frac{u(x,y)}{u(r,\theta)} = |\frac{\frac{u_x}{u_r}}{\frac{u_y}{u_r}} \frac{\frac{u_x}{u_{\theta}}}{\frac{u_y}{u_{\theta}}}|$$
+        $$J = |\frac{\frac{r \cos(\theta)}{u_r}}{\frac{r \sin(\theta)}{u_r}} \frac{\frac{r \cos(\theta)}{u_{\theta}}}{\frac{r \sin(\theta)}{u_{\theta}}}|$$
+        $$J = |\frac{\cos(\theta)}{\sin(\theta)} \frac{-r \sin(\theta)}{r \cos(\theta)}|$$
+        $$J = r\cos^2(\theta) + r\sin^2(\theta) = r(\cos^2(\theta)+\sin^2(\theta)) = r$$
+        $$\Downarrow$$
+        $$\int_{\pi}^{\frac{3}{2}\pi}\int_2^5 r\cos(\theta) \cdot r\sin(\theta) J \delta r \delta \theta$$
+        $$\int_{\pi}^{\frac{3}{2}\pi}\int_2^5 r^3\cos(\theta)\sin(\theta) \delta r \delta \theta$$
+        $$\int_{\pi}^{\frac{3}{2}\pi} \cos(\theta)\sin(\theta) \delta \theta \int_2^5 r^3 \delta r$$
+        $$\int \cos(x)\sin(x)\delta x$$
+        $$t= \sin(x) \rightarrow \delta t = \cos(x)\delta x \Downarrow$$
+        $$\int t \delta t$$
+        $$\frac{1}{2}t^2 \rightarrow \frac{1}{2}\sin^2(x)$$
+        $$\Downarrow$$
+        $$(\frac{1}{2}\sin^2(\theta)|_{\pi}^{\frac{3}{2}\pi}) (\frac{1}{4}r^4|_2^5) $$
+        $$(\frac{1}{2}) (\frac{5^4}{4}-\frac{2^4}{4})$$
+        $$(\frac{1}{2}) (\frac{5^4}{4}-\frac{2^4}{4})$$
+        $$76.125$$
+
+
     2.
         $$\int\int_D x^2 \delta x \delta y$$
         $$D: \frac{x^2}{4}+\frac{y^2}{9}\leq 1$$
+        פתרון:
+
+        נעבור קורדינטות 
+
+        $$x=2u$$
+        $$y=3v$$
+        $$\Downarrow$$
+        $$u^2+v^2\leq 1$$
+        נעבור לקורדינטות פולאריות
+
+        $$u=r\cos(\theta)\rightarrow x = 2r\cos(\theta)$$
+        $$v=r\sin(\theta)\rightarrow y = 3r\sin(\theta)$$
+        $$\Downarrow$$
+        $$0 \leq r \leq 1$$
+        $$0 \leq \theta \leq 2\pi$$
+        $$J = |\frac{2\cos(\theta)}{3\sin(\theta)} \frac{-2r\sin(\theta)}{3r\cos(\theta)}|$$
+        $$J = 6r\cos^2(\theta)+6r\sin^2(\theta) = 6r$$
+        $$\Downarrow$$
+        $$\int_{0}^{2\pi}\int_0^1 4r^2\cos^2(\theta) 6r \delta r \delta \theta$$
+        $$24\int_{0}^{2\pi} \cos^2(\theta) \delta \theta \int_0^1 r^3 \delta r$$
+        $$24 (\frac{\sin(\theta)\cos(\theta) + x}{2}|_{0}^{2\pi}) (\frac{1}{4}r^4|_0^1)$$
+        $$24 (\frac{\sin(\theta)\cos(\theta) + x}{2}|_{0}^{2\pi}) (\frac{1}{4}r^4|_0^1)$$
+        $$24 (\pi) (\frac{1}{4})$$
+        $$6\pi$$
+        
     3.
         $$\int\int_D (x+2y) \delta x \delta y$$
         $$D: (2x+3y-1)^2+(3x+4y)^2\leq 16$$
+         פתרון:
+
+        נעבור קורדינטות 
+
+        $$u=2x+3y-1$$
+        $$v=3x+4y$$
+        $$\Downarrow$$
+        $$x=\frac{v-4y}{3}$$
+        $$u=\frac{2v-8y}{3}+3y-1$$
+        $$3u=2v-8y+9y-3$$
+        $$3u=2v+y-3$$
+        $$y=3u-2v+3$$
+        $$x=\frac{v-12u+8v-12}{3} = \frac{-12u+9v-12}{3} = 3v-4u-4$$
+        $$\Downarrow$$
+        $$u^2+v^2\leq 16$$
+        נעבור לקורדינטות פולאריות
+
+        $$u=r\cos(\theta)$$
+        $$v=r\sin(\theta)$$
+        $$\Downarrow$$
+        $$x = 3r\sin(\theta)-4r\cos(\theta)-4$$
+        $$y = 3r\cos(\theta)-2r\sin(\theta)+3$$
+        $$0\leq r \leq 4$$
+        $$0 \leq \theta \leq 2\pi$$
+        $$J = |\frac{3\sin(\theta)-4\cos(\theta)}{3\cos(\theta)-2\sin(\theta)} \frac{3r\cos(\theta)+4r\sin(\theta)}{-3r\sin(\theta)-2r\cos(\theta)}|$$
+        $$J = (3\sin(\theta)-4\cos(\theta))(-3r\sin(\theta)-2r\cos(\theta))-(3r\cos(\theta)+4r\sin(\theta))(3\cos(\theta)-2\sin(\theta))$$
+        $$J = -r[(3\sin(\theta)-4\cos(\theta))(3\sin(\theta)+2\cos(\theta))+(3\cos(\theta)+4\sin(\theta))(3\cos(\theta)-2\sin(\theta))]$$
+        $$J = -r(9sin^2(\theta)+6\sin(\theta)\cos(\theta)-12\sin(\theta)\cos(\theta)-8\cos^2(\theta)+9\cos^2(\theta)-6\sin(\theta)\cos(\theta)+12\sin(\theta)\cos(\theta)-8\sin^2(\theta))$$
+        $$J = -r(sin^2(\theta)+\cos^2(\theta))$$
+        $$J = -r$$
+        $$\Downarrow$$
+        $$\int_0^{2\pi}\int_0^{4} (3r\sin(\theta)-4r\cos(\theta)-4+6r\cos(\theta)-4r\sin(\theta)+6) (-r) \delta r \delta \theta$$
+        $$\int_0^{2\pi}\int_0^{4} (-r\sin(\theta)+2r\cos(\theta)+2) (-r) \delta r \delta \theta$$
+        $$\int_0^{2\pi}\int_0^{4} (r^2\sin(\theta)-2r^2\cos(\theta)-2r \delta r)  \delta \theta$$
+        $$\int_0^{2\pi} (\frac{1}{3}r^3\sin(\theta)-\frac{2}{3}r^3\cos(\theta)-r^2 |_0^{4})  \delta \theta$$
+        $$\int_0^{2\pi} (\frac{64}{3}\sin(\theta)-\frac{2\cdot 64}{3}\cos(\theta)-16)  \delta \theta$$
+        $$(-\frac{64}{3}\cos(\theta)-\frac{2\cdot 64}{3}\sin(\theta)-16\theta|_0^{2\pi})$$
+        $$(-\frac{64}{3}\cos(\theta)-\frac{2\cdot 64}{3}\sin(\theta)-16\theta|_0^{2\pi})$$
+        $$-32\pi$$
 6.  
     $$z=x^2+y^2$$
     $$xy=1$$
