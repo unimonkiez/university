@@ -255,15 +255,16 @@
         $$J = -r(9sin^2(\theta)+6\sin(\theta)\cos(\theta)-12\sin(\theta)\cos(\theta)-8\cos^2(\theta)+9\cos^2(\theta)-6\sin(\theta)\cos(\theta)+12\sin(\theta)\cos(\theta)-8\sin^2(\theta))$$
         $$J = -r(sin^2(\theta)+\cos^2(\theta))$$
         $$J = -r$$
+        $$|J| = r$$
         $$\Downarrow$$
-        $$\int_0^{2\pi}\int_0^{4} (3r\sin(\theta)-4r\cos(\theta)-4+6r\cos(\theta)-4r\sin(\theta)+6) (-r) \delta r \delta \theta$$
-        $$\int_0^{2\pi}\int_0^{4} (-r\sin(\theta)+2r\cos(\theta)+2) (-r) \delta r \delta \theta$$
-        $$\int_0^{2\pi}\int_0^{4} (r^2\sin(\theta)-2r^2\cos(\theta)-2r \delta r)  \delta \theta$$
-        $$\int_0^{2\pi} (\frac{1}{3}r^3\sin(\theta)-\frac{2}{3}r^3\cos(\theta)-r^2 |_0^{4})  \delta \theta$$
-        $$\int_0^{2\pi} (\frac{64}{3}\sin(\theta)-\frac{2\cdot 64}{3}\cos(\theta)-16)  \delta \theta$$
-        $$(-\frac{64}{3}\cos(\theta)-\frac{2\cdot 64}{3}\sin(\theta)-16\theta|_0^{2\pi})$$
-        $$(-\frac{64}{3}\cos(\theta)-\frac{2\cdot 64}{3}\sin(\theta)-16\theta|_0^{2\pi})$$
-        $$-32\pi$$
+        $$\int_0^{2\pi}\int_0^{4} (3r\sin(\theta)-4r\cos(\theta)-4+6r\cos(\theta)-4r\sin(\theta)+6) r \delta r \delta \theta$$
+        $$\int_0^{2\pi}\int_0^{4} (-r\sin(\theta)+2r\cos(\theta)+2) r \delta r \delta \theta$$
+        $$\int_0^{2\pi}\int_0^{4} (-r^2\sin(\theta)+2r^2\cos(\theta)+2r \delta r)  \delta \theta$$
+        $$\int_0^{2\pi} (-\frac{1}{3}r^3\sin(\theta)+\frac{2}{3}r^3\cos(\theta)+r^2 |_0^{4})  \delta \theta$$
+        $$\int_0^{2\pi} (-\frac{64}{3}\sin(\theta)+\frac{2\cdot 64}{3}\cos(\theta)+16)  \delta \theta$$
+        $$(\frac{64}{3}\cos(\theta)+\frac{2\cdot 64}{3}\sin(\theta)+16\theta|_0^{2\pi})$$
+        $$(\frac{64}{3}\cos(\theta)+\frac{2\cdot 64}{3}\sin(\theta)+16\theta|_0^{2\pi})$$
+        $$32\pi$$
 6.  
     $$z=x^2+y^2$$
     $$xy=1$$
@@ -272,3 +273,33 @@
     $$2y=x$$
     $$x\geq 0$$
     פתרון:
+
+    $$\int\int_D (x^2+y^2) \delta x \delta y$$
+    $$D: \{1\leq xy\leq 2, 0\leq \frac{1}{2}x\leq y\leq 2x\}$$
+
+    נעבור קורדינטות 
+
+    $$u=xy \rightarrow$$
+    $$v=\frac{y}{x}$$
+    $$x=\frac{u}{y}$$
+    $$y=vx$$
+    $$x=\frac{u}{vx}$$
+    $$x=\sqrt[]{\frac{u}{v}} = u^{\frac{1}{2}}v^{-\frac{1}{2}}$$
+    $$y=v\sqrt[]{\frac{u}{v}} = u^{\frac{1}{2}}v^{\frac{1}{2}}$$
+    $$J = |\frac{\frac{1}{2}u^{-\frac{1}{2}}v^{-\frac{1}{2}}}{\frac{1}{2}u^{-\frac{1}{2}}v^{\frac{1}{2}}} \frac{-\frac{1}{2}u^{\frac{1}{2}}v^{-\frac{3}{2}}}{\frac{1}{2}u^{\frac{1}{2}}v^{-\frac{1}{2}}}|$$
+    $$J = (\frac{1}{2}u^{-\frac{1}{2}}v^{-\frac{1}{2}})(\frac{1}{2}u^{\frac{1}{2}}v^{-\frac{1}{2}})-(-\frac{1}{2}u^{\frac{1}{2}}v^{-\frac{3}{2}})(\frac{1}{2}u^{-\frac{1}{2}}v^{\frac{1}{2}})$$
+    $$J = \frac{1}{4}v^{-1}+\frac{1}{4}v^{-1}$$
+    $$J = \frac{1}{2}v^{-1}$$
+    $$1\leq u\leq 2$$
+    $$\frac{1}{2}\leq v\leq 2$$
+    $$\Downarrow$$
+    $$\int_{\frac{1}{2}}^{2}\int_{1}^{2} (uv^{-1}+uv) \frac{1}{2}v^{-1}\delta u \delta v$$
+    $$\frac{1}{2}\int_{\frac{1}{2}}^{2}\int_{1}^{2} (uv^{-2}+u)\delta u \delta v$$
+    $$\frac{1}{2}\int_{\frac{1}{2}}^{2}(\frac{1}{2}u^2v^{-2}+\frac{1}{2}u^2|_{1}^{2}) \delta v$$
+    $$\frac{1}{2}\int_{\frac{1}{2}}^{2}(2v^{-2}+2-\frac{1}{2}v^{-2}-\frac{1}{2}) \delta v$$
+    $$\frac{1}{2}\int_{\frac{1}{2}}^{2}(\frac{3}{2}v^{-2}+\frac{3}{2}) \delta v$$
+    $$\frac{1}{2}(-\frac{3}{2}v^{-1}+\frac{3}{2}v|_{\frac{1}{2}}^{2})$$
+    $$\frac{3}{4}(-v^{-1}+v|_{\frac{1}{2}}^{2})$$
+    $$\frac{3}{4}(-\frac{1}{2}+2+2-\frac{1}{2})$$
+    $$\frac{3}{4}(3)$$
+    $$\frac{9}{4}$$
