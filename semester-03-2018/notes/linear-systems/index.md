@@ -1,3 +1,12 @@
+<style>
+    html {
+        direction: rtl;
+    }
+    eqn, table, .katex {
+        direction: ltr;
+    }
+</style>
+### 16.10.2018
 * אנרגיה כוללת  
     רציף
 
@@ -25,3 +34,12 @@
 * כל אות יכול להיות מפורק לסכום של שני אותות, אחד זוגי והשני אי זוגי
     * $$even_{(x_{(t)})} = \frac{1}{2}(x_{(t)}+x_{(-t)})$$
     * $$odd_{(x_{(t)})} = \frac{1}{2}(x_{(t)}-x_{(-t)})$$
+### 22.10.2018
+
+*
+    $$\delta_{\Delta}(t) = \{ \frac{1}{\Delta} : |t|\leq \frac{\Delta}{2}, 0: |t|> \frac{\Delta}{2}\}$$
+*   תמיד אותו שטח:
+
+    $$\Delta \cdot \frac{1}{\Delta} = 1$$
+*
+    $$f_{(t)}\cdot \delta'_{(t)} = f_{(0)}\delta'_{(t)}-f'_{(0)}\delta_{(t)}$$
