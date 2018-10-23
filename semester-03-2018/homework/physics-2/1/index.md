@@ -46,8 +46,8 @@
     $$\vec{B}\cdot((\frac{\delta}{\delta y}A_z-\frac{\delta}{\delta z}A_y)\hat{x}+(\frac{\delta}{\delta z}A_x-\frac{\delta}{\delta x}A_z)\hat{y}+(\frac{\delta}{\delta x}A_y-\frac{\delta}{\delta y}A_x)\hat{z})+\vec{A}\cdot((\frac{\delta}{\delta y}B_z-\frac{\delta}{\delta z}B_y)\hat{x}+(\frac{\delta}{\delta z}B_x-\frac{\delta}{\delta x}B_z)\hat{y}+(\frac{\delta}{\delta x}B_y-\frac{\delta}{\delta y}B_x)\hat{z})$$
     $$\vec{B}\cdot(\vec{\nabla} \times \vec{A})+\vec{A}\cdot(\vec{B}\times \vec{\nabla})$$
     $$\vec{B}\cdot(\vec{\nabla} \times \vec{A})-\vec{A}\cdot(\vec{\nabla}\times \vec{B})$$
-
-    3. $$\vec{\nabla} \times (\vec{\nabla} \times \vec{A}) = \vec{\nabla}(\vec{\nabla} \cdot \vec{A}) - \nabla^2\vec{A}$$
+<!-- 
+    3. $$\vec{\nabla} \times (\vec{\nabla} \times \vec{A}) = \vec{\nabla}(\vec{\nabla} \cdot \vec{A}) - \nabla^2\vec{A}$$ -->
 3.
     1.
         $$\int_{0}^{1}\int_{0}^{1-x}\int_{0}^{2-x}xyz \delta x \delta y \delta z$$
@@ -92,6 +92,12 @@
         $$\vec{A}_{(x,y,z)} = y^2z\hat{x} + xz^2\hat{y}+ x^2y\hat{z}$$
         1.
             $$\vec{\nabla \phi}$$
+            $$\phi_{(x,y,z)} = e^{-\sqrt[]{x^2+y^2+z^2}}$$
+            $$\vec{\nabla \phi} = \frac{\delta  e^{-\sqrt[]{x^2+y^2+z^2}}}{\delta x}\hat{x} + \frac{\delta  e^{-\sqrt[]{x^2+y^2+z^2}}}{\delta y}\hat{y} + \frac{\delta  e^{-\sqrt[]{x^2+y^2+z^2}}}{\delta z}\hat{z}$$
+            $$\frac{\delta -\sqrt[]{x^2+y^2+z^2}}{\delta x}e^{-\sqrt[]{x^2+y^2+z^2}}\hat{x} + \frac{\delta -\sqrt[]{x^2+y^2+z^2}}{\delta y}e^{-\sqrt[]{x^2+y^2+z^2}}\hat{y} + \frac{\delta -\sqrt[]{x^2+y^2+z^2}}{\delta z}e^{-\sqrt[]{x^2+y^2+z^2}}\hat{z}$$
+            $$e^{-\sqrt[]{x^2+y^2+z^2}}(\frac{\delta -\sqrt[]{x^2+y^2+z^2}}{\delta x}\hat{x} + \frac{\delta -\sqrt[]{x^2+y^2+z^2}}{\delta y}\hat{y} + \frac{\delta -\sqrt[]{x^2+y^2+z^2}}{\delta z}\hat{z})$$
+            $$e^{-\sqrt[]{x^2+y^2+z^2}}((-1)\frac{1}{2}(x^2+y^2+z^2)^{\frac{1}{2}-1}2x\hat{x} + (-1)\frac{1}{2}(x^2+y^2+z^2)^{\frac{1}{2}-1}2y\hat{y} + (-1)\frac{1}{2}(x^2+y^2+z^2)^{\frac{1}{2}-1}2z\hat{z})$$
+            $$-e^{-\sqrt[]{x^2+y^2+z^2}}(\frac{x}{(x^2+y^2+z^2)^{\frac{1}{2}}}\hat{x} + \frac{y}{(x^2+y^2+z^2)^{\frac{1}{2}}}\hat{y} + \frac{z}{(x^2+y^2+z^2)^{\frac{1}{2}}}\hat{z})$$
         2.
             $$\vec{\nabla}\cdot \vec{A}$$
             $$\frac{\delta A_x}{\delta x} + \frac{\delta A_y}{\delta y} + \frac{\delta A_z}{\delta z}$$
@@ -102,8 +108,13 @@
             $$(\frac{\delta}{\delta y}A_z - \frac{\delta}{\delta z}A_y)\hat{x} +
             (\frac{\delta}{\delta z}A_x - \frac{\delta}{\delta x}A_z)\hat{y} +
             (\frac{\delta}{\delta x}A_y - \frac{\delta}{\delta y}A_x)\hat{z}$$
-        4.
-            $$\vec{\nabla} \cdot (\phi \vec{A})$$
+            $$(\frac{\delta}{\delta y}x^2y - \frac{\delta}{\delta z}xz^2)\hat{x} +
+            (\frac{\delta}{\delta z}y^2z - \frac{\delta}{\delta x}x^2y)\hat{y} +
+            (\frac{\delta}{\delta x}xz^2 - \frac{\delta}{\delta y}y^2z)\hat{z}$$
+            $$(x^2 - 2xz)\hat{x} + (y^2 - 2xy)\hat{y} + (z^2 - 2yz)\hat{z}$$
+            $$x(x - 2z)\hat{x} + y(y - 2x)\hat{y} + z(z - 2y)\hat{z}$$
+        <!-- 4.
+            $$\vec{\nabla} \cdot (\phi \vec{A})$$ -->
 5.
     $$\rho_{(x,y)}=x^2+y^3$$
     $$\delta s=\delta x\delta y$$
