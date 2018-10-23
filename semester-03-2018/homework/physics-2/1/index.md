@@ -86,6 +86,24 @@
         $$\frac{2}{27}(6^5-\frac{6^6}{5})$$
         $$\frac{2}{27}(6^5-\frac{6^6}{5}) = 460.8$$
 4.
+    1.
+        $$r=|\vec{r}|$$
+        $$\phi_{(x,y,z)} = e^{-r}$$
+        $$\vec{A}_{(x,y,z)} = y^2z\hat{x} + xz^2\hat{y}+ x^2y\hat{z}$$
+        1.
+            $$\vec{\nabla \phi}$$
+        2.
+            $$\vec{\nabla}\cdot \vec{A}$$
+            $$\frac{\delta A_x}{\delta x} + \frac{\delta A_y}{\delta y} + \frac{\delta A_z}{\delta z}$$
+            $$\frac{\delta y^2z}{\delta x} + \frac{\delta xz^2}{\delta y} + \frac{\delta x^2y}{\delta z}$$
+            $$0$$
+        3.
+            $$\vec{\nabla}\times \vec{A}$$
+            $$(\frac{\delta}{\delta y}A_z - \frac{\delta}{\delta z}A_y)\hat{x} +
+            (\frac{\delta}{\delta z}A_x - \frac{\delta}{\delta x}A_z)\hat{y} +
+            (\frac{\delta}{\delta x}A_y - \frac{\delta}{\delta y}A_x)\hat{z}$$
+        4.
+            $$\vec{\nabla} \cdot (\phi \vec{A})$$
 5.
     $$\rho_{(x,y)}=x^2+y^3$$
     $$\delta s=\delta x\delta y$$
@@ -122,14 +140,19 @@
     $$p_{(r,\phi,\theta)} = \frac{\sin(\theta)}{r^2}p_0$$
     $$V=\{a<r<b,0<\theta<\pi, 0<\phi<2\pi\}$$
     $$\Downarrow$$
-    $$\int_a^b \delta r \int_0^{\pi} \int_0^{2\pi} \delta \phi (\frac{\sin(\theta)}{r^2}p_0)$$
-    $$p_0 \int_a^b \delta r (\frac{1}{r^2}) \int_0^{\pi} (\sin(\theta)) \int_0^{2\pi} \delta \phi$$
-    $$p_0 \int_a^b \delta r (\frac{1}{r^2}) \int_0^{\pi} (\sin(\theta)) (\phi|_0^{2\pi})$$
-    $$p_0 \int_a^b \delta r (\frac{1}{r^2}) \int_0^{\pi} (\sin(\theta)) (2\pi)$$
-    $$2\pi p_0 \int_a^b \delta r (\frac{1}{r^2}) \int_0^{\pi} (\sin(\theta))$$
-    $$2\pi p_0 \int_a^b \delta r (\frac{1}{r^2}) (-\cos(\theta) |_0^{\pi})$$
-    $$2\pi p_0 \int_a^b \delta r (\frac{1}{r^2}) (-\cos(\pi)+\cos(0))$$
-    $$2\pi p_0 \int_a^b \delta r (\frac{1}{r^2}) (-0+1)$$
-    $$2\pi p_0 \int_a^b \delta r (\frac{1}{r^2})$$
-    $$2\pi p_0 (-\frac{1}{r}|_a^b)$$
-    $$2\pi p_0 (\frac{1}{a}-\frac{1}{b})$$
+    $$\int_a^b \delta r \int_0^{\pi} \delta \theta \int_0^{2\pi} \delta \phi (\frac{\sin(\theta)}{r^2}p_0\cdot r^2\sin(\theta))$$
+    $$\int_a^b \delta r \int_0^{\pi} \delta \theta \int_0^{2\pi} \delta \phi (\sin^2(\theta)p_0)$$
+    $$p_0 \int_a^b \delta r \int_0^{\pi} \delta \theta (\sin^2(\theta)) \int_0^{2\pi} \delta \phi$$
+    $$p_0 \int_a^b \delta r \int_0^{\pi} \delta \theta (\sin^2(\theta)) (\phi|_0^{2\pi})$$
+    $$p_0 \int_a^b \delta r \int_0^{\pi} \delta \theta (\sin^2(\theta)) (2\pi)$$
+    $$2\pi p_0 \int_a^b \delta r \int_0^{\pi} \delta \theta (\sin^2(\theta))$$
+    $$\Downarrow$$
+    $$\int\sin^2(x)\delta x = -\frac{\sin(2x)-2x}{4}$$
+    $$\Downarrow$$
+    $$2\pi p_0 \int_a^b \delta r (-\frac{\sin(2\theta)-2\theta}{4}(\theta)|_0^{\pi})$$
+    $$2\pi p_0 \int_a^b \delta r (\frac{\pi}{2})$$
+    $$\pi^2 p_0 \int_a^b \delta r$$
+    $$\pi^2 p_0 (r|_a^b)$$
+    $$\pi^2 p_0 (b-a)$$
+    
+    
