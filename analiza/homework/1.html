@@ -19,9 +19,66 @@
         $$< A , B > = tr(AB)$$
         $$tr(AB) = \sum_{i=1}^{n}A_iB_i$$
         1.
-            ליניאריות
+            ליניאריות  
+            $$< A + B , C > = < A, C > + < B , C >$$
+            $$\Downarrow$$
+            $$< A + B , C >$$
+            $$\sum_{i=1}^{n}(A_i + B_i)\cdot C_i$$
+            $$(\sum_{i=1}^{n}A_i\cdot C_i) + (\sum_{i=1}^{n}B_i\cdot C_i)$$
+            $$< A, C > + < B , C >$$
         2.
-            הרמיטיות
+            הרמיטיות  
+            $$< A , B > = \overline{< B , A >}$$
+            $$\Downarrow$$
+            $$\overline{< B , A >}$$
+            $$\forall i\in N: A_i,B_i \in R \Downarrow$$
+            $$\sum_{i=1}^{n}B_iA_i$$
+            $$\sum_{i=1}^{n}A_iB_i$$
+            $$< A , B >$$
         3.  
-            אי שליליות
+            אי שליליות  
+            לא נכון, למשל $A=[1], B=[-1]$
+            $$< A , B > = -1 \ngeq 0 $$
+    2.
+        $$A\in n\times n$$
+        $$B\in n\times n$$
+        $$< A , B > = tr(AB^t)$$
+        $$tr(AB^t) = \sum_{i=1}^{n}A_iB_i$$
+        אותם התשובות כמו בסעיף 1, מכיוון שפונקציית שחלוף הופכת את המטריצה סביב האלכסון הראשי, ופעולת העקבה שווה גם עבור מטריצה משוחלפת
+        $$tr(A) = tr(A^t)$$
+    3.
+        $$C^1[0,1] = f:[0,1] \rightarrow R$$
+        $$f,g,h \in C^1[0,1]$$
+        $$< f , g > = \int_0^1 f'(x)g'(x)\delta x$$
+        1.
+            ליניאריות  
+            $$< f + g , h > = < f, h > + < g , h >$$
+            $$\Downarrow$$
+            $$< f + g , h >$$
+            $$\int_0^1 (f(x)+h(x))'h'(x)\delta x$$
+            $$\int_0^1 (f'(x)+h'(x))h'(x)\delta x$$
+            $$(\int_0^1 f'(x)h'(x)\delta x) + (\int_0^1 g'(x)h'(x)\delta x)$$
+            $$< f, h > + < g , h >$$
+        2.
+            הרמיטיות  
+            $$< f , g > = \overline{< g , h >}$$
+            $$\Downarrow$$
+            $$\overline{< g , h >}$$
+            $$\overline{\int_0^1 g'(x)f'(x)\delta x}$$
+            $$\forall x\in [0,1]: f(x),g(x) \in R \Downarrow$$
+            $$\int_0^1 g'(x)f'(x)\delta x$$
+            $$\int_0^1 f'(x)g'(x)\delta x$$
+            $$< f , g >$$
+        3.  
+            אי שליליות  
+            לא נכון, למשל $f(x)=x, g(x)=-x$
+            $$< f , g >$$
+            $$< x , -x >$$
+            $$\int_0^1 (x)'(-x)'\delta x$$
+            $$\int_0^1 1\cdot(-1)\delta x$$
+            $$\int_0^1 -\delta x$$
+            $$-x|_0^1$$
+            $$-1$$
+            $$-1 \ngeq 0$$
+
             
