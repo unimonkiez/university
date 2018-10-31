@@ -45,6 +45,7 @@
         $$< A , B > = tr(AB^t)$$
         $$tr(AB^t) = \sum_{i=1}^{n}A_iB_i$$
         אותם התשובות כמו בסעיף 1, מכיוון שפונקציית שחלוף הופכת את המטריצה סביב האלכסון הראשי, ופעולת העקבה שווה גם עבור מטריצה משוחלפת
+
         $$tr(A) = tr(A^t)$$
     3.
         $$C^1[0,1] = f:[0,1] \rightarrow R$$
@@ -80,5 +81,85 @@
             $$-x|_0^1$$
             $$-1$$
             $$-1 \ngeq 0$$
+    4.
+        $$C^1[0,1] = f:[0,1] \rightarrow R$$
+        $$f,g,h \in C^1[0,1]$$
+        $$< f , g > = \int_0^1 f(x)g(x)e^x\delta x$$
+        1.
+            ליניאריות  
+            $$< f + g , h > = < f, h > + < g , h >$$
+            $$\Downarrow$$
+            $$< f + g , h >$$
+            $$\int_0^1 (f(x)+h(x))h(x)e^x\delta x$$
+            $$(\int_0^1 f(x)h(x)e^x\delta x) + (\int_0^1 g(x)h(x)e^x\delta x)$$
+            $$< f, h > + < g , h >$$
+        2.
+            הרמיטיות  
+            $$< f , g > = \overline{< g , h >}$$
+            $$\Downarrow$$
+            $$\overline{< g , h >}$$
+            $$\overline{\int_0^1 g(x)f(x)e^x\delta x}$$
+            $$\forall x\in [0,1]: f(x),g(x) \in R \Downarrow$$
+            $$\int_0^1 g(x)f(x)e^x\delta x$$
+            $$\int_0^1 f(x)g(x)e^x\delta x$$
+            $$< f , g >$$
+        3.  
+            אי שליליות  
+            לא נכון, למשל $f(x)=x, g(x)=-x$
+            $$< f , g >$$
+            $$< x , -x >$$
+            $$\int_0^1 (x)'(-x)'\delta x$$
+            $$\int_0^1 1\cdot(-1)\delta x$$
+            $$\int_0^1 -\delta x$$
+            $$-x|_0^1$$
+            $$-1$$
+            $$-1 \ngeq 0$$
+2.
+    $$u = (|x_1,x_2,x_3,...,x_n|)$$
+    $$v = (|1,1,1,...,1|)$$
+    $$< u , v > = \sum_{i=1}^{n}u_iv_i$$
+    $$< u , v > = \sum_{i=1}^{n}|x_i|$$
+    $$||u|| = \sqrt[]{< u , u >}$$
+    $$||u|| = \sqrt[]{\sum_{i=1}^{n}x_i^2}$$
+    $$||v|| = \sqrt[]{< v , v >}$$
+    $$||v|| = \sqrt[]{\sum_{i=1}^{n}1}$$
+    $$||v|| = \sqrt[]{n}$$
+    מכיוון שהמדובר במכפלה הפנימית הסטנדרטית בין וקטורים, מתאיים אי-שיוויון קושי שוורץ':
+    $$|< u , v >|\leq ||u|| \cdot ||v||$$
+    $$\Downarrow$$
+    $$|\sum_{i=1}^{n}|x_i||\leq \sqrt[]{\sum_{i=1}^{n}x_i^2} \cdot \sqrt[]{n}$$
+    $$\sum_{i=1}^{n}|x_i| \geq 0, \sqrt[]{n} \geq 0 \Downarrow$$
+    $$\frac{\sum_{i=1}^{n}|x_i|}{\sqrt[]{n}}\leq \sqrt[]{\sum_{i=1}^{n}x_i^2}$$
+3.
+    1.
+        צ"ל:
+        $$< u , v > = \frac{1}{4}(||u+v||^2 - ||u-v||^2)$$
+        פתרון
+        $$\frac{1}{4}(||u+v||^2 - ||u-v||^2)$$
+        $$\frac{1}{4}((\sqrt[]{< u+v , u+v >})^2 - (\sqrt[]{< u-v , u-v >})^2)$$
+        $$\frac{1}{4}(< u+v , u+v > - < u-v , u-v >)$$
+        $$\frac{1}{4}(\sum_{i=1}^{n}(u_i+v_1)^2 - \sum_{i=1}^{n}(u_i-v_1)^2)$$
+        $$\frac{1}{4}(\sum_{i=1}^{n}(u_i+v_1)^2-(u_i-v_1)^2)$$
+        $$\frac{1}{4}(\sum_{i=1}^{n}(u_i^2+v_i^2+2u_iv_i)-(u_i^2+v_i^2-2u_iv_i))$$
+        $$\frac{1}{4}(\sum_{i=1}^{n}4u_iv_i)$$
+        $$\sum_{i=1}^{n}u_iv_i$$
+        $$< u , v >$$
+    2.
+        צ"ל:
+        $$< u , v > = \frac{1}{4}(||u+v||^2 - ||u-v||^2 + i||u+vi||^2 - i||u-vi||^2)$$
+        פתרון
+        $$\frac{1}{4}(||u+v||^2 - ||u-v||^2 + i||u+vi||^2 - i||u-vi||^2)$$
+        $$< u , v > = \frac{1}{4}(||u+v||^2 - ||u-v||^2) \Downarrow$$
+        $$< u , v > + \frac{1}{4}(i||u+vi||^2 - i||u-vi||^2)$$
+        $$< u , v > + \frac{i}{4}(||u+vi||^2 - ||u-vi||^2)$$
+        $$< u , v > + \frac{i}{4}((\sqrt[]{< u+vi , u+vi >})^2 - |(\sqrt[]{< u-vi , u-vi >})^2)$$
+        $$< u , v > + \frac{i}{4}(< u+vi , u+vi > - |< u-vi , u-vi >)$$
+        $$< u , v > + \frac{i}{4}(\sum_{j=1}^{n}((u_j+v_ji)^2) - \sum_{j=1}^{n}((u_j-v_ji)^2))$$
+        $$< u , v > + \frac{i}{4}(\sum_{j=1}^{n}(u_j+v_ji)^2 - (u_j-v_ji)^2)$$
+        $$< u , v > + \frac{i}{4}(\sum_{j=1}^{n}(u_j^2-v_j^2+2iu_jv_j) - (u_j^2-v_j^2-2iu_jv_j)^2)$$
+        $$< u , v > + \frac{i}{4}(\sum_{j=1}^{n}4iu_jv_j)$$
+        $$< u , v > - \sum_{j=1}^{n}u_jv_j$$
+        $$< u , v > - < u , v >$$
+        $$0$$
 
             
