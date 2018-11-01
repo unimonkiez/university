@@ -149,17 +149,28 @@
         $$< u , v > = \frac{1}{4}(||u+v||^2 - ||u-v||^2 + i||u+vi||^2 - i||u-vi||^2)$$
         פתרון
         $$\frac{1}{4}(||u+v||^2 - ||u-v||^2 + i||u+vi||^2 - i||u-vi||^2)$$
-        $$< u , v > = \frac{1}{4}(||u+v||^2 - ||u-v||^2) \Downarrow$$
-        $$< u , v > + \frac{1}{4}(i||u+vi||^2 - i||u-vi||^2)$$
-        $$< u , v > + \frac{i}{4}(||u+vi||^2 - ||u-vi||^2)$$
-        $$< u , v > + \frac{i}{4}((\sqrt[]{< u+vi , u+vi >})^2 - |(\sqrt[]{< u-vi , u-vi >})^2)$$
-        $$< u , v > + \frac{i}{4}(< u+vi , u+vi > - |< u-vi , u-vi >)$$
-        $$< u , v > + \frac{i}{4}(\sum_{j=1}^{n}((u_j+v_ji)^2) - \sum_{j=1}^{n}((u_j-v_ji)^2))$$
-        $$< u , v > + \frac{i}{4}(\sum_{j=1}^{n}(u_j+v_ji)^2 - (u_j-v_ji)^2)$$
-        $$< u , v > + \frac{i}{4}(\sum_{j=1}^{n}(u_j^2-v_j^2+2iu_jv_j) - (u_j^2-v_j^2-2iu_jv_j)^2)$$
-        $$< u , v > + \frac{i}{4}(\sum_{j=1}^{n}4iu_jv_j)$$
-        $$< u , v > - \sum_{j=1}^{n}u_jv_j$$
-        $$< u , v > - < u , v >$$
-        $$0$$
+        $$\frac{1}{4}((\sqrt[]{< u+v , u+v >})^2 - (\sqrt[]{< u-v , u-v >})^2 + i(\sqrt[]{< u+vi , u+vi >})^2 -i(\sqrt[]{< u-vi , u-vi >})^2)$$
+        $$\frac{1}{4}(< u+v , u+v > - < u-v , u-v > + i< u+vi , u+vi > -i< u-vi , u-vi >)$$
+        $$\frac{1}{4}(< u+v , u > + < u+v , v > - < u-v , u > + < u-v , v > + i< u+vi , u > +i< u+vi , vi > -i< u-vi , u > + i< u-vi , vi >)$$
+        $$\frac{1}{4}(< u , u > + < v , u >
+         + < u , v > + < v , v >
+         - < u , u > + < v , u >
+         + < u , v > - < v , v >
+         + i< u , u > + i< vi , u >
+         +i< u , vi > + i< vi , vi >
+         -i< u , u > +i< vi , u >
+         + i< u , vi > - i< vi , vi >
+        )$$
+        $$\frac{1}{4}(2< v , u >
+         + 2< u , v > + 2i< vi , u >
+         + 2i< u , vi >
+        )$$
+        $$\frac{1}{4}(2< v , u >
+         + 2< u , v > - 2< v , u >
+         + 2< u , v >
+        )$$
+        $$\frac{1}{4}(4< u , v >)$$
+        $$< u , v >$$
+        
 
             
