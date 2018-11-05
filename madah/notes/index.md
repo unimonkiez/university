@@ -82,3 +82,23 @@ $$\frac{\delta z}{\delta y}(2,1) = 3$$
         $$t=0$$
         $$\Downarrow$$
         $$x(t,s) = t$$
+## 05.11.2018 - תרגול
+* שיטת לגרנז'
+
+    $$au_x+bu_y = c$$
+    $$\frac{\delta x}{a} =\frac{\delta y}{b} = \frac{\delta u}{c}$$
+*
+    דוגמא:  
+    
+    $$xu_x+yu_y = 1$$
+    $$a = x, b=y, c=1$$
+    $$I.\ \ \ \frac{\delta x}{x} = \frac{\delta y}{y}$$
+    $$II.\ \ \ \frac{\delta y}{y} = \delta u$$
+    $$I.\ \ \ \ln|x| = \ln|y| + C_1$$
+    $$C_{(x,y)} = \frac{x}{y}$$
+    $$II.\ \ \ \int \delta u = \int \frac{\delta y}{y}$$
+    $$u = \ln|y| + C_2$$
+    $$C_2 = u - \ln|y|$$
+    $$F_{(\frac{x}{y}, u-\ln|y|)}$$
+    $$u - \ln|y| = F_{(\frac{x}{y})}$$
+    $$u_{(x,y)} = F_{(\frac{x}{y})} + \ln|y|$$
