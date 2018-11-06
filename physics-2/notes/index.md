@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<script src="https://cdn.jsdelivr.net/npm/texme@0.5.0"></script>
+<!-- <!DOCTYPE html> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/texme@0.5.0"></script> -->
 <style>
     html {
         direction: rtl;
@@ -8,7 +8,7 @@
         direction: ltr;
     }
 </style>
-<textarea>
+<!-- <textarea> -->
 
 ### הרצאה 3
 #### שטף חשמלי - electric flux
@@ -39,3 +39,20 @@ $$\delta q = \frac{\lambda a}{r^3}\delta u$$
 $$\delta q = \frac{\lambda a z}{(a^2+z^2)^{\frac{3}{2}}}$$
 $$E_{z} = \frac{ka \lambda z}{(a^2+z^2)^{\frac{3}{2}}}\int \delta u$$
 $$E_{z} = \frac{2\pi ka \lambda z}{(a^2+z^2)^{\frac{3}{2}}}$$
+## 06.11.2018
+#### הקשר בין שדה חשמלי ופונטציאל חשמלי
+
+$$\phi_{A\ \ \ [v]} = \int_A^{\infty}\vec{E}\cdot \vec{\delta r}$$
+$$\phi_B = \int_B^{\infty}\vec{E}\cdot \vec{\delta r}$$
+$$\phi_A - \phi_B = \int_A^{B}\vec{E}\cdot \vec{\delta r}$$
+* עבודה
+
+    * $$W_{[J]} = \phi \cdot q$$
+    * מטען חיובי ישאף לנוע מפוטנציאל חשמלי גבוה לנמוך
+    * מטען שלילי ישאף לנוע מפוטנציאל חשמלי נמוך לגבוה
+* אם יש שימור אנרגיה
+
+    $$W_A - W_B = q (\phi_A - \phi_B) = q \Delta \phi = E_{kB} - E_{kA}$$
+* שדה קבוע
+    * $$\Delta \phi = -\int_A^B \vec{E}\cdot \vec{\delta s} = E \cdot d$$
+    * $$E = \frac{\Delta \phi}{d}$$
