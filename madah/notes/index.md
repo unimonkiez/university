@@ -102,3 +102,7 @@ $$\frac{\delta z}{\delta y}(2,1) = 3$$
     $$F_{(\frac{x}{y}, u-\ln|y|)}$$
     $$u - \ln|y| = F_{(\frac{x}{y})}$$
     $$u_{(x,y)} = F_{(\frac{x}{y})} + \ln|y|$$
+## 06.11.2018
+#### נוסחאת דלמבר
+
+$$u_{(x,y)} = \frac{f_{(x+ct)}+f_{(x-ct)}}{2}+\frac{1}{2c}\int_{x-ct}^{x+ct}g_{(s)}\delta s$$
