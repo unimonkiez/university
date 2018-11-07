@@ -46,3 +46,74 @@ $$\frac{\delta u}{\delta x} = \frac{\delta v}{\delta y}, \frac{\delta u}{\delta 
     $$\int z_{(t)}\delta t = \int x_{(t)}\delta t +i\int y_{(t)}\delta t$$
 *  $$C \longrightarrow C$$
     <!-- $$\int z_{(t)}\delta t = \int x_{(t)}\delta t +i\int y_{(t)}\delta t$$ -->
+#### 7.11.2018
+* $$\log (z) = \ln (|z|) + i (\theta +2\pi k)$$
+* $$-i = \frac{1}{i}$$
+*
+    תרגיל
+
+    $$\sin (z) = -2i$$
+    $$\frac{e^{iz} - e^{-iz}}{2i} = -2i$$
+    $$e^{iz} - e^{-iz} = 4$$
+    $$t = e^{iz}$$
+    $$\Downarrow$$
+    $$t -\frac{1}{t} = 4$$
+    $$t^2 -4t - 1 =0$$
+    $$t_{1,2} = \frac{4\pm \sqrt[]{16 - 4}}{2}$$
+    $$t_{1,2} = 2\pm \sqrt[]{5}$$
+    $$e^{iz} = 2\pm \sqrt[]{5}\ \ \ /\log ()$$
+    $$iz = \log (2\pm \sqrt[]{5})$$
+    נפצל למקרים:
+    
+    *  
+        $$iz = \ln (2+\sqrt[]{5}) + i(0+2\pi k) \ \ \ :k\in Z$$
+        $$iz = \ln (2+\sqrt[]{5}) + i2\pi k$$
+        $$z_{(k)} = 2\pi k -i\ln (2+\sqrt[]{5})$$
+    *  
+        $$iz = \ln (|2-\sqrt[]{5}|) + i(\pi+2\pi k) \ \ \ :k\in Z$$
+        $$iz = \ln (\sqrt[]{5}-2) + i(\pi+2\pi k)$$
+        $$iz = \pi +2\pi k -i \ln (\sqrt[]{5} - 2)$$
+*
+    תרגיל
+
+    $$e^{e^{z}} = 1$$
+    $$e^{e^{z}} = e^{2\pi k i}$$
+    $$e^{z} = 2\pi k i\ \ \ /\log ()$$
+    $$z = \log (2\pi k i) \ \ \ :k\neq 0$$
+    נפצל למקרים:
+    
+    * 
+        $$k>0$$
+        $$z = \ln|2\pi k i| + i(\frac{\pi}{2} + 2\pi n) \ \ \ :n\in Z$$
+        $$|2\pi k i| = 2\pi k |i| = 2\pi k|0+i| = 2\pi k \sqrt[]{0^2+1^2} = 2\pi k$$
+        $$\Downarrow$$
+        $$z = \ln(2\pi k) + i(\frac{\pi}{2} + 2\pi n)$$
+    * 
+        $$k<0$$
+        $$z = \ln|2\pi k i| + i(-\frac{\pi}{2} + 2\pi n) \ \ \ :n\in Z$$
+        $$z = \ln(2\pi |k|) + i(-\frac{\pi}{2} + 2\pi n)$$
+* $$log(z) \Rightarrow -\pi \leq \theta \leq \pi$$
+* $$Log(z) \Rightarrow 0 \leq \theta \leq 2\pi$$
+* $$z_{(t)} = e^{it}\ \ \ :0\leq t \leq 2\pi$$
+* $$z_{(t)} = e^{it} = r\cos(t) + ir\sin(t)$$
+*
+    פרמריזציה של הקו הישר שמחבר בין 
+    
+    $$z_0 = 0$$
+    $$z_1 = 2+i$$
+    $$\Downarrow$$
+    $$z_{(t)} = t(2+i)\ \ \ :0\leq t \leq 1$$
+*
+    פרמריזציה של פרבולה
+    
+    $$y=x^2$$
+    $$t = x \Rightarrow y=t^2$$
+    $$\Downarrow$$
+    $$z_{(t)} = t+it^2$$
+*
+    פרמריזציה של רבע מעגל היחידה ברביע הרביעי נגד כיוון השעון
+    
+    $$y=x^2$$
+    $$t = x \Rightarrow y=t^2$$
+    $$\Downarrow$$
+    $$z_{(t)} = e^{it}\ \ \ :-\frac{\pi}{2}\leq t 0$$
