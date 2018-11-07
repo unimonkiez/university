@@ -56,3 +56,45 @@ $$\phi_A - \phi_B = \int_A^{B}\vec{E}\cdot \vec{\delta r}$$
 * שדה קבוע
     * $$\Delta \phi = -\int_A^B \vec{E}\cdot \vec{\delta s} = E \cdot d$$
     * $$E = \frac{\Delta \phi}{d}$$
+## 07.11.2018
+* 
+    שדה דרוש לטיול אלקטרונים באוויר (בקירוב)
+    
+    $$E_{c} = 30000_{[\frac{V}{cm}]}$$
+### שיעור 7 - חוק גאוס הדיפרנציאלי
+
+* $$\oint \vec{E}\cdot \vec{\delta A} = \frac{1}{\epsilon_0}\sum Q_{in} = \frac{1}{\epsilon_0} \int_v \sigma \delta v$$
+* $$div \vec{F} = \lim_{V_{i} \rightarrow 0}\frac{1}{V_{i}} \oint_{S_{i}}\vec{F}\vec{\delta a_{i}}$$
+* משפט גאוס \ משפט הדיברגנס  
+    אם ידועה הפונקציה הסקלרית 
+    
+    $$div \vec{F}$$
+    אז אפשר לקבל את האינטגרל המשטחי על משטח גדול יותר
+
+    * $$\oint \vec{F}\cdot \delta \vec{A} = \sum_{i=1}^N \oint_{S_i} \vec{F} \cdot \delta \vec{a_i} = \sum_{i=1}^N V_i \frac{\oint_{S_i} \vec{F}\cdot \delta \vec{a_i}}{V_i}$$
+    * $$\oint \vec{F}\cdot \delta \vec{A} = \int_V div \vec{F}$$
+    * שימוש בשדה חשמלי
+    
+        $$\oint \vec{E}\cdot \delta \vec{A} = \int_V div \vec{E}\delta  v$$
+    * 
+        חוק גאוס הדיפנרציאלי
+
+        $$div \vec{E} = \frac{\sigma}{\epsilon_0}$$
+*
+    דיברגנס בקורדינטות קרטזיות  
+    נתון שדה וקטורי הכיוון $\hat{x}$, $\hat{y}$ ו-$\hat{z}$ בכל נקודה במרחב :
+    
+    $$F_{z}(x,y,z)$$
+    $$F_{y}(x,y,z)$$
+    $$F_{x}(x,y,z)$$
+    $$div \vec{F} = \frac{\delta F_x}{\delta x} + \frac{\delta F_y}{\delta y}+ \frac{\delta F_z}{\delta z}$$
+* דוגמא 
+    גליל אינסופי עם צפיפות מטען $\rho$, צריך למצוא את השדה
+    * מבחוץ
+
+        $$E \cdot 2\pi r L = \frac{1}{\epsilon_0}\rho \cdot \pi R^2 L$$
+        $$E = \frac{\rho R^2}{2\epsilon_0}\frac{1}{r}$$
+    * מבפנים
+
+        $$E \cdot 2\pi r L = \frac{1}{\epsilon_0}\rho \cdot \pi r^2 L$$
+        $$E = \frac{\rho R^2}{2\epsilon_0}r$$
