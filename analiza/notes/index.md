@@ -30,4 +30,8 @@
 * $e^{i\theta} = \cos{\theta}+i\sin{\theta}$
 * $\overline{e^{i\theta}} = \frac{1}{e^{i\theta}} = e^{-i\theta}$
 
-### 31.10.2018
+### 07.11.2018
+* $$< f, g > = \frac{1}{\pi}f_{(x)}\overline{g_{(x)}}\delta x$$
+* $$||f||^2 = \frac{1}{\pi}\int_{-\pi}^{\pi}f_{(x)}^2\delta x$$
+* $$a_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f_{(x)} \cos (nx) \delta x$$
+* $$b_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f_{(x)} \sin (nx) \delta x$$
